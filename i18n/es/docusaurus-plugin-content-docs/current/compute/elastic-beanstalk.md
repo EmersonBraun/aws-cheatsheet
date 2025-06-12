@@ -4,25 +4,25 @@ sidebar_position: 4
 
 # AWS Elastic Beanstalk
 
-## O que é
-Um serviço fácil de usar para implantar e escalar aplicações web e serviços desenvolvidos com várias linguagens de programação (Java, .NET, PHP, Node.js, Python, Ruby, Go e Docker) em servidores familiares, como Apache, Nginx, Passenger e IIS.
+## Qué es
+Un servicio completamente administrado que facilita el despliegue y la ejecución de aplicaciones en múltiples lenguajes en AWS sin necesidad de aprender sobre la infraestructura que ejecuta esas aplicaciones.
 
-## Para que serve
-Simplificar o processo de implantação, gerenciamento e escalabilidade de aplicações web, abstraindo a complexidade da infraestrutura subjacente.
+## Para qué sirve
+Simplificar el despliegue y la gestión de aplicaciones web y servicios manejando automáticamente los detalles de la infraestructura.
 
 ## Casos de uso
-- Implantação rápida de aplicações web.
-- Criação de back-ends de API móvel.
-- Hospedagem de aplicações de negócios críticas.
-- Desenvolvimento e teste de aplicações.
-- Aplicações que precisam de escalabilidade automática e balanceamento de carga.
+- Despliegue de aplicaciones web
+- Desarrollo y despliegue de APIs
+- Arquitectura de microservicios
+- Entornos de desarrollo y pruebas
+- Alojamiento de aplicaciones en producción
 
-## Principais pontos
-- **Plataforma como Serviço (PaaS):** Você faz o upload do seu código, e o Elastic Beanstalk cuida do provisionamento de recursos, balanceamento de carga, auto scaling, monitoramento de saúde e implantação.
-- **Suporte a várias linguagens e servidores:** Compatível com uma ampla gama de tecnologias.
-- **Gerenciamento de infraestrutura:** Reduz a carga operacional de gerenciar servidores, sistemas operacionais e middleware.
-- **Integração:** Integra-se com outros serviços AWS, como EC2, S3, RDS, CloudWatch e VPC.
-- **Personalização:** Permite personalizar o ambiente subjacente, se necessário.
+## Puntos clave
+- **Despliegue fácil:** Despliega aplicaciones con unos pocos clics o comandos
+- **Múltiples plataformas:** Admite varios lenguajes de programación y plataformas
+- **Escalado automático:** Maneja el aprovisionamiento de capacidad y el balanceo de carga
+- **Monitoreo de estado:** Monitorea la salud y el rendimiento de la aplicación
+- **Personalización:** Permite personalizar los recursos subyacentes
 
-## Comparativo
-- **AWS Elastic Beanstalk vs. AWS EC2:** O Elastic Beanstalk é uma plataforma como serviço (PaaS) que abstrai a complexidade da infraestrutura, permitindo que os desenvolvedores se concentrem no código da aplicação. Ideal para implantação rápida e gerenciamento simplificado. O EC2 oferece controle total sobre a infraestrutura subjacente (IaaS - Infraestrutura como Serviço), exigindo que o usuário gerencie o sistema operacional, servidores web, bancos de dados, etc. Ideal para cenários que exigem personalização profunda e controle total sobre o ambiente. 
+## Comparación
+- **AWS Elastic Beanstalk vs. Despliegue manual en EC2:** Elastic Beanstalk automatiza el despliegue y la gestión de aplicaciones, manejando automáticamente los detalles de la infraestructura. El despliegue manual en EC2 le da control total sobre la infraestructura pero requiere más sobrecarga de gestión. Elastic Beanstalk es ideal para desarrolladores que quieren concentrarse en su código en lugar de la gestión de infraestructura. 

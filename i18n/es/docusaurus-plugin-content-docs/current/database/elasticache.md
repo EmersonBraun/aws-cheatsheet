@@ -1,30 +1,28 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Amazon ElastiCache
 
-## O que é
-Um serviço web que facilita a configuração, o gerenciamento e a escalabilidade de um armazenamento de dados em memória distribuído ou ambiente de cache na nuvem.
+## Qué es
+Un servicio web que facilita el despliegue, operación y escalado de almacenes de datos en memoria en la nube, mejorando el rendimiento de las aplicaciones web al permitir recuperar información desde almacenes de datos en memoria rápidos y administrados.
 
-## Para que serve
-Acelerar o desempenho de aplicações e bancos de dados, armazenando dados frequentemente acessados em memória para acesso de baixa latência.
+## Para qué sirve
+Mejorar el rendimiento de las aplicaciones web al proporcionar acceso rápido a datos en memoria, reduciendo la latencia y la carga en las bases de datos.
 
 ## Casos de uso
-- Cache de dados para reduzir a carga em bancos de dados (ex: cache de resultados de consultas, cache de objetos)
-- Armazenamento de sessões para aplicações web (ex: sessões de usuário, carrinhos de compras)
-- Tabelas de classificação de jogos em tempo real
-- Análise em tempo real e processamento de streams
-- Mensagens e filas de pub/sub
+- Caché de sesión
+- Caché de base de datos
+- Almacenamiento de datos en tiempo real
+- Análisis en tiempo real
+- Juegos y aplicaciones de alta velocidad
 
-## Principais pontos
-- **Motores de cache:** Suporta Redis (para cache, pub/sub, estruturas de dados avançadas) e Memcached (para cache simples de chave-valor)
-- **Desempenho:** Oferece acesso a dados com latência de microssegundos
-- **Totalmente gerenciado:** A AWS cuida do provisionamento, patching, backups, monitoramento e recuperação
-- **Escalabilidade:** Permite escalar a capacidade de cache para atender às demandas da aplicação
-- **Alta disponibilidade:** Suporta replicação e failover automático para alta disponibilidade
-- **ElastiCache Serverless:** Uma opção sem servidor que escala automaticamente a capacidade do cache
+## Puntos clave
+- **Rendimiento:** Acceso a datos en memoria con latencia de microsegundos
+- **Escalabilidad:** Escalado automático de capacidad
+- **Alta disponibilidad:** Replicación automática en múltiples AZs
+- **Seguridad:** Encriptación en reposo y en tránsito
+- **Compatibilidad:** Soporte para Redis y Memcached
 
-## Comparativo com cache em banco de dados
-- **Amazon ElastiCache:** Um serviço de cache dedicado que oferece desempenho muito superior e menor latência do que o cache embutido em muitos bancos de dados. Descarrega a carga de E/S do banco de dados principal, melhorando a performance geral da aplicação
-- **Cache em banco de dados:** Geralmente mais simples de configurar, mas pode não oferecer o mesmo nível de desempenho, escalabilidade e recursos avançados de um serviço de cache dedicado 
+## Comparación
+- **Amazon ElastiCache vs. Redis/Memcached auto-gestionado:** ElastiCache es un servicio administrado que proporciona alta disponibilidad, escalabilidad y seguridad sin la necesidad de gestionar la infraestructura. Redis/Memcached auto-gestionado ofrece más control y personalización pero requiere más gestión. ElastiCache es ideal para aplicaciones que necesitan caché de alto rendimiento sin la sobrecarga de gestión, mientras que Redis/Memcached auto-gestionado es mejor para casos de uso que requieren personalización avanzada o características específicas. 

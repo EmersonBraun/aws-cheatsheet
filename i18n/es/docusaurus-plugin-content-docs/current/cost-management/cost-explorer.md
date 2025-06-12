@@ -4,25 +4,25 @@ sidebar_position: 1
 
 # AWS Cost Explorer
 
-## O que é
-Uma ferramenta que permite visualizar e analisar seus custos e uso da AWS ao longo do tempo.
+## Qué es
+Una herramienta que permite visualizar y analizar sus costos y uso de AWS a lo largo del tiempo.
 
-## Para que serve
-Entender seus gastos na AWS, identificar tendências de custo, prever gastos futuros e otimizar seus custos.
+## Para qué sirve
+Comprender su gasto en AWS, identificar tendencias de costos, pronosticar gastos futuros y optimizar sus costos.
 
 ## Casos de uso
-- Análise de custos e uso por serviço, região, tags, etc.
-- Identificação de picos de custo e anomalias.
-- Previsão de gastos futuros com base em dados históricos.
-- Análise de relatórios de instâncias reservadas (RIs) e planos de poupança.
-- Criação de relatórios personalizados para diferentes stakeholders.
+- Análisis de costos y uso por servicio, región, etiquetas, etc.
+- Identificación de picos de costo y anomalías.
+- Pronóstico de gastos futuros basado en datos históricos.
+- Análisis de informes de instancias reservadas (RI) y planes de ahorro.
+- Creación de informes personalizados para diferentes partes interesadas.
 
-## Principais pontos
-- **Visualização:** Apresenta gráficos e tabelas para facilitar a compreensão dos custos.
-- **Filtragem e agrupamento:** Permite filtrar e agrupar dados de custo por diversas dimensões.
-- **Previsão de custos:** Oferece previsões de custos para os próximos meses.
-- **Relatórios de RI/Savings Plans:** Ajuda a otimizar o uso de RIs e Savings Plans.
-- **Gratuito:** É um serviço gratuito da AWS.
+## Puntos clave
+- **Visualización:** Presenta gráficos y tablas para facilitar la comprensión de los costos.
+- **Filtrado y agrupación:** Permite filtrar y agrupar datos de costos por varias dimensiones.
+- **Pronóstico de costos:** Ofrece pronósticos de costos para los próximos meses.
+- **Informes de RI/Planes de ahorro:** Ayuda a optimizar el uso de RIs y Planes de ahorro.
+- **Gratuito:** Es un servicio gratuito de AWS.
 
-## Comparativo
-- **AWS Cost Explorer vs. AWS Cost and Usage Report (CUR):** O Cost Explorer é uma ferramenta interativa para visualização e análise de custos, ideal para explorar e entender os gastos de forma rápida e visual. Focado em análise histórica e previsão. O CUR fornece um conjunto de dados abrangente e detalhado sobre seus custos e uso da AWS, entregue em um bucket S3, ideal para análises mais profundas, integração com outras ferramentas de BI e automação de processos de faturamento, mas exige mais esforço para configurar e analisar. 
+## Comparación
+- **AWS Cost Explorer vs. Informe de Costos y Uso de AWS (CUR):** Cost Explorer es una herramienta interactiva para la visualización y análisis de costos, ideal para explorar y comprender rápidamente el gasto de manera visual. Se centra en el análisis histórico y el pronóstico. El CUR proporciona un conjunto de datos completo y detallado sobre sus costos y uso de AWS, entregado a un bucket S3, ideal para análisis más profundos, integración con otras herramientas de BI y automatización de procesos de facturación, pero requiere más esfuerzo para configurar y analizar. 

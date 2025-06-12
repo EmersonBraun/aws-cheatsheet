@@ -2,27 +2,27 @@
 sidebar_position: 3
 ---
 
-# Amazon Elastic Kubernetes Service (EKS)
+# AWS EKS (Elastic Kubernetes Service)
 
-## O que é
-Um serviço gerenciado de Kubernetes que permite executar Kubernetes na AWS Cloud e em datacenters on-premises.
+## Qué es
+Un servicio de Kubernetes completamente administrado que facilita la ejecución de Kubernetes en AWS sin necesidad de instalar, operar y mantener su propio plano de control de Kubernetes.
 
-## Para que serve
-Simplificar a implantação, o gerenciamento e a escalabilidade de aplicações em contêineres usando Kubernetes, sem a necessidade de instalar, operar e manter seu próprio plano de controle do Kubernetes.
+## Para qué sirve
+Ejecutar aplicaciones contenerizadas usando Kubernetes, proporcionando una plataforma altamente disponible y escalable para la orquestación de contenedores.
 
 ## Casos de uso
-- Execução de aplicações em contêineres que exigem a portabilidade e flexibilidade do Kubernetes.
-- Implantação de microsserviços em escala.
-- Ambientes híbridos e multi-cloud.
-- Aplicações que precisam de alta disponibilidade e escalabilidade.
-- Modernização de aplicações legadas usando contêineres.
+- Orquestación de contenedores empresarial
+- Despliegues de nube híbrida
+- Estrategias multi-nube
+- Arquitectura de microservicios
+- Automatización DevOps
 
-## Principais pontos
-- **Kubernetes gerenciado:** A AWS gerencia o plano de controle do Kubernetes, incluindo alta disponibilidade e atualizações.
-- **Integração nativa:** Integra-se com outros serviços AWS, como Amazon ECR, IAM, VPC, e CloudWatch.
-- **Escalabilidade:** Suporta auto-scaling de nós e pods.
-- **Segurança:** Integração com IAM para controle de acesso e suporte a políticas de segurança.
-- **Flexibilidade:** Suporta diferentes tipos de capacidade de computação, incluindo EC2 e Fargate.
+## Puntos clave
+- **Kubernetes administrado:** AWS maneja el plano de control
+- **Alta disponibilidad:** Se ejecuta en múltiples AZs
+- **Seguridad:** Integración con IAM y políticas de red
+- **Escalabilidad:** Escalado automático de nodos
+- **Compatibilidad:** APIs estándar de Kubernetes
 
-## Comparativo
-- **Amazon EKS vs. Amazon ECS:** O EKS é um serviço gerenciado de Kubernetes que oferece a flexibilidade e portabilidade do Kubernetes, ideal para usuários que já estão familiarizados com o Kubernetes ou que precisam de compatibilidade com ambientes híbridos/multi-cloud. O ECS é um orquestrador de contêineres proprietário da AWS, mais simples de usar e com integração nativa com o ecossistema AWS, ideal para usuários que preferem uma solução mais gerenciada e menos complexa. 
+## Comparación
+- **AWS EKS vs. ECS:** EKS es un servicio administrado de Kubernetes que proporciona características más avanzadas de orquestación de contenedores y es compatible con el ecosistema de Kubernetes. ECS es un servicio de orquestación de contenedores más simple que está más estrechamente integrado con los servicios de AWS. EKS es ideal para organizaciones que necesitan compatibilidad con Kubernetes o tienen necesidades complejas de orquestación de contenedores, mientras que ECS es mejor para despliegues centrados en AWS que no requieren características de Kubernetes. 

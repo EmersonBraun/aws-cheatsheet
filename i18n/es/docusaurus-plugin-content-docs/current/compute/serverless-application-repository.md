@@ -1,27 +1,28 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
-# AWS Serverless Application Repository
+# Repositorio de Aplicaciones Sin Servidor de AWS
 
-## O que é
-Um repositório gerenciado que permite que desenvolvedores e empresas encontrem, implantem e publiquem aplicações serverless (sem servidor) na AWS Cloud.
+## Qué es
+Un repositorio administrado para aplicaciones sin servidor que facilita encontrar, desplegar y publicar aplicaciones y componentes sin servidor.
 
-## Para que serve
-Facilitar a reutilização e o compartilhamento de aplicações serverless, permitindo que os usuários implantem soluções pré-construídas com um clique e que os desenvolvedores publiquem suas próprias aplicações para uso interno ou público.
+## Para qué sirve
+Compartir y reutilizar aplicaciones y componentes sin servidor, acelerando el desarrollo mediante el aprovechamiento de soluciones preconstruidas.
 
 ## Casos de uso
-- Implantação rápida de soluções serverless comuns (ex: chatbots, back-ends móveis, processamento de dados).
-- Compartilhamento de componentes serverless dentro de uma organização.
-- Publicação de aplicações serverless para a comunidade AWS.
-- Acelerar o desenvolvimento de aplicações serverless reutilizando código e arquiteturas.
+- Despliegue rápido de patrones comunes sin servidor
+- Compartir aplicaciones sin servidor dentro de una organización
+- Reutilizar componentes sin servidor en diferentes proyectos
+- Aprender de aplicaciones sin servidor de ejemplo
+- Publicar aplicaciones sin servidor para la comunidad
 
-## Principais pontos
-- **Repositório de aplicações:** Contém uma variedade de aplicações serverless prontas para uso.
-- **Implantação com um clique:** Facilita a implantação de aplicações serverless sem a necessidade de configurar manualmente os recursos.
-- **Compartilhamento:** Permite compartilhar aplicações serverless de forma privada ou pública.
-- **Integração:** Integra-se com AWS Lambda, AWS SAM (Serverless Application Model) e CloudFormation.
-- **Reutilização:** Promove a reutilização de código e arquiteturas serverless.
+## Puntos clave
+- **Aplicaciones preconstruidas:** Acceso a aplicaciones sin servidor listas para usar
+- **Despliegue fácil:** Despliegue de aplicaciones con un solo clic
+- **Control de versiones:** Gestiona diferentes versiones de aplicaciones
+- **Seguridad:** Controla quién puede acceder a tus aplicaciones
+- **Integración:** Funciona con AWS SAM y CloudFormation
 
-## Comparativo
-- **AWS Serverless Application Repository vs. Implantação manual de aplicações serverless:** O repositório simplifica drasticamente a implantação de aplicações serverless, eliminando a necessidade de configurar manualmente cada recurso. A implantação manual exige que o usuário defina e provisione todos os recursos (funções Lambda, gatilhos, permissões, etc.) usando CloudFormation ou AWS SAM. 
+## Comparación
+- **Repositorio de Aplicaciones Sin Servidor de AWS vs. Despliegue manual:** El Repositorio de Aplicaciones Sin Servidor proporciona aplicaciones sin servidor preconstruidas y reutilizables que pueden desplegarse con un solo clic. El despliegue manual requiere construir y configurar aplicaciones desde cero. El repositorio es ideal para desarrolladores que quieren desplegar rápidamente patrones comunes sin servidor o compartir sus aplicaciones con otros. 

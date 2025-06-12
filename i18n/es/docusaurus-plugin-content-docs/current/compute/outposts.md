@@ -1,31 +1,48 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 # AWS Outposts
 
-## O que é
-Um serviço totalmente gerenciado que estende a infraestrutura, serviços, APIs e ferramentas da AWS para as instalações do cliente (on-premises).
+## Qué es
+Un servicio completamente administrado que extiende la infraestructura, servicios, APIs y herramientas de AWS a prácticamente cualquier centro de datos, espacio de colocación o instalación local.
 
-## Para que serve
-Executar serviços AWS localmente em seu próprio datacenter, permitindo que você use a mesma infraestrutura, serviços e ferramentas da AWS para aplicações que exigem baixa latência, processamento de dados local ou residência de dados.
+## Para qué sirve
+Ejecutar servicios de AWS localmente mientras mantiene una experiencia híbrida consistente, permitiéndole ejecutar aplicaciones que requieren acceso de baja latencia a sistemas locales.
 
 ## Casos de uso
-- Aplicações que exigem baixa latência para usuários ou equipamentos locais.
-- Processamento de dados local para atender a requisitos de residência de dados.
-- Migração de aplicações on-premises para a nuvem de forma gradual.
-- Consolidação de operações de TI usando um modelo operacional consistente em nuvem e on-premises.
-- Aplicações com requisitos de conectividade intermitente ou limitada à nuvem.
+- Aplicaciones de baja latencia
+- Requisitos de residencia de datos
+- Procesamiento de datos local
+- Migración de aplicaciones locales
+- Arquitecturas de nube híbrida
 
-## Principais pontos
-- **Extensão da AWS:** Traz a infraestrutura e os serviços AWS para o seu datacenter.
-- **Modelo operacional consistente:** Use as mesmas APIs, ferramentas e serviços AWS em nuvem e on-premises.
-- **Baixa latência:** Permite que as aplicações acessem recursos de computação e armazenamento com latência muito baixa.
-- **Residência de dados:** Ajuda a atender a requisitos regulatórios e de conformidade para residência de dados.
-- **Totalmente gerenciado:** A AWS gerencia o hardware e o software do Outpost.
+## Puntos clave
+- **Experiencia consistente:** Misma infraestructura, servicios y APIs de AWS
+- **Completamente administrado:** AWS maneja la gestión del ciclo de vida del hardware
+- **Procesamiento local:** Procesa datos localmente con baja latencia
+- **Capacidades híbridas:** Integración perfecta con la nube de AWS
+- **Seguridad:** Mismos controles de seguridad que la nube de AWS
 
-## Comparativo
+## Comparación
+- **AWS Outposts vs. Infraestructura local tradicional:** Outposts proporciona una infraestructura de AWS completamente administrada localmente, ofreciendo los mismos servicios y APIs que la nube. La infraestructura local tradicional requiere gestión manual y no proporciona el mismo nivel de automatización e integración con servicios en la nube. Outposts es ideal para organizaciones que necesitan mantener algunas cargas de trabajo localmente mientras aprovechan los servicios y capacidades de AWS.
+
+## Casos de uso
+- Aplicaciones que requieren baja latencia para usuarios o equipos locales
+- Procesamiento de datos local para cumplir requisitos de residencia de datos
+- Migración gradual de aplicaciones locales a la nube
+- Consolidación de operaciones de TI usando un modelo operativo consistente en nube y local
+- Aplicaciones con requisitos de conectividad intermitente o limitada a la nube
+
+## Puntos clave
+- **Extensión de AWS:** Lleva la infraestructura y servicios de AWS a su centro de datos
+- **Modelo operativo consistente:** Use las mismas APIs, herramientas y servicios de AWS en nube y local
+- **Baja latencia:** Permite que las aplicaciones accedan a recursos de cómputo y almacenamiento con latencia muy baja
+- **Residencia de datos:** Ayuda a cumplir requisitos regulatorios y de cumplimiento para residencia de datos
+- **Completamente administrado:** AWS gestiona el hardware y software del Outpost
+
+## Comparación
 - **AWS Outposts vs. AWS Local Zones vs. AWS Wavelength:**
-  - **AWS Outposts:** Traz a infraestrutura AWS para o seu datacenter, ideal para aplicações que exigem baixa latência e processamento de dados local, com controle total sobre o ambiente físico.
-  - **AWS Local Zones:** Estende a infraestrutura AWS para áreas metropolitanas próximas aos usuários finais, oferecendo baixa latência para aplicações que precisam estar mais próximas dos usuários, mas ainda dentro de um datacenter da AWS.
-  - **AWS Wavelength:** Integra os serviços AWS com as redes 5G das operadoras, permitindo que os desenvolvedores criem aplicações com latência ultrabaixa para dispositivos móveis e casos de uso de borda. 
+  - **AWS Outposts:** Lleva la infraestructura de AWS a su centro de datos, ideal para aplicaciones que requieren baja latencia y procesamiento de datos local, con control total sobre el entorno físico
+  - **AWS Local Zones:** Extiende la infraestructura de AWS a áreas metropolitanas cercanas a los usuarios finales, ofreciendo baja latencia para aplicaciones que necesitan estar más cerca de los usuarios pero aún dentro de un centro de datos de AWS
+  - **AWS Wavelength:** Integra los servicios de AWS con las redes 5G de los operadores, permitiendo a los desarrolladores crear aplicaciones con latencia ultra baja para dispositivos móviles y casos de uso de borde 

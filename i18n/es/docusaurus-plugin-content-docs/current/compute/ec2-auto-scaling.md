@@ -4,25 +4,25 @@ sidebar_position: 2
 
 # AWS EC2 Auto Scaling
 
-## O que é
-Um serviço que ajuda a garantir que você tenha o número correto de instâncias EC2 disponíveis para lidar com a carga da sua aplicação, adicionando ou removendo instâncias automaticamente.
+## Qué es
+Un servicio que ajusta automáticamente el número de instancias EC2 en su aplicación para mantener el rendimiento y la disponibilidad mientras optimiza los costos.
 
-## Para que serve
-Manter a disponibilidade da aplicação, melhorar a tolerância a falhas e otimizar custos, escalando a capacidade do EC2 para cima ou para baixo em resposta à demanda.
+## Para qué sirve
+Escalar automáticamente la capacidad de cómputo de su aplicación hacia arriba o hacia abajo según la demanda, asegurando un rendimiento óptimo y eficiencia en costos.
 
 ## Casos de uso
-- Aplicações web com tráfego variável.
-- Processamento de dados em lote que exige capacidade elástica.
-- Ambientes de desenvolvimento e teste que precisam de escalabilidade.
-- Manter a disponibilidade de aplicações críticas.
-- Reduzir custos ao desligar instâncias quando não são necessárias.
+- Aplicaciones web con tráfico variable
+- Trabajos de procesamiento por lotes
+- Aplicaciones con patrones de carga predecibles
+- Aplicaciones de alta disponibilidad
+- Optimización de costos para cargas de trabajo variables
 
-## Principais pontos
-- **Grupos de Auto Scaling:** Coleções de instâncias EC2 que são tratadas como uma unidade para fins de escalabilidade e gerenciamento.
-- **Políticas de escalabilidade:** Define como o Auto Scaling deve adicionar ou remover instâncias (ex: escalabilidade baseada em métricas, escalabilidade programada).
-- **Verificações de integridade:** Monitora a integridade das instâncias e substitui automaticamente as instâncias não íntegras.
-- **Balanceamento de carga:** Integra-se com o Elastic Load Balancing para distribuir o tráfego entre as instâncias.
-- **Otimização de custos:** Ajuda a otimizar custos ao usar instâncias Spot e instâncias sob demanda de forma eficiente.
+## Puntos clave
+- **Escalado dinámico:** Ajusta automáticamente la capacidad según la demanda
+- **Escalado predictivo:** Utiliza aprendizaje automático para predecir patrones de tráfico
+- **Escalado programado:** Escala según cambios de carga predecibles
+- **Verificaciones de estado:** Reemplaza automáticamente instancias no saludables
+- **Múltiples políticas de escalado:** Seguimiento de objetivos, escalado por pasos y escalado simple
 
-## Comparativo
-- **AWS EC2 Auto Scaling vs. Escalabilidade manual:** O Auto Scaling automatiza o processo de escalabilidade, garantindo que a capacidade da aplicação se ajuste dinamicamente à demanda, reduzindo a necessidade de intervenção manual e otimizando custos. A escalabilidade manual exige que o usuário monitore a demanda e adicione ou remova instâncias manualmente, o que pode ser ineficiente, propenso a erros e não responsivo a mudanças rápidas na carga. 
+## Comparación
+- **AWS EC2 Auto Scaling vs. Escalado manual:** Auto Scaling ajusta automáticamente la capacidad según la demanda, reduciendo la sobrecarga operativa y asegurando un rendimiento óptimo. El escalado manual requiere intervención humana para agregar o eliminar instancias, lo que puede llevar a un sobreaprovisionamiento o subaprovisionamiento. Auto Scaling es ideal para aplicaciones con cargas de trabajo variables, mientras que el escalado manual podría ser adecuado para aplicaciones con cargas estables y predecibles. 

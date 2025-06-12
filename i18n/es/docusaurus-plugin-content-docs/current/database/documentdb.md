@@ -1,30 +1,28 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# Amazon DocumentDB (compatível com MongoDB)
+# Amazon DocumentDB
 
-## O que é
-Um serviço de banco de dados de documentos totalmente gerenciado e compatível com MongoDB.
+## Qué es
+Un servicio de base de datos de documentos compatible con MongoDB que está diseñado para ser rápido, escalable y altamente disponible.
 
-## Para que serve
-Facilitar a configuração, operação e dimensionamento de bancos de dados compatíveis com MongoDB na nuvem, oferecendo alta performance, escalabilidade e disponibilidade.
+## Para qué sirve
+Almacenar, consultar e indexar datos JSON, proporcionando un rendimiento y escalabilidad superiores a MongoDB, con la misma flexibilidad de esquema.
 
 ## Casos de uso
-- Armazenamento e consulta de dados de gerenciamento de conteúdo
-- Gerenciamento de perfis de usuário, preferências e solicitações
-- Dimensionamento de aplicações móveis e web que usam MongoDB
-- Catálogos de produtos e sistemas de gerenciamento de documentos
-- Aplicações que exigem um banco de dados flexível e sem esquema
+- Aplicaciones de contenido y gestión de catálogos
+- Aplicaciones móviles y web
+- Análisis en tiempo real
+- Aplicaciones de IoT
+- Sistemas de gestión de contenido
 
-## Principais pontos
-- **Compatibilidade com MongoDB:** Permite usar o mesmo código, drivers e ferramentas que você já usa com o MongoDB
-- **Totalmente gerenciado:** A AWS cuida do provisionamento, patching, backups, recuperação e escalabilidade
-- **Alta performance:** Oferece alto throughput e baixa latência para workloads de documentos
-- **Escalabilidade:** Escala de forma independente o armazenamento e a computação
-- **Alta disponibilidade:** Armazenamento distribuído, tolerante a falhas e com recuperação automática, replicando dados em várias Zonas de Disponibilidade
-- **Segurança:** Integração com AWS IAM, VPC e criptografia de dados
+## Puntos clave
+- **Compatibilidad con MongoDB:** Compatible con las APIs de MongoDB 4.0
+- **Alto rendimiento:** Hasta 2 veces más rápido que MongoDB
+- **Escalabilidad:** Escalado automático de almacenamiento
+- **Durabilidad:** Replicación automática en múltiples AZs
+- **Seguridad:** Encriptación en reposo y en tránsito
 
-## Comparativo com MongoDB auto-gerenciado
-- **Amazon DocumentDB:** Elimina a complexidade de gerenciar um cluster MongoDB, incluindo instalação, configuração, backups, patching e escalabilidade. Ideal para quem busca uma solução gerenciada e de alta performance
-- **MongoDB auto-gerenciado:** Oferece controle total sobre o ambiente, mas exige que o usuário cuide de todas as tarefas operacionais e de gerenciamento. Pode ser mais complexo de escalar e manter em produção 
+## Comparación
+- **Amazon DocumentDB vs. MongoDB:** DocumentDB es un servicio administrado que ofrece mejor rendimiento y escalabilidad que MongoDB auto-gestionado, pero con algunas limitaciones en términos de características. MongoDB auto-gestionado ofrece más flexibilidad y características completas pero requiere más gestión. DocumentDB es ideal para aplicaciones que necesitan alto rendimiento y escalabilidad sin la sobrecarga de gestión, mientras que MongoDB auto-gestionado es mejor para casos de uso que requieren características avanzadas o personalización específica. 

@@ -2,27 +2,27 @@
 sidebar_position: 2
 ---
 
-# Amazon Elastic Container Service (ECS)
+# AWS ECS (Elastic Container Service)
 
-## O que é
-Um serviço de orquestração de contêineres totalmente gerenciado que facilita a implantação, o gerenciamento e a escalabilidade de aplicações em contêineres Docker na AWS.
+## Qué es
+Un servicio de orquestación de contenedores completamente administrado que facilita la ejecución, detención y gestión de contenedores Docker en un clúster.
 
-## Para que serve
-Executar e gerenciar aplicações em contêineres de forma altamente escalável e disponível, sem a necessidade de gerenciar a infraestrutura de orquestração.
+## Para qué sirve
+Ejecutar y gestionar aplicaciones contenerizadas a escala, con soporte integrado para balanceo de carga, auto-escalado y descubrimiento de servicios.
 
 ## Casos de uso
-- Execução de microsserviços e aplicações em contêineres.
-- Hospedagem de aplicações web e APIs.
-- Processamento de dados em lote e tarefas agendadas.
-- Suporte a pipelines de CI/CD para implantação contínua.
-- Modernização de aplicações legadas.
+- Arquitectura de microservicios
+- Procesamiento por lotes
+- Migración de aplicaciones a contenedores
+- Integración con pipelines CI/CD
+- Aplicaciones de alta disponibilidad
 
-## Principais pontos
-- **Totalmente gerenciado:** A AWS gerencia o plano de controle do ECS, incluindo o agendador, o balanceador de carga e o registro de contêineres.
-- **Flexibilidade de computação:** Suporta diferentes tipos de capacidade de computação, incluindo instâncias EC2 (para maior controle) e AWS Fargate (sem servidor).
-- **Integração:** Integra-se nativamente com outros serviços AWS, como Amazon ECR, Elastic Load Balancing, Amazon CloudWatch e AWS IAM.
-- **Escalabilidade:** Escala automaticamente para atender às demandas da aplicação.
-- **Alta disponibilidade:** Distribui contêineres em várias Zonas de Disponibilidade para resiliência.
+## Puntos clave
+- **Orquestación de contenedores:** Gestiona el despliegue y escalado de contenedores
+- **Integración de servicios:** Funciona con ALB, CloudWatch y otros servicios de AWS
+- **Definiciones de tareas:** Define configuraciones y requisitos de contenedores
+- **Auto-escalado:** Escala automáticamente según la demanda
+- **Seguridad:** Integración con roles IAM y grupos de seguridad
 
-## Comparativo
-- **Amazon ECS vs. Amazon Elastic Kubernetes Service (EKS):** O ECS é um orquestrador de contêineres proprietário da AWS, mais simples de usar e com integração nativa com o ecossistema AWS. Ideal para usuários que preferem uma solução mais gerenciada e menos complexa. O EKS é um serviço gerenciado de Kubernetes que permite executar aplicações Kubernetes na AWS. Oferece a flexibilidade e a portabilidade do Kubernetes, ideal para usuários que já estão familiarizados com o Kubernetes ou que precisam de compatibilidade com ambientes híbridos/multi-cloud. 
+## Comparación
+- **AWS ECS vs. EKS:** ECS es un servicio de orquestación de contenedores más simple que es más fácil de comenzar a usar y se integra bien con otros servicios de AWS. EKS es un servicio administrado de Kubernetes que ofrece características más avanzadas y es mejor para necesidades complejas de orquestación de contenedores. ECS es ideal para despliegues centrados en AWS, mientras que EKS es mejor para organizaciones que necesitan compatibilidad con Kubernetes o tienen requisitos más complejos de orquestación de contenedores. 

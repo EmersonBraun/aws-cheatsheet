@@ -1,30 +1,28 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # Amazon Neptune
 
-## O que é
-Um serviço de banco de dados de grafos rápido, confiável e totalmente gerenciado.
+## Qué es
+Un servicio de base de datos de grafos rápido, confiable y completamente administrado que está diseñado para aplicaciones que necesitan almacenar y consultar miles de millones de relaciones.
 
-## Para que serve
-Construir e executar aplicações que funcionam com conjuntos de dados altamente conectados, como grafos de identidade, grafos de conhecimento e detecção de fraudes.
+## Para qué sirve
+Almacenar y consultar datos altamente conectados, permitiendo análisis de relaciones complejas y consultas de grafos eficientes.
 
 ## Casos de uso
-- Motores de recomendação (ex: produtos, filmes, amigos)
-- Detecção de fraudes (ex: identificar padrões de fraude em transações)
-- Grafos de conhecimento (ex: organizar e consultar informações complexas)
-- Redes sociais e gerenciamento de identidade
-- Análise de segurança de rede
+- Motores de recomendación
+- Detección de fraudes
+- Análisis de redes sociales
+- Gráficos de conocimiento
+- Aplicaciones de seguridad
 
-## Principais pontos
-- **Banco de dados de grafos:** Otimizado para armazenar e consultar dados com relacionamentos complexos
-- **Totalmente gerenciado:** A AWS cuida do provisionamento, patching, backups, recuperação e escalabilidade
-- **Suporte a padrões:** Suporta os padrões de grafos populares Gremlin e SPARQL
-- **Alta performance:** Projetado para alto throughput e baixa latência para consultas de grafos
-- **Escalabilidade:** Escala para lidar com bilhões de relacionamentos
-- **Alta disponibilidade:** Armazenamento distribuído e tolerante a falhas
+## Puntos clave
+- **Rendimiento:** Consultas de grafos de baja latencia
+- **Escalabilidad:** Almacenamiento automático hasta decenas de billones de relaciones
+- **Alta disponibilidad:** Replicación automática en múltiples AZs
+- **Seguridad:** Encriptación en reposo y en tránsito
+- **Compatibilidad:** Soporte para Gremlin y SPARQL
 
-## Comparativo com bancos de dados relacionais/NoSQL para dados de grafos
-- **Amazon Neptune:** Projetado especificamente para dados de grafos, oferecendo desempenho superior e consultas mais eficientes para conjuntos de dados altamente conectados em comparação com bancos de dados relacionais ou NoSQL que tentam simular estruturas de grafos
-- **Bancos de dados relacionais/NoSQL:** Podem ser usados para armazenar dados de grafos, mas as consultas para navegar por relacionamentos complexos podem ser ineficientes e difíceis de escrever em escala 
+## Comparación
+- **Amazon Neptune vs. Neo4j:** Neptune es un servicio administrado que ofrece alta disponibilidad y escalabilidad sin la necesidad de gestionar la infraestructura. Neo4j es una base de datos de grafos líder en el mercado con características más completas pero requiere más gestión. Neptune es ideal para aplicaciones que necesitan alta disponibilidad y escalabilidad sin la sobrecarga de gestión, mientras que Neo4j es mejor para casos de uso que requieren características avanzadas o personalización específica. 

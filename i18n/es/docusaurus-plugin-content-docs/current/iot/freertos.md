@@ -2,28 +2,27 @@
 sidebar_position: 4
 ---
 
-# FreeRTOS
+# Amazon FreeRTOS
 
-## O que é
-Um sistema operacional de tempo real (RTOS) de código aberto para microcontroladores e pequenos dispositivos embarcados.
+## Qué es
+Un sistema operativo en tiempo real para microcontroladores que facilita la programación, implementación, protección y mantenimiento de dispositivos IoT de pequeña escala.
 
-## Para que serve
-Permitir que dispositivos pequenos e de baixo consumo de energia se conectem com segurança a serviços de nuvem AWS, como o AWS IoT Core, e executem tarefas em tempo real.
+## Para qué sirve
+Proporcionar un sistema operativo optimizado para dispositivos IoT con recursos limitados, facilitando su conexión segura con la nube y otros dispositivos.
 
 ## Casos de uso
-- Desenvolvimento de firmware para dispositivos IoT
-- Aplicações embarcadas com requisitos de tempo real
-- Conectividade de dispositivos à nuvem AWS
-- Gerenciamento de tarefas e comunicação entre componentes em sistemas embarcados
-- Aplicações de automação industrial e controle
+- Dispositivos embebidos
+- Sensores inteligentes
+- Dispositivos industriales
+- Dispositivos médicos
+- Automatización doméstica
 
-## Principais pontos
-- **RTOS:** Fornece funcionalidades de sistema operacional para dispositivos embarcados, como multitarefa, agendamento de tarefas e comunicação entre tarefas
-- **Código aberto:** Licença de software que permite o uso em sistemas comerciais
-- **Pequeno e eficiente:** Projetado para rodar em microcontroladores com recursos limitados
-- **Integração com AWS IoT:** Facilita a conexão segura de dispositivos à nuvem AWS e a integração com serviços IoT
-- **Confiabilidade:** Desenvolvido com ênfase na confiabilidade e facilidade de uso
+## Puntos clave
+- **Tiempo real:** Sistema operativo de tiempo real
+- **Optimización:** Diseñado para microcontroladores
+- **Seguridad:** Comunicación segura con la nube
+- **Conectividad:** Protocolos de comunicación IoT
+- **Integración:** Compatible con servicios AWS
 
-## Comparativo
-- **FreeRTOS:** Um RTOS leve e otimizado para dispositivos com recursos limitados e requisitos de tempo real. Ideal para aplicações onde a resposta precisa ser previsível e rápida.
-- **Linux embarcado:** Um sistema operacional de propósito geral mais robusto e com mais recursos, adequado para dispositivos com mais poder de processamento e memória. Oferece maior flexibilidade, mas pode ter maior latência e consumo de recursos. 
+## Comparación
+- **Amazon FreeRTOS vs. Mbed OS:** FreeRTOS es un sistema operativo en tiempo real optimizado para dispositivos IoT con integración AWS. Mbed OS es un sistema operativo similar pero orientado al ecosistema ARM. FreeRTOS es ideal para proyectos que requieren integración con AWS, mientras que Mbed OS es mejor para desarrollos basados en ARM sin requisitos específicos de nube. 

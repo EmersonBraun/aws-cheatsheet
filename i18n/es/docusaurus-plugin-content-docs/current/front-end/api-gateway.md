@@ -1,30 +1,28 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # Amazon API Gateway
 
-## O que é
-Um serviço totalmente gerenciado que permite que desenvolvedores criem, publiquem, mantenham, monitorem e protejam APIs REST, HTTP e WebSocket em qualquer escala.
+## Qué es
+Un servicio completamente administrado que facilita a los desarrolladores la creación, publicación, mantenimiento, monitoreo y protección de APIs a cualquier escala.
 
-## Para que serve
-Atuar como um "front door" para aplicações, permitindo que os clientes acessem dados, lógica de negócios ou funcionalidades de back-end de forma segura e escalável.
+## Para qué sirve
+Crear y gestionar APIs que actúan como "puerta de entrada" para aplicaciones para acceder a datos, lógica de negocio o funcionalidad de servicios backend.
 
 ## Casos de uso
-- Criação de APIs para aplicações web e móveis
-- Exposição de funções AWS Lambda como APIs
-- Integração de aplicações com serviços de back-end
-- Construção de microsserviços e APIs serverless
-- Habilitar comunicação em tempo real com APIs WebSocket
+- APIs RESTful
+- APIs WebSocket
+- APIs HTTP
+- Integración de microservicios
+- APIs serverless
 
-## Principais pontos
-- **Totalmente gerenciado:** A AWS cuida do provisionamento, escalabilidade, segurança e monitoramento
-- **Tipos de API:** Suporta APIs REST (HTTP/S), HTTP APIs (mais simples e baratas) e WebSocket APIs (para comunicação bidirecional em tempo real)
-- **Segurança:** Integração com AWS IAM, Amazon Cognito, autorizadores Lambda e chaves de API
-- **Cache:** Permite configurar cache para reduzir a latência e a carga nos serviços de back-end
-- **Throttling e cotas:** Permite controlar o tráfego para proteger seus serviços de back-end
-- **Monitoramento:** Integração com Amazon CloudWatch para monitoramento e logs
+## Puntos clave
+- **Gestión de APIs:** Creación y gestión de APIs completas
+- **Seguridad:** Autenticación y autorización integradas
+- **Monitoreo:** Métricas y registros detallados
+- **Rendimiento:** Caché de respuestas y límites de velocidad
+- **Integración:** Conexión con servicios de AWS y externos
 
-## Comparativo
-- **Amazon API Gateway:** Um serviço versátil para criar e gerenciar APIs REST, HTTP e WebSocket. É mais genérico e adequado para uma ampla gama de APIs, incluindo aquelas que não exigem GraphQL ou recursos em tempo real avançados.
-- **AWS AppSync:** Ideal para construir APIs GraphQL que exigem recursos em tempo real, sincronização offline e agregação de dados de múltiplas fontes. Focado em flexibilidade de consulta e eficiência de dados. 
+## Comparación
+- **Amazon API Gateway vs. Kong:** API Gateway es un servicio administrado que ofrece gestión completa de APIs sin necesidad de infraestructura. Kong es una plataforma de gestión de APIs que ofrece características similares pero requiere gestión de infraestructura. API Gateway es ideal para aplicaciones que necesitan una solución de API completamente administrada, mientras que Kong es mejor para casos que requieren mayor control sobre la infraestructura o características específicas de personalización. 

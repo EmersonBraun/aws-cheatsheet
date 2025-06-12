@@ -1,0 +1,40 @@
+{
+  "index_name": "aws-cheatsheet",
+  "start_urls": ["https://emersonbraun.github.io/aws-cheatsheet/"],
+  "sitemap_urls": ["https://emersonbraun.github.io/aws-cheatsheet/sitemap.xml"],
+  "sitemap_alternate_links": true,
+  "stop_urls": [],
+  "selectors": {
+    "lvl0": {
+      "selector": "(//nav[contains(@class,'navbar')]//a[@class='navbar__link--active'])[1]/text()",
+      "type": "xpath",
+      "global": true,
+      "default_value": "Documentation"
+    },
+    "lvl1": "header h1",
+    "lvl2": "article h2",
+    "lvl3": "article h3",
+    "lvl4": "article h4",
+    "lvl5": "article h5, article td:first-child",
+    "lvl6": "article h6",
+    "text": "article p, article li, article td:last-child"
+  },
+  "strip_chars": " .,;:#",
+  "custom_settings": {
+    "separatorsToIndex": "_",
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "type",
+      "docusaurus_tag"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ]
+  }
+} 

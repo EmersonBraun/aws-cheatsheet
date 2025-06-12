@@ -2,26 +2,27 @@
 sidebar_position: 1
 ---
 
-# Amazon Elastic Container Registry (ECR)
+# AWS ECR (Elastic Container Registry)
 
-## O que é
-Um serviço de registro de imagens de contêineres totalmente gerenciado, seguro, escalável e confiável.
+## Qué es
+Un registro de contenedores Docker completamente administrado que facilita el almacenamiento, gestión y despliegue de imágenes de contenedores Docker.
 
-## Para que serve
-Armazenar, gerenciar e implantar imagens Docker e Open Container Initiative (OCI) de forma segura e eficiente.
+## Para qué sirve
+Almacenar y gestionar imágenes de contenedores Docker de forma segura, con alta disponibilidad y escalabilidad, mientras se integra con otros servicios de AWS.
 
 ## Casos de uso
-- Armazenamento centralizado de imagens Docker para aplicações em contêineres.
-- Distribuição de imagens de contêineres para Amazon ECS, Amazon EKS, AWS Fargate e outras plataformas.
-- Gerenciamento de versões de imagens e controle de acesso.
-- Integração com pipelines de CI/CD para automação de implantações.
+- Almacenamiento y gestión de imágenes de contenedores
+- Integración con pipelines CI/CD
+- Despliegue de microservicios
+- Desarrollo de aplicaciones basadas en contenedores
+- Replicación de imágenes entre regiones
 
-## Principais pontos
-- **Totalmente gerenciado:** A AWS cuida da infraestrutura subjacente, escalabilidade e disponibilidade.
-- **Segurança:** Integração com AWS IAM para controle de acesso granular, criptografia de imagens em repouso e em trânsito.
-- **Escalabilidade:** Escala automaticamente para lidar com grandes volumes de imagens e requisições.
-- **Integração:** Integra-se nativamente com Amazon ECS, Amazon EKS, AWS Fargate, Docker CLI e outras ferramentas de contêineres.
-- **Vulnerabilidade Scanning:** Pode escanear imagens em busca de vulnerabilidades de segurança.
+## Puntos clave
+- **Completamente administrado:** Sin infraestructura que gestionar
+- **Seguridad:** Escaneo de imágenes y encriptación
+- **Integración:** Funciona con ECS, EKS y otros servicios de AWS
+- **Control de acceso:** Integración con IAM para permisos granulares
+- **Políticas de ciclo de vida:** Automatiza la limpieza de imágenes
 
-## Comparativo
-- **Amazon ECR vs. Docker Hub (público):** O ECR é um registro privado e gerenciado pela AWS, ideal para armazenar imagens de contêineres de forma segura para uso interno em suas aplicações AWS. Oferece integração nativa com o ecossistema AWS e recursos de segurança avançados. O Docker Hub é um registro público de imagens Docker, ideal para compartilhar imagens de código aberto ou para uso em ambientes de desenvolvimento. Embora possa ser usado para imagens privadas, o ECR oferece uma integração mais profunda e recursos de segurança específicos para a AWS. 
+## Comparación
+- **AWS ECR vs. Docker Hub:** ECR está completamente integrado con los servicios de AWS y proporciona mejor seguridad y control de acceso para cargas de trabajo de AWS. Docker Hub es un registro público con niveles gratuitos y de pago, ofreciendo una comunidad más amplia y compartición pública de imágenes. ECR es ideal para despliegues de contenedores basados en AWS, mientras que Docker Hub es mejor para compartición pública de imágenes y colaboración comunitaria. 

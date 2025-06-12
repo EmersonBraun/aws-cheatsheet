@@ -4,26 +4,25 @@ sidebar_position: 1
 
 # Amazon Aurora
 
-## O que é
-Um serviço de banco de dados relacional em escala global, criado para a nuvem, com total compatibilidade com MySQL e PostgreSQL.
+## Qué es
+Un servicio de base de datos relacional compatible con MySQL y PostgreSQL que combina la velocidad y disponibilidad de bases de datos comerciales de alto rendimiento con la simplicidad y rentabilidad de bases de datos de código abierto.
 
-## Para que serve
-Oferecer o desempenho e a disponibilidade de bancos de dados comerciais a um custo muito menor, combinando a velocidade e a disponibilidade de bancos de dados de ponta com a simplicidade e o custo-benefício de bancos de dados de código aberto.
+## Para qué sirve
+Proporcionar una base de datos relacional de alto rendimiento, escalable y duradera para aplicaciones empresariales críticas.
 
 ## Casos de uso
-- Aplicações web e móveis de alto desempenho
-- Aplicações empresariais que exigem alta disponibilidade e escalabilidade
-- Workloads de banco de dados que exigem alta taxa de transferência e baixa latência
-- Migração de bancos de dados comerciais para a nuvem
+- Aplicaciones empresariales críticas
+- Sistemas de comercio electrónico
+- Aplicaciones de juegos
+- Sistemas de gestión de contenido
+- Aplicaciones de análisis en tiempo real
 
-## Principais pontos
-- **Compatibilidade:** Compatível com MySQL e PostgreSQL, permitindo a migração fácil de aplicações existentes
-- **Alto desempenho:** Oferece até 5x o throughput do MySQL padrão e 3x o do PostgreSQL padrão
-- **Alta disponibilidade e durabilidade:** Armazenamento distribuído, tolerante a falhas e com recuperação automática, replicando dados em três Zonas de Disponibilidade
-- **Escalabilidade:** Escala automaticamente o armazenamento e permite escalar a capacidade de computação
-- **Totalmente gerenciado:** A AWS cuida do provisionamento, patching, backups e recuperação
-- **Aurora Serverless:** Uma opção sem servidor que escala automaticamente a capacidade do banco de dados com base na demanda
+## Puntos clave
+- **Alto rendimiento:** Hasta 5 veces más rápido que MySQL y 3 veces más rápido que PostgreSQL
+- **Alta disponibilidad:** Replicación automática en múltiples AZs
+- **Escalabilidad:** Escalado automático de almacenamiento
+- **Durabilidad:** Replicación continua a S3
+- **Compatibilidad:** Compatible con MySQL y PostgreSQL
 
-## Comparativo com Amazon RDS
-- **Amazon Aurora:** Um banco de dados relacional otimizado para a nuvem, projetado para alto desempenho e escalabilidade, com compatibilidade com MySQL e PostgreSQL. É uma opção mais avançada e geralmente mais cara que o RDS para os mesmos motores de banco de dados
-- **Amazon RDS (Relational Database Service):** Um serviço gerenciado que facilita a configuração, operação e escalabilidade de bancos de dados relacionais em várias engines (MySQL, PostgreSQL, Oracle, SQL Server, MariaDB). Oferece mais opções de motores de banco de dados e é uma boa escolha para uma ampla gama de aplicações 
+## Comparación
+- **Amazon Aurora vs. RDS MySQL/PostgreSQL:** Aurora ofrece mejor rendimiento, mayor disponibilidad y mejor escalabilidad que RDS MySQL/PostgreSQL, pero a un costo más alto. RDS es más económico y más simple de configurar. Aurora es ideal para aplicaciones que requieren alto rendimiento y disponibilidad, mientras que RDS es mejor para cargas de trabajo más pequeñas o menos críticas. 

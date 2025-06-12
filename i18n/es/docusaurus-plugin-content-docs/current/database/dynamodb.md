@@ -1,30 +1,28 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Amazon DynamoDB
 
-## O que é
-Um serviço de banco de dados NoSQL de chave-valor e documento totalmente gerenciado, sem servidor, que oferece desempenho de milissegundos em qualquer escala.
+## Qué es
+Un servicio de base de datos NoSQL completamente administrado que proporciona rendimiento de milisegundos a cualquier escala, con disponibilidad y durabilidad integradas.
 
-## Para que serve
-Construir aplicações modernas que exigem alta performance, escalabilidade massiva e baixa latência, sem a necessidade de gerenciar servidores.
+## Para qué sirve
+Almacenar y recuperar cualquier cantidad de datos, con cualquier nivel de tráfico, con latencia de milisegundos y sin necesidad de gestionar servidores.
 
 ## Casos de uso
-- Back-ends para aplicações web, móveis, jogos e IoT
-- Armazenamento de perfis de usuário, carrinhos de compras e dados de sessão
-- Microsserviços e aplicações serverless
-- Armazenamento de metadados para data lakes
-- Tabelas de roteamento para serviços de rede
+- Aplicaciones móviles y web
+- Juegos
+- IoT
+- Análisis en tiempo real
+- Aplicaciones de comercio electrónico
 
-## Principais pontos
-- **NoSQL:** Suporta modelos de dados de chave-valor e documento
-- **Totalmente gerenciado e sem servidor:** A AWS cuida de toda a infraestrutura, escalabilidade e operações
-- **Desempenho em escala:** Oferece desempenho consistente de milissegundos, mesmo em escala de petabytes
-- **Alta disponibilidade e durabilidade:** Dados replicados em várias Zonas de Disponibilidade
-- **Segurança:** Integração com AWS IAM, criptografia em repouso e em trânsito
-- **Streams do DynamoDB:** Permite capturar alterações de dados em tempo real para processamento por outras aplicações
+## Puntos clave
+- **Rendimiento:** Latencia de milisegundos a cualquier escala
+- **Escalabilidad:** Escalado automático sin tiempo de inactividad
+- **Durabilidad:** Replicación automática en múltiples AZs
+- **Seguridad:** Encriptación en reposo y en tránsito
+- **Sin servidor:** Sin servidores que gestionar
 
-## Comparativo com Amazon RDS (bancos de dados relacionais)
-- **Amazon DynamoDB:** Um banco de dados NoSQL, ideal para aplicações que exigem escalabilidade massiva, baixa latência e um modelo de dados flexível (sem esquema). Não é adequado para dados altamente relacionais ou que exigem transações complexas com múltiplas tabelas
-- **Amazon RDS:** Um serviço para bancos de dados relacionais (SQL), ideal para aplicações que exigem integridade referencial, transações ACID e um modelo de dados estruturado. Mais adequado para dados que se encaixam bem em tabelas e relacionamentos 
+## Comparación
+- **Amazon DynamoDB vs. MongoDB:** DynamoDB es un servicio completamente administrado que ofrece escalabilidad automática y alta disponibilidad sin gestión de servidores. MongoDB es una base de datos NoSQL de código abierto que requiere más gestión pero ofrece más flexibilidad en términos de consultas y esquemas. DynamoDB es ideal para aplicaciones que necesitan escalabilidad automática y alta disponibilidad, mientras que MongoDB es mejor para casos de uso que requieren consultas complejas o esquemas flexibles. 

@@ -4,11 +4,46 @@ sidebar_position: 3
 
 # AWS IoT Greengrass
 
-## O que é
-Um software que estende os recursos da nuvem AWS para dispositivos locais, permitindo que eles coletem e analisem dados mais perto de onde esses dados são gerados.
+## Qué es
+Un servicio que extiende las capacidades de AWS a dispositivos de borde, permitiendo que ejecuten aplicaciones localmente mientras mantienen la sincronización con la nube.
 
-## Para que serve
-Executar funções AWS Lambda, sincronizar dados e se comunicar com outros dispositivos localmente, mesmo sem conectividade com a nuvem. Isso permite processamento e inteligência na borda.
+## Para qué sirve
+Habilitar el procesamiento local, mensajería y sincronización de datos para dispositivos de borde, permitiendo que operen incluso sin conexión a internet.
+
+## Casos de uso
+- Computación en el borde
+- Procesamiento local de datos
+- Aplicaciones industriales
+- Sistemas autónomos
+- Dispositivos conectados
+
+## Puntos clave
+- **Procesamiento local:** Ejecución de código en dispositivos
+- **Conectividad:** Operación sin conexión a internet
+- **Seguridad:** Comunicación encriptada y autenticación
+- **Sincronización:** Actualización automática con la nube
+- **Integración:** Compatibilidad con servicios AWS
+
+## Comparación
+- **AWS IoT Greengrass vs. Azure IoT Edge:** Greengrass es un servicio que permite ejecutar capacidades de AWS en dispositivos de borde, incluyendo procesamiento local y sincronización con la nube. Azure IoT Edge ofrece funcionalidades similares pero en la plataforma Azure. Greengrass es ideal para usuarios de AWS que necesitan capacidades de computación en el borde, mientras que Azure IoT Edge es mejor para usuarios comprometidos con el ecosistema Azure.
+
+## Use cases
+- Real-time data processing on edge devices (e.g., factories, hospitals, vehicles)
+- Running machine learning models on IoT devices for local inference
+- Data synchronization between local devices and AWS cloud
+- Secure communication between devices on a local network
+- Applications requiring low latency and offline operation
+
+## Key points
+- **Edge computing:** Extends AWS capabilities to IoT devices, enabling local processing
+- **Lambda functions:** Allows running Lambda functions on edge devices
+- **Data synchronization:** Synchronizes data between local devices and AWS cloud
+- **Local communication:** Enables devices to communicate with each other locally
+- **Security:** Authentication and encryption for secure communication
+- **Open source:** The edge runtime is open source
+
+## Comparison
+- **AWS IoT Greengrass:** Extends AWS capabilities to edge devices, allowing them to run Lambda functions, synchronize data, and communicate with other devices locally, even without cloud connectivity. Complements IoT Core by enabling edge processing and intelligence.
 
 ## Casos de uso
 - Processamento de dados em tempo real em dispositivos de borda (ex: fábricas, hospitais, veículos)

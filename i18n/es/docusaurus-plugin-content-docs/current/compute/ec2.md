@@ -4,25 +4,25 @@ sidebar_position: 1
 
 # AWS EC2 (Elastic Compute Cloud)
 
-## O que é
-Um serviço web que fornece capacidade computacional segura e redimensionável na nuvem na forma de instâncias virtuais (servidores virtuais).
+## Qué es
+Un servicio web que proporciona capacidad de cómputo segura y redimensionable en la nube en forma de instancias virtuales (servidores virtuales).
 
-## Para que serve
-Executar aplicações, hospedar sites, processar dados e realizar diversas tarefas de computação na nuvem, com controle total sobre o ambiente do servidor.
+## Para qué sirve
+Ejecutar aplicaciones, alojar sitios web, procesar datos y realizar diversas tareas de computación en la nube, con control total sobre el entorno del servidor.
 
 ## Casos de uso
-- Hospedagem de aplicações web e sites.
-- Execução de servidores de banco de dados.
-- Processamento de big data e análise.
-- Ambientes de desenvolvimento e teste.
-- Execução de aplicações empresariais.
+- Alojamiento de aplicaciones web y sitios web
+- Operación de servidores de base de datos
+- Procesamiento y análisis de big data
+- Entornos de desarrollo y pruebas
+- Ejecución de aplicaciones empresariales
 
-## Principais pontos
-- **Instâncias:** Servidores virtuais que podem ser configurados com diferentes tipos de CPU, memória, armazenamento e rede.
-- **Tipos de instância:** Ampla seleção de tipos de instância otimizados para diferentes casos de uso (uso geral, computação otimizada, memória otimizada, etc.).
-- **Modelos de compra:** Sob demanda, instâncias reservadas (RIs), instâncias spot e Savings Plans para otimização de custos.
-- **Escalabilidade:** Pode escalar verticalmente (aumentar o tamanho da instância) ou horizontalmente (adicionar mais instâncias) com o Auto Scaling.
-- **Segurança:** Integração com AWS IAM, Security Groups e Network ACLs para controle de acesso e segurança de rede.
+## Puntos clave
+- **Instancias:** Servidores virtuales que pueden configurarse con diferentes tipos de CPU, memoria, almacenamiento y redes
+- **Tipos de instancia:** Amplia selección de tipos de instancia optimizados para diferentes casos de uso (propósito general, optimizado para cómputo, optimizado para memoria, etc.)
+- **Modelos de precios:** Bajo demanda, Instancias Reservadas (RIs), instancias Spot y Planes de ahorro para optimización de costos
+- **Escalabilidad:** Puede escalar verticalmente (aumentar el tamaño de la instancia) u horizontalmente (agregar más instancias) con Auto Scaling
+- **Seguridad:** Integración con AWS IAM, Grupos de Seguridad y ACLs de red para control de acceso y seguridad de red
 
-## Comparativo
-- **AWS EC2 vs. AWS Lambda:** O EC2 oferece controle total sobre o ambiente do servidor, permitindo a instalação de qualquer software e a execução de workloads de longa duração. Você é responsável pelo gerenciamento do sistema operacional e do software. O Lambda é um serviço de computação sem servidor que executa seu código em resposta a eventos, sem a necessidade de provisionar ou gerenciar servidores. Ideal para funções de curta duração e orientadas a eventos, onde você paga apenas pelo tempo de computação consumido. 
+## Comparación
+- **AWS EC2 vs. AWS Lambda:** EC2 proporciona control total sobre el entorno del servidor, permitiendo la instalación de cualquier software y la ejecución de cargas de trabajo de larga duración. Usted es responsable de gestionar el sistema operativo y el software. Lambda es un servicio de cómputo sin servidor que ejecuta su código en respuesta a eventos, sin necesidad de aprovisionar o gestionar servidores. Ideal para funciones de corta duración y basadas en eventos donde solo paga por el tiempo de cómputo consumido. 

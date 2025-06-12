@@ -4,24 +4,24 @@ sidebar_position: 2
 
 # AWS Budgets
 
-## O que é
-Um serviço que permite definir orçamentos personalizados para rastrear seus custos e uso da AWS, e receber alertas quando seus gastos excederem (ou forem previstos para exceder) seus limites definidos.
+## Qué es
+Un servicio que permite establecer presupuestos personalizados para realizar un seguimiento de sus costos y uso de AWS, y recibir alertas cuando su gasto excede (o se pronostica que excederá) sus límites definidos.
 
-## Para que serve
-Monitorar e controlar os gastos na AWS, evitar gastos excessivos e garantir que você permaneça dentro do seu orçamento.
+## Para qué sirve
+Monitorear y controlar el gasto en AWS, prevenir gastos excesivos y asegurar que se mantenga dentro de su presupuesto.
 
 ## Casos de uso
-- Definir orçamentos para custos, uso, utilização de instâncias reservadas (RIs) e cobertura de RIs.
-- Receber alertas por e-mail ou SNS quando os limites do orçamento forem atingidos ou previstos para serem atingidos.
-- Monitorar o uso do nível gratuito da AWS para evitar cobranças inesperadas.
-- Criar orçamentos para projetos ou departamentos específicos.
+- Establecer presupuestos para costos, uso, utilización de Instancias Reservadas (RI) y cobertura de RI.
+- Recibir alertas por correo electrónico o SNS cuando se alcancen o se pronostique alcanzar los límites del presupuesto.
+- Monitorear el uso del nivel gratuito de AWS para evitar cargos inesperados.
+- Crear presupuestos para proyectos o departamentos específicos.
 
-## Principais pontos
-- **Alertas personalizáveis:** Configure alertas com base em custos reais ou previstos.
-- **Tipos de orçamento:** Suporta orçamentos de custo, uso, utilização de RI e cobertura de RI.
-- **Ações:** Pode configurar ações automáticas (ex: parar instâncias EC2) quando um orçamento é excedido.
-- **Granularidade:** Defina orçamentos por serviço, conta, região, tags, etc.
-- **Previsão:** Ajuda a prever gastos futuros com base no uso atual.
+## Puntos clave
+- **Alertas personalizables:** Configurar alertas basadas en costos reales o pronosticados.
+- **Tipos de presupuesto:** Admite presupuestos de costo, uso, utilización de RI y cobertura de RI.
+- **Acciones:** Puede configurar acciones automáticas (por ejemplo, detener instancias EC2) cuando se excede un presupuesto.
+- **Granularidad:** Definir presupuestos por servicio, cuenta, región, etiquetas, etc.
+- **Pronósticos:** Ayuda a predecir gastos futuros basados en el uso actual.
 
-## Comparativo
-- **AWS Budgets vs. AWS Cost Explorer:** O Budgets é focado em definir limites de gastos e alertar quando esses limites são atingidos ou previstos para serem atingidos. É uma ferramenta proativa para controle de custos. O Cost Explorer é uma ferramenta de análise e visualização de custos que permite explorar e entender os gastos históricos e prever tendências. É uma ferramenta reativa para análise de custos. 
+## Comparación
+- **AWS Budgets vs. AWS Cost Explorer:** Budgets se centra en establecer límites de gasto y alertar cuando se alcanzan o se pronostica alcanzar esos límites. Es una herramienta proactiva para el control de costos. Cost Explorer es una herramienta de análisis y visualización de costos que permite explorar y comprender el gasto histórico y las tendencias de pronóstico. Es una herramienta reactiva para el análisis de costos.
