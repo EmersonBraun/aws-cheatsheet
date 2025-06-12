@@ -33,7 +33,21 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'pt-BR',
-    locales: ['pt-BR'],
+    locales: ['pt-BR', 'en', 'es'],
+    localeConfigs: {
+      'pt-BR': {
+        label: 'Português',
+        direction: 'ltr',
+      },
+      'en': {
+        label: 'English',
+        direction: 'ltr',
+      },
+      'es': {
+        label: 'Español',
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
@@ -45,7 +59,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/EmersonBraun/aws-cheatsheet/blob/master',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -57,10 +71,15 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
-      title: 'AWS Cheatsheet',
+      title: 'Home',
       logo: {
-        alt: 'AWS Cheatsheet Logo',
+        alt: 'Home Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -68,7 +87,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Serviços AWS',
+          label: 'AWS Cheatsheet',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           href: 'https://github.com/EmersonBraun/aws-cheatsheet',

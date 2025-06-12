@@ -72,6 +72,7 @@ const sidebars: SidebarsConfig = {
         'containers/ecr',
         'containers/ecs',
         'containers/eks',
+        'containers/fargate',
       ],
     },
     {
@@ -128,6 +129,7 @@ const sidebars: SidebarsConfig = {
         'machine-learning/translate',
         'machine-learning/kendra',
         'machine-learning/rekognition',
+        'machine-learning/textract',
       ],
     },
     {
@@ -180,6 +182,29 @@ const sidebars: SidebarsConfig = {
         'storage/backup',
         'storage/snowball',
         'storage/storage-gateway',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Security',
+      items: [
+        'security/iam',
+        'security/kms',
+        'security/secrets-manager',
+        'security/shield',
+        'security/waf',
+        'security/certificate-manager',
+        'security/cloudhsm',
+        'security/directory-service',
+        'security/firewall-manager',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Serverless',
+      items: [
+        'serverless/lambda',
+        'serverless/step-functions',
       ],
     },
   ],
