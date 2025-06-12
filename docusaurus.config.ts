@@ -51,7 +51,6 @@ const config: Config = {
       },
     },
   },
-
   presets: [
     [
       'classic',
@@ -72,7 +71,17 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/aws.png',
+    metadata: [
+      {
+        name: 'keywords',
+        content: 'aws, cheatsheet, documentation, guide, tutorial',
+      },
+      {
+        name: 'algolia-site-verification',
+        content: '1ACD95D7BD65423A',
+      },
+    ],
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
@@ -121,9 +130,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    // Add Algolia search configuration
     algolia: {
-      // Replace with your project's Algolia credentials
       appId: process.env.ALGOLIA_APP_ID,
       apiKey: process.env.ALGOLIA_API_KEY,
       indexName: 'aws-cheatsheet',
