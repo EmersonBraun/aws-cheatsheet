@@ -7,7 +7,7 @@ import { type ReactElement } from 'react';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -18,7 +18,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/analytics/athena">
+            to="/docs/getting-started">
             Start Learning 🚀
           </Link>
         </div>
@@ -28,7 +28,7 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactElement {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={siteConfig.title}
@@ -47,54 +47,11 @@ export default function Home(): ReactElement {
                     Key Points, and Comparisons. This organization helps you quickly understand when to use
                     each service, what's important to know for the exams, and how services relate to each other.
                   </p>
-                  
-                  <h2>What you'll find in each service section</h2>
-                  <p>
-                    Our structured approach covers everything you need to know for AWS certifications:
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>Use Cases:</strong> Real-world scenarios and applications where each service
-                      excels, helping you understand practical implementations
-                    </li>
-                    <li>
-                      <strong>Key Points:</strong> Essential concepts, features, and limitations you need
-                      to know for the certification exams
-                    </li>
-                    <li>
-                      <strong>Comparisons:</strong> Clear comparisons between similar services, helping you
-                      make the right architectural decisions and answer exam questions correctly
-                    </li>
-                  </ul>
 
-                  <h2>How to use this guide?</h2>
-                  <p>
-                    This guide is designed to be your quick reference during AWS certification preparation:
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>For Use Cases:</strong> When you need to understand practical applications
-                      and real-world scenarios for each service
-                    </li>
-                    <li>
-                      <strong>For Key Points:</strong> When studying for the exam, focus on these essential
-                      concepts and features that frequently appear in certification questions
-                    </li>
-                    <li>
-                      <strong>For Comparisons:</strong> When you need to differentiate between similar
-                      services or make architectural decisions
-                    </li>
-                  </ul>
-                  <p>
-                    Keep this guide open while practicing in the AWS Console and reviewing official
-                    documentation. The structured format helps you quickly find the information you need
-                    at each stage of your certification journey.
-                  </p>
-
-                  <div className={styles.buttons}>
+                  <div className={styles.buttons} style={{ marginBottom: '5rem' }}>
                     <Link
                       className="button button--primary button--lg"
-                      to="/docs/analytics/athena">
+                      to="/docs/analytics/get-started">
                       Explore Services ✨
                     </Link>
                   </div>
@@ -119,7 +76,7 @@ export default function Home(): ReactElement {
                   <div className={styles.buttons}>
                     <Link
                       className="button button--secondary button--lg"
-                      to="https://github.com/EmersonBraun/aws-cheatsheet">
+                      to="/docs/contributing">
                       Contribute to the Project 🤝
                     </Link>
                   </div>

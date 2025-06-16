@@ -17,6 +17,14 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
       type: 'category',
+      label: 'Getting Started',
+      items: [
+        'getting-started/getting-started',
+        'getting-started/contributing',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Analytics',
       items: [
         'analytics/athena',
@@ -27,6 +35,8 @@ const sidebars: SidebarsConfig = {
         'analytics/msk',
         'analytics/redshift',
         'analytics/glue',
+        'analytics/quicksight',
+        'analytics/data-exchange',
       ],
     },
     {
@@ -65,6 +75,9 @@ const sidebars: SidebarsConfig = {
         'compute/lambda',
         'compute/serverless-application-repository',
         'compute/outposts',
+        'compute/lightsail',
+        'compute/ec2-image-builder',
+        'compute/app-runner',
       ],
     },
     {
@@ -75,6 +88,7 @@ const sidebars: SidebarsConfig = {
         'containers/ecs',
         'containers/eks',
         'containers/fargate',
+        'containers/app-mesh',
       ],
     },
     {
@@ -98,6 +112,9 @@ const sidebars: SidebarsConfig = {
         'developer-tools/codedeploy',
         'developer-tools/xray',
         'developer-tools/workspaces',
+        'developer-tools/codepipeline',
+        'developer-tools/codecommit',
+        // 'developer-tools/codestar',
       ],
     },
     {
@@ -107,6 +124,7 @@ const sidebars: SidebarsConfig = {
         'front-end/api-gateway',
         'front-end/appsync',
         'front-end/amplify',
+        // 'front-end/device-farm',
       ],
     },
     {
@@ -133,6 +151,10 @@ const sidebars: SidebarsConfig = {
         'machine-learning/rekognition',
         'machine-learning/textract',
         'machine-learning/macie',
+        'machine-learning/forecast',
+        'machine-learning/personalize',
+        'machine-learning/lookout-for-metrics',
+        'machine-learning/bedrock',
       ],
     },
     {
@@ -149,6 +171,8 @@ const sidebars: SidebarsConfig = {
         'management/organizations',
         'management/systems-manager',
         'management/trusted-advisor',
+        'management/service-catalog',
+        'management/opsworks',
       ],
     },
     {
@@ -159,6 +183,7 @@ const sidebars: SidebarsConfig = {
         'migration/datasync',
         'migration/migration-hub',
         'migration/transfer-family',
+        'migration/application-discovery-service',
       ],
     },
     {
@@ -172,6 +197,8 @@ const sidebars: SidebarsConfig = {
         'networking/privatelink',
         'networking/transit-gateway',
         'networking/elb',
+        'networking/global-accelerator',
+        'networking/network-firewall',
       ],
     },
     {
@@ -187,6 +214,8 @@ const sidebars: SidebarsConfig = {
         'storage/backup',
         'storage/snowball',
         'storage/storage-gateway',
+        'storage/glacier-deep-archive',
+        'storage/storage-lens',
       ],
     },
     {
@@ -205,6 +234,10 @@ const sidebars: SidebarsConfig = {
         'security/security-hub',
         'security/shield',
         'security/waf',
+        'security/control-tower',
+        'security/detective',
+        'security/identity-center',
+        'security/access-analyzer',
       ],
     },
     {
@@ -215,7 +248,27 @@ const sidebars: SidebarsConfig = {
         'serverless/step-functions',
       ],
     },
+    {
+      type: 'category',
+      label: 'Hybrid and Edge',
+      items: [
+        'hybrid/outposts',
+        'hybrid/local-zones',
+        'hybrid/wavelength',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Artificial Intelligence (Generative)',
+      items: [
+        'ai/bedrock',
+        'ai/amazon-q',
+        'ai/claude',
+        'ai/titan',
+      ],
+    },
   ],
+
 
   // But you can create a sidebar manually
   /*

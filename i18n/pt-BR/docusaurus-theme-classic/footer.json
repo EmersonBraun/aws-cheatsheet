@@ -6,9 +6,5 @@
   "link.item.label.Serviços AWS": {
     "message": "Serviços AWS",
     "description": "The label of footer link with label=Serviços AWS linking to /docs/intro"
-  },
-  "copyright": {
-    "message": "Copyright © 2025 AWS Cheatsheet. Built with Docusaurus.",
-    "description": "The footer copyright"
   }
 }
