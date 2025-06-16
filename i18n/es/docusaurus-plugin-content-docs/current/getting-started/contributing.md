@@ -58,7 +58,7 @@ Para mais informações sobre como contribuir com projetos open source, consulte
 
 ## Código de Conduta
 
-Por favor, leia e siga nosso [Código de Conduta](CODE_OF_CONDUCT.md) para manter um ambiente respeitoso e inclusivo para todos os contribuidores.
+Por favor, leia e siga nosso [Código de Conduta](https://github.com/EmersonBraun/aws-cheatsheet/blob/master/CODE_OF_CONDUCT.md) para manter um ambiente respeitoso e inclusivo para todos os contribuidores.
 
 ## Licença
 
@@ -110,7 +110,7 @@ For more information about contributing to open source projects, check out the [
 
 ## Code of Conduct
 
-Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to maintain a respectful and inclusive environment for all contributors.
+Please read and follow our [Code of Conduct](https://github.com/EmersonBraun/aws-cheatsheet/blob/master/CODE_OF_CONDUCT.md) to maintain a respectful and inclusive environment for all contributors.
 
 ## License
 

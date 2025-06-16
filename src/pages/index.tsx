@@ -51,7 +51,7 @@ export default function Home(): ReactElement {
                   <div className={styles.buttons} style={{ marginBottom: '5rem' }}>
                     <Link
                       className="button button--primary button--lg"
-                      to="/docs/analytics/get-started">
+                      to="/docs/getting-started">
                       Explore Services ✨
                     </Link>
                   </div>
@@ -76,7 +76,7 @@ export default function Home(): ReactElement {
                   <div className={styles.buttons}>
                     <Link
                       className="button button--secondary button--lg"
-                      to="/docs/contributing">
+                      to="/docs/getting-started/contributing">
                       Contribute to the Project 🤝
                     </Link>
                   </div>
