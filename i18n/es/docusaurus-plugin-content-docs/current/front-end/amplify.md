@@ -4,28 +4,28 @@ sidebar_position: 3
 
 # AWS Amplify
 
-## What is it
-A set of tools and services for developing full-stack web and mobile applications, enabling developers to build scalable applications with managed backend features.
+## Qué es
+Un conjunto de herramientas y servicios para el desarrollo de aplicaciones web y móviles full-stack, permitiendo que los desarrolladores creen aplicaciones escalables con recursos de backend administrados.
 
-## What it's for
-Accelerate the development of modern web and mobile applications by providing a complete platform that includes authentication, storage, APIs, hosting, and more.
+## Para qué sirve
+Acelerar el desarrollo de aplicaciones web y móviles modernas, proporcionando una plataforma completa que incluye autenticación, almacenamiento, APIs, alojamiento y más.
 
-## Use cases
-- Rapid development of web and mobile applications
-- Implementation of authentication and authorization
-- Content and file management
-- Creation of GraphQL and REST APIs
-- Application hosting and deployment
-- Development of applications with real-time features
+## Casos de uso
+- Desarrollo rápido de aplicaciones web y móviles
+- Implementación de autenticación y autorización
+- Gestión de contenido y archivos
+- Creación de APIs GraphQL y REST
+- Alojamiento e implementación de aplicaciones
+- Desarrollo de aplicaciones con recursos en tiempo real
 
-## Key points
-- **Development tools:** CLI, libraries, and UI components for rapid development
-- **Managed backend:** Fully managed backend services (authentication, storage, APIs)
-- **Hosting:** Web application hosting and CDN
-- **CI/CD:** Continuous integration and delivery pipeline
-- **Security:** Integration with AWS IAM and Amazon Cognito
-- **Scalability:** Automatically scalable infrastructure
+## Puntos principales
+- **Herramientas de desarrollo:** CLI, bibliotecas y componentes UI para desarrollo rápido
+- **Backend administrado:** Servicios de backend totalmente administrados (autenticación, almacenamiento, APIs)
+- **Alojamiento:** Alojamiento y CDN para aplicaciones web
+- **CI/CD:** Pipeline de integración y entrega continua
+- **Seguridad:** Integración con AWS IAM y Amazon Cognito
+- **Escalabilidad:** Infraestructura escalable automáticamente
 
-## Comparison
-- **AWS Amplify:** A complete platform for full-stack development, ideal for teams that want to quickly develop modern applications with managed backend features.
-- **Manual development with AWS services:** Offers more control and flexibility, but requires more time and knowledge to set up and manage the infrastructure. 
+## Comparativo
+- **AWS Amplify:** Una plataforma completa para desarrollo full-stack, ideal para equipos que quieren desarrollar rápidamente aplicaciones modernas con recursos de backend administrados.
+- **Desarrollo manual con servicios AWS:** Ofrece más control y flexibilidad, pero requiere más tiempo y conocimiento para configurar y administrar la infraestructura. 

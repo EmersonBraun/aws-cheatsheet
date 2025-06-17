@@ -4,26 +4,26 @@ sidebar_position: 4
 
 # Amazon Comprehend
 
-## What is it
-A natural language processing (NLP) service that uses machine learning to discover information and relationships in unstructured text.
+## O que é
+Um serviço de processamento de linguagem natural (NLP) que usa machine learning para descobrir informações e relacionamentos em texto não estruturado.
 
-## What it's for
-Analyze text to identify entities (people, places, organizations), sentiment (positive, negative, neutral), key phrases, languages, and topics.
+## Para que serve
+Analisar texto para identificar entidades (pessoas, locais, organizações), sentimentos (positivo, negativo, neutro), frases-chave, idiomas e tópicos.
 
-## Use cases
-- Customer feedback analysis (reviews, comments, emails)
-- Document and article classification
-- Information extraction from legal or medical documents
-- Social media analysis for trends and sentiment
-- Building text-based search and recommendation applications
+## Casos de uso
+- Análise de feedback de clientes (avaliações, comentários, e-mails)
+- Classificação de documentos e artigos
+- Extração de informações de documentos legais ou médicos
+- Análise de mídias sociais para tendências e sentimentos
+- Construção de aplicações de busca e recomendação baseadas em texto
 
-## Key points
-- **Managed NLP:** No prior machine learning knowledge required to use
-- **Multiple features:** Language detection, sentiment analysis, entity extraction, key phrase extraction, topic detection
-- **Customization:** Allows training custom models for entities and text classification
-- **Amazon Comprehend Medical:** A specialized version for extracting information from clinical text
-- **Integration:** Integrates with other AWS services, such as S3, Lambda, and Kinesis
+## Principais pontos
+- **NLP gerenciado:** Não exige conhecimento prévio em machine learning para usar
+- **Várias funcionalidades:** Detecção de idioma, análise de sentimento, extração de entidades, extração de frases-chave, detecção de tópicos
+- **Customização:** Permite treinar modelos personalizados para entidades e classificação de texto
+- **Amazon Comprehend Medical:** Uma versão especializada para extrair informações de texto clínico
+- **Integração:** Integra-se com outros serviços AWS, como S3, Lambda e Kinesis
 
-## Comparison
-- **Amazon Comprehend:** Offers a managed and scalable solution for NLP, eliminating the need to build and train ML models from scratch. Ideal for those who need quick results and do not want to manage ML infrastructure.
-- **Manual NLP/libraries (e.g., NLTK, SpaCy):** Offers greater control and flexibility for customization, but requires ML and programming knowledge, as well as infrastructure management. Suitable for very specific use cases or research. 
+## Comparativo
+- **Amazon Comprehend:** Oferece uma solução gerenciada e escalável para NLP, eliminando a necessidade de construir e treinar modelos de ML do zero. Ideal para quem precisa de resultados rápidos e não quer gerenciar a infraestrutura de ML.
+- **NLP manual/bibliotecas (ex: NLTK, SpaCy):** Oferece maior controle e flexibilidade para personalização, mas exige conhecimento em ML e programação, além de gerenciamento da infraestrutura. Adequado para casos de uso muito específicos ou pesquisa. 

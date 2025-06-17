@@ -1,29 +1,29 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 ---
 
 # Amazon Polly
 
 ## Qué es
-Un servicio que convierte texto en habla natural, utilizando tecnología de aprendizaje automático para crear voces que suenan como personas reales.
+Un servicio que convierte texto en voz natural utilizando aprendizaje automático.
 
 ## Para qué sirve
-Proporcionar una forma de crear aplicaciones que hablan, permitiendo la conversión de texto a voz de alta calidad.
+Proporcionar capacidades de síntesis de voz, permitiendo la conversión de texto a voz natural.
 
 ## Casos de uso
-- Aplicaciones móviles
-- Sistemas de respuesta de voz interactiva (IVR)
+- Síntesis de voz
+- Accesibilidad
 - Asistentes virtuales
 - Contenido multimedia
-- Aplicaciones de accesibilidad
+- Aplicaciones móviles
 
-## Puntos clave
-- **Voces naturales:** Creación de voces que suenan como personas reales
-- **Múltiples idiomas:** Soporte para varios idiomas y acentos
-- **Personalización:** Opciones para personalizar la voz y el habla
-- **Escalabilidad:** Escalado automático según la demanda
-- **Integración:** Fácil integración con otros servicios AWS
+## Puntos principales
+- **Síntesis:** Conversión de texto a voz
+- **Naturalidad:** Voces que suenan naturales
+- **Idiomas:** Soporte para varios idiomas
+- **Personalización:** Adaptación a necesidades específicas
+- **Integración:** Integración con otros servicios AWS
 
-## Comparación con Amazon Lex
-- **Amazon Polly:** Un servicio que convierte texto en habla natural, utilizando tecnología de aprendizaje automático para crear voces que suenan como personas reales. Ideal para aplicaciones que requieren síntesis de voz.
-- **Amazon Lex:** Un servicio que permite construir interfaces conversacionales en aplicaciones utilizando voz y texto, basado en la misma tecnología que Alexa. Ideal para chatbots y asistentes virtuales. 
+## Comparación con Amazon Transcribe
+- **Amazon Polly:** Un servicio que convierte texto a voz utilizando aprendizaje automático. Ideal para síntesis de voz y accesibilidad.
+- **Amazon Transcribe:** Un servicio que convierte audio a texto utilizando aprendizaje automático. Ideal para transcripción de audio y análisis de contenido de audio. 

@@ -4,26 +4,26 @@ sidebar_position: 7
 
 # Amazon Kendra
 
-## What is it
-An intelligent and highly accurate enterprise search service powered by machine learning (ML).
+## O que é
+Um serviço de pesquisa empresarial inteligente e altamente preciso, baseado em machine learning (ML).
 
-## What it's for
-Enable users to quickly find relevant information in large volumes of unstructured data (documents, manuals, FAQs, etc.) using natural language.
+## Para que serve
+Permitir que os usuários encontrem informações relevantes rapidamente em grandes volumes de dados não estruturados (documentos, manuais, FAQs, etc.) usando linguagem natural.
 
-## Use cases
-- Internal search for employees (intranet, knowledge bases)
-- Customer service (chatbots, self-service)
-- Legal and compliance document search
-- Search data analysis for business insights
-- Accelerate research in research and development repositories
+## Casos de uso
+- Pesquisa interna para funcionários (intranet, bases de conhecimento)
+- Atendimento ao cliente (chatbots, autoatendimento)
+- Pesquisa de documentos legais e de conformidade
+- Análise de dados de pesquisa para insights de negócios
+- Acelerar a pesquisa em repositórios de pesquisa e desenvolvimento
 
-## Key points
-- **Intelligent search:** Understands natural language and question context to provide more relevant answers
-- **Data connectors:** Connects to various data sources (S3, SharePoint, Salesforce, Confluence, etc.)
-- **Built-in ML:** Uses ML to improve search accuracy and extract direct answers
-- **Relevance:** Allows adjusting search result relevance
-- **Fully managed:** AWS handles the underlying infrastructure
+## Principais pontos
+- **Pesquisa inteligente:** Entende a linguagem natural e o contexto das perguntas para fornecer respostas mais relevantes
+- **Conectores de dados:** Conecta-se a várias fontes de dados (S3, SharePoint, Salesforce, Confluence, etc.)
+- **ML integrado:** Utiliza ML para melhorar a precisão da pesquisa e extrair respostas diretas
+- **Relevância:** Permite ajustar a relevância dos resultados da pesquisa
+- **Totalmente gerenciado:** A AWS cuida da infraestrutura subjacente
 
-## Comparison
-- **Amazon Kendra:** Goes beyond traditional keyword-based search by understanding the meaning and context of questions, providing direct and relevant answers. Reduces time spent searching for information.
-- **Traditional search:** Relies on exact keywords and may not return the most relevant results for complex or natural language questions. 
+## Comparativo
+- **Amazon Kendra:** Vai além da pesquisa tradicional baseada em palavras-chave, entendendo o significado e o contexto das perguntas, e fornecendo respostas diretas e relevantes. Reduz o tempo gasto na busca por informações.
+- **Pesquisa tradicional:** Depende de palavras-chave exatas e pode não retornar os resultados mais relevantes para perguntas complexas ou em linguagem natural. 

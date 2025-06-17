@@ -4,26 +4,26 @@ sidebar_position: 9
 
 # Amazon Textract
 
-## What is it
-A service that enables text and data extraction from scanned documents using pre-trained machine learning.
+## O que é
+Um serviço que permite extrair texto e dados de documentos digitalizados utilizando machine learning pré-treinado.
 
-## What it's for
-Provide text and data extraction capabilities from documents, enabling document processing automation.
+## Para que serve
+Fornecer capacidades de extração de texto e dados de documentos, permitindo a automação do processamento de documentos.
 
-## Use cases
-- Text extraction
-- Document processing
-- Document scanning
-- Form analysis
-- Process automation
+## Casos de uso
+- Extração de texto
+- Processamento de documentos
+- Digitalização de documentos
+- Análise de formulários
+- Automação de processos
 
-## Key points
-- **Extraction:** Text and data extraction
-- **Processing:** Document processing
-- **Forms:** Form and table analysis
-- **Automation:** Process automation
-- **Integration:** Integration with other AWS services
+## Pontos principais
+- **Extração:** Extração de texto e dados
+- **Processamento:** Processamento de documentos
+- **Formulários:** Análise de formulários e tabelas
+- **Automação:** Automação de processos
+- **Integração:** Integração com outros serviços AWS
 
-## Comparison with Amazon Comprehend
-- **Amazon Textract:** A service that enables text and data extraction from scanned documents using pre-trained machine learning. Ideal for text extraction from documents and forms.
-- **Amazon Comprehend:** A service that enables text analysis using pre-trained machine learning. Ideal for text analysis and natural language processing.
+## Comparação com Amazon Comprehend
+- **Amazon Textract:** Um serviço que permite extrair texto e dados de documentos digitalizados utilizando machine learning pré-treinado. Ideal para extração de texto de documentos e formulários.
+- **Amazon Comprehend:** Um serviço que permite analisar texto utilizando machine learning pré-treinado. Ideal para análise de texto e processamento de linguagem natural.

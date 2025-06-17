@@ -34,7 +34,7 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'pt-BR',
+    defaultLocale: 'en',
     locales: ['pt-BR', 'en', 'es'],
     localeConfigs: {
       'pt-BR': {
@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'Serviços AWS',
-              to: '/docs/intro',
+              to: '/docs/getting-started/getting-started',
             },
           ],
         },

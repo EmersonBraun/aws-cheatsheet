@@ -1,29 +1,30 @@
 ---
-sidebar_position: 11
+sidebar_position: 6
 ---
 
 # Amazon Translate
 
 ## Qué es
-Un servicio que traduce texto entre idiomas, utilizando aprendizaje automático para proporcionar traducciones precisas.
+Un servicio de traducción automática neuronal que utiliza aprendizaje profundo para proporcionar traducciones de texto rápidas, de alta calidad y accesibles.
 
 ## Para qué sirve
-Proporcionar una forma de traducir texto entre idiomas, permitiendo la automatización de tareas de traducción.
+Traducir texto entre diferentes idiomas de forma precisa y natural, permitiendo que las aplicaciones se comuniquen con un público global.
 
 ## Casos de uso
-- Traducción de contenido
-- Localización de aplicaciones
-- Análisis de texto multilingüe
-- Comunicación global
-- Accesibilidad
+- Traducción de contenido generado por el usuario (ej: comentarios, reseñas, mensajes)
+- Análisis de conversaciones en línea en diferentes idiomas
+- Creación de comunicaciones multilingües entre usuarios
+- Traducción de documentos y artículos para consumo global
+- Soporte para chatbots y asistentes virtuales multilingües
 
-## Puntos clave
-- **Traducción de texto:** Conversión de texto entre idiomas
-- **Múltiples idiomas:** Soporte para varios idiomas
-- **Precisión:** Traducciones precisas y naturales
-- **Escalabilidad:** Procesamiento de grandes volúmenes de texto
-- **Integración:** Fácil integración con otros servicios AWS
+## Puntos principales
+- **Traducción neuronal:** Utiliza redes neuronales para producir traducciones más precisas y naturales que los métodos tradicionales
+- **Soporte multilingüe:** Soporta una amplia gama de pares de idiomas
+- **Traducción en tiempo real:** Permite traducir texto en tiempo real para aplicaciones interactivas
+- **Traducción por lotes:** Soporta la traducción de grandes volúmenes de texto de forma asíncrona
+- **Personalización:** Permite crear terminologías personalizadas para garantizar la consistencia de la traducción de términos específicos
+- **Pago por uso:** Pagas por carácter traducido
 
-## Comparación con Amazon Comprehend
-- **Amazon Translate:** Un servicio que traduce texto entre idiomas, utilizando aprendizaje automático para proporcionar traducciones precisas. Ideal para aplicaciones que requieren traducción de texto.
-- **Amazon Comprehend:** Un servicio que utiliza aprendizaje automático para descubrir información y relaciones en texto. Ideal para aplicaciones que requieren análisis de texto y procesamiento de lenguaje natural. 
+## Comparativa
+- **Amazon Translate:** Ofrece una solución escalable y económica para traducir grandes volúmenes de texto rápidamente, ideal para contenido generado por el usuario o para expandir el alcance de aplicaciones a nuevos mercados.
+- **Traducción manual:** Ofrece la mayor precisión y matices culturales, pero es costosa, lenta y no escalable para grandes volúmenes de contenido. Generalmente reservada para contenido de alta importancia o sensibilidad. 
