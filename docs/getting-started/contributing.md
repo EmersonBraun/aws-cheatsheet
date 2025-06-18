@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Guia de Contribuição
 
 Obrigado pelo seu interesse em contribuir com o AWS Cheatsheet! Este documento fornece diretrizes e instruções para contribuir com o projeto.

@@ -2,6 +2,34 @@
 sidebar_position: 1
 ---
 
+
+## Analytics
+# Amazon QuickSight
+# AWS Data Exchange
+
+## Compute
+# Amazon Lightsail
+# AWS EC2 Image Builder
+# AWS App Runner
+
+
+
+
+## Containers
+# AWS App Mesh
+
+## Developer Tools
+# AWS CodePipeline
+# AWS CodeCommit
+# AWS CodeStar
+
+## Front-End
+# AWS Device Farm
+
+## Machine Learning
+# Amazon Forecast
+# Amazon Personalize
+
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
