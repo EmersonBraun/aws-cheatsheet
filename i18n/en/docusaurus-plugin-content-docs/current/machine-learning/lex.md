@@ -4,28 +4,28 @@ sidebar_position: 5
 
 # Amazon Lex
 
-## O que é
-Um serviço para a criação de interfaces de conversa usando voz e texto. Ele é alimentado pelas mesmas tecnologias de deep learning que o Amazon Alexa.
+## What is it
+A service for creating conversational interfaces using voice and text. It is powered by the same deep learning technologies as Amazon Alexa.
 
-## Para que serve
-Construir chatbots e aplicações de conversação que podem entender a intenção do usuário, extrair informações contextuais e automatizar tarefas.
+## What is it for
+Building chatbots and conversational applications that can understand user intent, extract contextual information, and automate tasks.
 
-## Casos de uso
-- Criação de chatbots para atendimento ao cliente
-- Automação de tarefas de rotina (ex: agendamento de compromissos, consulta de saldo)
-- Integração com aplicações de voz (ex: IVR, assistentes virtuais)
-- Construção de interfaces de conversação para aplicações móveis e web
-- Geração de respostas dinâmicas e personalizadas
+## Use cases
+- Creating chatbots for customer service
+- Automating routine tasks (e.g., appointment scheduling, balance inquiries)
+- Integration with voice applications (e.g., IVR, virtual assistants)
+- Building conversational interfaces for mobile and web applications
+- Generating dynamic and personalized responses
 
-## Principais pontos
-- **Processamento de Linguagem Natural (NLP):** Entende a linguagem natural para interpretar a intenção do usuário
-- **Reconhecimento Automático de Fala (ASR):** Converte fala em texto
-- **Geração de Linguagem Natural (NLG):** Gera respostas em linguagem natural
-- **Intenções e Slots:** Define as intenções do usuário e as informações necessárias para cumprir essa intenção
-- **Integração:** Integra-se com AWS Lambda (para lógica de negócios), Amazon Connect, Facebook Messenger, Slack e outros
-- **Escalabilidade:** Projetado para escalar para milhões de usuários
-- **Custo-efetivo:** Pague apenas pelo uso
+## Key points
+- **Natural Language Processing (NLP):** Understands natural language to interpret user intent
+- **Automatic Speech Recognition (ASR):** Converts speech to text
+- **Natural Language Generation (NLG):** Generates responses in natural language
+- **Intents and Slots:** Defines user intents and the information needed to fulfill that intent
+- **Integration:** Integrates with AWS Lambda (for business logic), Amazon Connect, Facebook Messenger, Slack, and others
+- **Scalability:** Designed to scale to millions of users
+- **Cost-effective:** Pay only for what you use
 
-## Comparativo
-- **Amazon Lex:** Uma solução totalmente gerenciada para construir interfaces de conversação, ideal para desenvolvedores que desejam criar chatbots e aplicações de voz sem gerenciar a infraestrutura subjacente.
-- **Serviços de IA de baixo nível (ex: Amazon Transcribe, Amazon Polly):** Fornecem componentes individuais (transcrição de fala, síntese de fala) que podem ser usados para construir soluções de conversação mais personalizadas, mas exigem mais esforço de desenvolvimento. 
+## Comparison
+- **Amazon Lex:** A fully managed solution for building conversational interfaces, ideal for developers who want to create chatbots and voice applications without managing the underlying infrastructure.
+- **Low-level AI Services (e.g., Amazon Transcribe, Amazon Polly):** Provide individual components (speech transcription, speech synthesis) that can be used to build more customized conversational solutions but require more development effort. 

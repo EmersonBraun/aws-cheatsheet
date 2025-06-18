@@ -4,27 +4,27 @@ sidebar_position: 6
 
 # Amazon Translate
 
-## O que é
-Um serviço de tradução automática neural que usa deep learning para fornecer traduções de texto rápidas, de alta qualidade e acessíveis.
+## What is it
+A neural machine translation service that uses deep learning to provide fast, high-quality, and affordable text translations.
 
-## Para que serve
-Traduzir texto entre diferentes idiomas de forma precisa e natural, permitindo que aplicações se comuniquem com um público global.
+## What is it for
+Translating text between different languages accurately and naturally, enabling applications to communicate with a global audience.
 
-## Casos de uso
-- Tradução de conteúdo gerado pelo usuário (ex: comentários, avaliações, mensagens)
-- Análise de conversas online em diferentes idiomas
-- Criação de comunicações multilíngues entre usuários
-- Tradução de documentos e artigos para consumo global
-- Suporte a chatbots e assistentes virtuais multilíngues
+## Use cases
+- Translation of user-generated content (e.g., comments, reviews, messages)
+- Analysis of online conversations in different languages
+- Creation of multilingual communications between users
+- Translation of documents and articles for global consumption
+- Support for multilingual chatbots and virtual assistants
 
-## Principais pontos
-- **Tradução neural:** Utiliza redes neurais para produzir traduções mais precisas e naturais do que os métodos tradicionais
-- **Suporte a vários idiomas:** Suporta uma ampla gama de pares de idiomas
-- **Tradução em tempo real:** Permite traduzir texto em tempo real para aplicações interativas
-- **Tradução em lote:** Suporta tradução de grandes volumes de texto de forma assíncrona
-- **Customização:** Permite criar terminologias personalizadas para garantir a consistência da tradução de termos específicos
-- **Pagamento por uso:** Você paga por caractere traduzido
+## Key points
+- **Neural translation:** Uses neural networks to produce more accurate and natural translations than traditional methods
+- **Multiple language support:** Supports a wide range of language pairs
+- **Real-time translation:** Enables real-time text translation for interactive applications
+- **Batch translation:** Supports asynchronous translation of large volumes of text
+- **Customization:** Allows creation of custom terminologies to ensure consistency in translation of specific terms
+- **Pay-per-use:** You pay per character translated
 
-## Comparativo
-- **Amazon Translate:** Oferece uma solução escalável e econômica para traduzir grandes volumes de texto rapidamente, ideal para conteúdo gerado pelo usuário ou para expandir o alcance de aplicações para novos mercados.
-- **Tradução manual:** Oferece a maior precisão e nuances culturais, mas é cara, demorada e não escalável para grandes volumes de conteúdo. Geralmente reservada para conteúdo de alta importância ou sensibilidade. 
+## Comparison
+- **Amazon Translate:** Offers a scalable and cost-effective solution for quickly translating large volumes of text, ideal for user-generated content or expanding application reach to new markets.
+- **Manual translation:** Offers the highest accuracy and cultural nuances, but is expensive, time-consuming, and not scalable for large volumes of content. Usually reserved for high-importance or sensitive content. 

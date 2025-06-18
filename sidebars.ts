@@ -19,8 +19,8 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Getting Started',
       items: [
-        'getting-started/contributing',
         'getting-started/getting-started',
+        'getting-started/contributing',
       ],
     },
     {
@@ -48,7 +48,6 @@ const sidebars: SidebarsConfig = {
         'application-integration/lake-formation',
         'application-integration/sns',
         'application-integration/sqs',
-        'application-integration/step-functions',
         'application-integration/swf',
       ],
     },
@@ -73,9 +72,7 @@ const sidebars: SidebarsConfig = {
         'compute/ec2-auto-scaling',
         'compute/ec2-image-builder',
         'compute/elastic-beanstalk',
-        'compute/lambda',
         'compute/lightsail',
-        'compute/outposts',
         'compute/serverless-application-repository',
       ],
     },
@@ -147,6 +144,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'hybrid/aws-local-zones',
         'hybrid/aws-wavelength',
+        'hybrid/outposts',
       ],
     },
     {

@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'Serviços AWS',
-              to: '/docs/getting-started/getting-started',
+              to: '/docs/getting-started',
             },
           ],
         },

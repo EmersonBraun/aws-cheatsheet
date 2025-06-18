@@ -4,30 +4,30 @@ sidebar_position: 10
 
 # Amazon Macie
 
-## O que é
-Um serviço de segurança de dados que usa machine learning e correspondência de padrões para descobrir, classificar e proteger dados sigilosos no Amazon S3.
+## What is it
+A data security service that uses machine learning and pattern matching to discover, classify, and protect sensitive data in Amazon S3.
 
-## Para que serve
-Identificar e alertar sobre a presença de dados sensíveis (ex: informações de identificação pessoal - PII, credenciais) em seus buckets S3, bem como monitorar o acesso a esses dados para detectar riscos de segurança.
+## What is it for
+Identify and alert about the presence of sensitive data (e.g., personally identifiable information - PII, credentials) in your S3 buckets, as well as monitor access to this data to detect security risks.
 
-## Casos de uso
-- Descoberta de dados sensíveis em buckets S3 (ex: números de cartão de crédito, CPFs, senhas).
-- Avaliação de riscos de segurança para dados armazenados no S3.
-- Monitoramento de acesso a dados sensíveis para detectar atividades incomuns.
-- Geração de alertas sobre configurações de segurança inadequadas em buckets S3.
-- Ajuda na conformidade com regulamentações de proteção de dados (ex: GDPR, LGPD).
+## Use cases
+- Discovery of sensitive data in S3 buckets (e.g., credit card numbers, SSNs, passwords).
+- Security risk assessment for data stored in S3.
+- Monitoring access to sensitive data to detect unusual activities.
+- Generation of alerts about inadequate security configurations in S3 buckets.
+- Assistance with data protection regulation compliance (e.g., GDPR, LGPD).
 
-## Principais pontos
-- **Descoberta de dados sensíveis:** Utiliza machine learning e técnicas de correspondência de padrões para identificar dados sensíveis.
-- **Visibilidade:** Fornece um painel centralizado para visualizar a postura de segurança dos seus dados no S3.
-- **Alertas:** Gera alertas detalhados sobre descobertas de dados sensíveis e atividades suspeitas.
-- **Totalmente gerenciado:** Não há infraestrutura para provisionar ou gerenciar.
-- **Integração:** Integra-se com AWS Security Hub e Amazon EventBridge para automação de resposta.
+## Key points
+- **Sensitive data discovery:** Uses machine learning and pattern matching techniques to identify sensitive data.
+- **Visibility:** Provides a centralized dashboard to view the security posture of your data in S3.
+- **Alerts:** Generates detailed alerts about sensitive data findings and suspicious activities.
+- **Fully managed:** No infrastructure to provision or manage.
+- **Integration:** Integrates with AWS Security Hub and Amazon EventBridge for response automation.
 
-## Comparativo
-- **Amazon Macie:** Especializado na descoberta e proteção de dados sensíveis no Amazon S3, utilizando machine learning para identificar padrões complexos de dados.
-- **AWS Config:** Monitora as configurações dos recursos AWS para conformidade, mas não se aprofunda no conteúdo dos dados armazenados.
-- **Ferramentas DLP (Data Loss Prevention) tradicionais:** Podem ser complexas de implantar e gerenciar em ambientes de nuvem, e podem não ter a mesma integração nativa com o S3 que o Macie oferece.
+## Comparison
+- **Amazon Macie:** Specialized in discovering and protecting sensitive data in Amazon S3, using machine learning to identify complex data patterns.
+- **AWS Config:** Monitors AWS resource configurations for compliance but doesn't delve into the content of stored data.
+- **Traditional DLP (Data Loss Prevention) tools:** Can be complex to deploy and manage in cloud environments, and may not have the same native integration with S3 that Macie offers.
 
 
 

@@ -4,25 +4,25 @@ sidebar_position: 8
 
 # AWS CodeStar
 
-## Qué es
-Un servicio que proporciona una interfaz unificada para gestionar el desarrollo de software en AWS, facilitando la configuración de un proyecto de desarrollo completo.
+## O que é
+Um serviço que fornece uma interface unificada para gerenciar o desenvolvimento de software na AWS, facilitando a configuração de um projeto de desenvolvimento completo.
 
-## Para qué sirve
-Simplificar la configuración y gestión de proyectos de desarrollo, proporcionando plantillas y herramientas preconfiguradas.
+## Para que serve
+Simplificar a configuração e gerenciamento de projetos de desenvolvimento, fornecendo templates e ferramentas pré-configuradas.
 
 ## Casos de uso
-- Desarrollo de aplicaciones
-- Gestión de proyectos
-- Integración continua
-- Entrega continua
-- Colaboración en equipo
+- Desenvolvimento de aplicações
+- Gerenciamento de projetos
+- Integração contínua
+- Entrega contínua
+- Colaboração em equipe
 
-## Puntos clave
-- **Plantillas:** Plantillas preconfiguradas para diferentes tipos de aplicaciones
-- **Integración:** Integración con otros servicios de AWS
-- **Colaboración:** Herramientas de colaboración integradas
-- **Automatización:** Automatización de tareas de desarrollo
-- **Gestión:** Gestión centralizada de proyectos
+## Pontos principais
+- **Templates:** Templates pré-configurados para diferentes tipos de aplicações
+- **Integração:** Integração com outros serviços da AWS
+- **Colaboração:** Ferramentas de colaboração integradas
+- **Automatização:** Automatização de tarefas de desenvolvimento
+- **Gerenciamento:** Gerenciamento centralizado de projetos
 
-## Comparación
-- **AWS CodeStar vs. GitHub Projects:** CodeStar es un servicio que proporciona una interfaz unificada para gestionar el desarrollo de software en AWS. GitHub Projects es una herramienta de gestión de proyectos que ofrece características similares pero con un enfoque diferente. CodeStar es ideal para equipos que necesitan una interfaz unificada para gestionar el desarrollo de software en AWS, mientras que GitHub Projects es mejor para equipos que necesitan características avanzadas o personalización específica. 
+## Comparação
+- **AWS CodeStar vs. GitHub Projects:** CodeStar é um serviço que fornece uma interface unificada para gerenciar o desenvolvimento de software na AWS. GitHub Projects é uma ferramenta de gerenciamento de projetos que oferece recursos similares, mas com uma abordagem diferente. CodeStar é ideal para equipes que precisam de uma interface unificada para gerenciar o desenvolvimento de software na AWS, enquanto o GitHub Projects é melhor para equipes que precisam de recursos avançados ou personalização específica. 

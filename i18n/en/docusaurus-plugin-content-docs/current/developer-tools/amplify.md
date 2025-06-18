@@ -4,25 +4,25 @@ sidebar_position: 1
 
 # AWS Amplify
 
-## Qué es
-Un conjunto de herramientas y servicios para desarrolladores frontend y móviles que permite crear aplicaciones full-stack rápidamente, con características como autenticación, API, almacenamiento y más.
+## What is it
+A set of tools and services for frontend and mobile developers that enables quickly building full-stack applications, with features like authentication, API, storage, and more.
 
-## Para qué sirve
-Simplificar el desarrollo de aplicaciones web y móviles al proporcionar una forma fácil de integrar servicios de backend y características comunes.
+## What is it used for
+Simplify web and mobile application development by providing an easy way to integrate backend services and common features.
 
-## Casos de uso
-- Aplicaciones web y móviles
-- Aplicaciones de autenticación
-- Aplicaciones con almacenamiento
-- Aplicaciones con API
-- Aplicaciones con análisis
+## Use cases
+- Web and mobile applications
+- Authentication applications
+- Storage applications
+- API applications
+- Analytics applications
 
-## Puntos clave
-- **Autenticación:** Autenticación de usuarios y autorización
-- **API:** Creación y gestión de API
-- **Almacenamiento:** Almacenamiento de archivos y datos
-- **Hosting:** Despliegue y hosting de aplicaciones
-- **Analytics:** Seguimiento y análisis de uso
+## Key points
+- **Authentication:** User authentication and authorization
+- **API:** API creation and management
+- **Storage:** File and data storage
+- **Hosting:** Application deployment and hosting
+- **Analytics:** Usage tracking and analysis
 
-## Comparación
-- **AWS Amplify vs. Firebase:** Amplify es un conjunto de herramientas y servicios para desarrolladores frontend y móviles que permite crear aplicaciones full-stack rápidamente. Firebase es una plataforma de desarrollo de aplicaciones que proporciona características similares pero con un enfoque diferente. Amplify es ideal para desarrolladores que quieren crear aplicaciones full-stack rápidamente, mientras que Firebase es mejor para desarrolladores que quieren una plataforma de desarrollo de aplicaciones más completa. 
+## Comparison
+- **AWS Amplify vs. Firebase:** Amplify is a set of tools and services for frontend and mobile developers that enables quickly building full-stack applications. Firebase is an application development platform that provides similar features but with a different approach. Amplify is ideal for developers who want to create full-stack applications quickly, while Firebase is better for developers who want a more comprehensive application development platform. 

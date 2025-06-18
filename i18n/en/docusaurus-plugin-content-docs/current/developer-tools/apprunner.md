@@ -4,25 +4,25 @@ sidebar_position: 2
 
 # AWS App Runner
 
-## Qué es
-Un servicio completamente administrado que facilita el despliegue rápido de aplicaciones web y APIs, directamente desde el código fuente o un contenedor.
+## What is it
+A fully managed service that makes it easy to deploy web applications and APIs directly from source code or a container.
 
-## Para qué sirve
-Simplificar el despliegue y la gestión de aplicaciones web y APIs, eliminando la necesidad de gestionar la infraestructura subyacente.
+## What is it for
+To simplify the deployment and management of web applications and APIs, eliminating the need to manage the underlying infrastructure.
 
-## Casos de uso
-- Aplicaciones web
+## Use cases
+- Web applications
 - APIs
-- Microservicios
-- Aplicaciones de backend
-- Aplicaciones de frontend
+- Microservices
+- Backend applications
+- Frontend applications
 
-## Puntos clave
-- **Despliegue rápido:** Despliegue automático desde código fuente o contenedores
-- **Escalabilidad:** Escalado automático basado en la demanda
-- **Alta disponibilidad:** Replicación automática en múltiples AZs
-- **Seguridad:** Encriptación en reposo y en tránsito
-- **Integración:** Integración con otros servicios de AWS
+## Key points
+- **Quick deployment:** Automatic deployment from source code or containers
+- **Scalability:** Automatic scaling based on demand
+- **High availability:** Automatic replication across multiple AZs
+- **Security:** Encryption at rest and in transit
+- **Integration:** Integration with other AWS services
 
-## Comparación
-- **AWS App Runner vs. Heroku:** App Runner es un servicio administrado que ofrece despliegue rápido y escalabilidad sin la necesidad de gestionar la infraestructura. Heroku es una plataforma como servicio (PaaS) que ofrece características similares pero con un enfoque diferente. App Runner es ideal para aplicaciones que necesitan despliegue rápido y escalabilidad sin la sobrecarga de gestión, mientras que Heroku es mejor para aplicaciones que requieren características avanzadas o personalización específica. 
+## Comparison
+- **AWS App Runner vs. Heroku:** App Runner is a managed service that offers quick deployment and scalability without the need to manage infrastructure. Heroku is a Platform as a Service (PaaS) that offers similar features but with a different approach. App Runner is ideal for applications that need quick deployment and scalability without management overhead, while Heroku is better for applications that require advanced features or specific customization. 

@@ -1,117 +1,65 @@
- # Contribution Guide
+# Guía de Contribución
 
-Thank you for your interest in contributing to the AWS Cheatsheet! This document provides guidelines and instructions for contributing to the project.
+¡Gracias por tu interés en contribuir al AWS Cheatsheet! Este documento proporciona pautas e instrucciones para contribuir al proyecto.
 
-## How to Contribute
+## Cómo Contribuir
 
-### 1. Fork the Project
+### 1. Hacer Fork del Proyecto
 
-1. Go to the repository on GitHub
-2. Click the "Fork" button in the upper right corner
-3. This will create a copy of the project in your GitHub account
+1. Ve al repositorio en GitHub
+2. Haz clic en el botón "Fork" en la esquina superior derecha
+3. Esto creará una copia del proyecto en tu cuenta de GitHub
 
-### 2. Clone o Seu Fork
+### 2. Clonar tu Fork
 
 ```bash
-git clone https://github.com/seu-usuario/aws-cheatsheet.git
+git clone https://github.com/tu-usuario/aws-cheatsheet.git
 cd aws-cheatsheet
 ```
 
-### 3. Crie uma Branch
+### 3. Crear una Rama
 
 ```bash
-git checkout -b feature/nome-da-sua-contribuicao
+git checkout -b feature/nombre-de-tu-contribucion
 ```
 
-### 4. Faça suas Alterações
+### 4. Realizar tus Cambios
 
-- Faça as alterações necessárias no código
-- Siga as convenções de código do projeto
-- Adicione testes quando apropriado
-- Atualize a documentação conforme necessário
+- Realiza los cambios necesarios en el código
+- Sigue las convenciones de código del proyecto
+- Añade pruebas cuando sea apropiado
+- Actualiza la documentación según sea necesario
 
-### 5. Commit e Push
-
-```bash
-git add .
-git commit -m "Descrição clara das alterações"
-git push origin feature/nome-da-sua-contribuicao
-```
-
-### 6. Abra um Pull Request
-
-1. Vá para o repositório original no GitHub
-2. Clique em "New Pull Request"
-3. Selecione sua branch
-4. Descreva suas alterações detalhadamente
-5. Aguarde a revisão
-
-## Issues
-
-Procuramos por contribuidores para resolver issues marcadas como "good first issue". Estas são ótimas oportunidades para começar a contribuir com o projeto:
-
-- [Issues marcadas como "good first issue"](https://github.com/seu-usuario/aws-cheatsheet/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
-
-## Recursos Adicionais
-
-Para mais informações sobre como contribuir com projetos open source, consulte o [Guia de Contribuição do GitHub](https://github.com/github/opensource.guide/blob/main/_articles/pcm/how-to-contribute.md).
-
-## Código de Conduta
-
-Por favor, leia e siga nosso [Código de Conduta](https://github.com/EmersonBraun/aws-cheatsheet/blob/master/CODE_OF_CONDUCT.md) para manter um ambiente respeitoso e inclusivo para todos os contribuidores.
-
-## Licença
-
-Ao contribuir, você concorda que suas contribuições serão licenciadas sob a mesma licença do projeto.
-
-```bash
-git clone https://github.com/your-username/aws-cheatsheet.git
-cd aws-cheatsheet
-```
-
-### 3. Create a Branch
-
-```bash
-git checkout -b feature/your-contribution
-```
-
-### 4. Make Your Changes
-
-- Make the necessary code changes
-- Follow the project's code conventions
-- Add tests when appropriate
-- Update documentation as needed
-
-### 5. Commit and Push
+### 5. Commit y Push
 
 ```bash
 git add .
-git commit -m "Clear description of changes"
-git push origin feature/your-contribution
+git commit -m "Descripción clara de los cambios"
+git push origin feature/nombre-de-tu-contribucion
 ```
 
-### 6. Open a Pull Request
+### 6. Abrir un Pull Request
 
-1. Go to the original repository on GitHub
-2. Click on "New Pull Request"
-3. Select your branch
-4. Describe your changes in detail
-5. Wait for review
+1. Ve al repositorio original en GitHub
+2. Haz clic en "New Pull Request"
+3. Selecciona tu rama
+4. Describe tus cambios detalladamente
+5. Espera la revisión
 
 ## Issues
 
-We're looking for contributors to help with issues labeled as "good first issue". These are great opportunities to start contributing to the project:
+Buscamos contribuidores para resolver issues marcados como "good first issue". Estas son excelentes oportunidades para comenzar a contribuir al proyecto:
 
-- [Issues labeled as "good first issue"](https://github.com/your-username/aws-cheatsheet/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+- [Issues marcados como "good first issue"](https://github.com/tu-usuario/aws-cheatsheet/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 
-## Additional Resources
+## Recursos Adicionales
 
-For more information about contributing to open source projects, check out the [GitHub Contribution Guide](https://github.com/github/opensource.guide/blob/main/_articles/pcm/how-to-contribute.md).
+Para más información sobre cómo contribuir a proyectos de código abierto, consulta la [Guía de Contribución de GitHub](https://github.com/github/opensource.guide/blob/main/_articles/pcm/how-to-contribute.md).
 
-## Code of Conduct
+## Código de Conducta
 
-Please read and follow our [Code of Conduct](https://github.com/EmersonBraun/aws-cheatsheet/blob/master/CODE_OF_CONDUCT.md) to maintain a respectful and inclusive environment for all contributors.
+Por favor, lee y sigue nuestro [Código de Conducta](https://github.com/EmersonBraun/aws-cheatsheet/blob/master/CODE_OF_CONDUCT.md) para mantener un ambiente respetuoso e inclusivo para todos los contribuidores.
 
-## License
+## Licencia
 
-By contributing, you agree that your contributions will be licensed under the same license as the project.
+Al contribuir, aceptas que tus contribuciones serán licenciadas bajo la misma licencia del proyecto.

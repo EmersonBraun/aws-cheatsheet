@@ -2,35 +2,35 @@
 sidebar_position: 1
 ---
 
-# Getting Started
+# Primeros Pasos
 
-This AWS Cheatsheet is your comprehensive companion for AWS certification preparation.
-Each AWS service is presented in a structured format with three key sections: Use Cases,
-Key Points, and Comparisons. This organization helps you quickly understand when to use
-each service, what's important to know for the exams, and how services relate to each other.
+Esta Guía Rápida de AWS es tu compañero integral para la preparación de certificaciones AWS.
+Cada servicio de AWS se presenta en un formato estructurado con tres secciones clave: Casos de Uso,
+Puntos Clave y Comparaciones. Esta organización te ayuda a comprender rápidamente cuándo usar
+cada servicio, qué es importante saber para los exámenes y cómo se relacionan los servicios entre sí.
 
-## What you'll find in each service section
+## Qué encontrarás en cada sección de servicio
 
-Our structured approach covers everything you need to know for AWS certifications:
+Nuestro enfoque estructurado cubre todo lo que necesitas saber para las certificaciones AWS:
 
-- **Use Cases:** Real-world scenarios and applications where each service
-  excels, helping you understand practical implementations
-- **Key Points:** Essential concepts, features, and limitations you need
-  to know for the certification exams
-- **Comparisons:** Clear comparisons between similar services, helping you
-  make the right architectural decisions and answer exam questions correctly
+- **Casos de Uso:** Escenarios del mundo real y aplicaciones donde cada servicio
+  destaca, ayudándote a entender implementaciones prácticas
+- **Puntos Clave:** Conceptos esenciales, características y limitaciones que necesitas
+  conocer para los exámenes de certificación
+- **Comparaciones:** Comparaciones claras entre servicios similares, ayudándote a
+  tomar las decisiones arquitectónicas correctas y responder correctamente las preguntas del examen
 
-## How to use this guide?
+## ¿Cómo usar esta guía?
 
-This guide is designed to be your quick reference during AWS certification preparation:
+Esta guía está diseñada para ser tu referencia rápida durante la preparación de certificaciones AWS:
 
-- **For Use Cases:** When you need to understand practical applications
-  and real-world scenarios for each service
-- **For Key Points:** When studying for the exam, focus on these essential
-  concepts and features that frequently appear in certification questions
-- **For Comparisons:** When you need to differentiate between similar
-  services or make architectural decisions
+- **Para Casos de Uso:** Cuando necesites entender aplicaciones prácticas
+  y escenarios del mundo real para cada servicio
+- **Para Puntos Clave:** Al estudiar para el examen, concéntrate en estos conceptos
+  y características esenciales que aparecen frecuentemente en las preguntas de certificación
+- **Para Comparaciones:** Cuando necesites diferenciar entre servicios similares
+  o tomar decisiones arquitectónicas
 
-Keep this guide open while practicing in the AWS Console and reviewing official
-documentation. The structured format helps you quickly find the information you need
-at each stage of your certification journey. 
+Mantén esta guía abierta mientras practicas en la Consola de AWS y revisas la documentación
+oficial. El formato estructurado te ayuda a encontrar rápidamente la información que necesitas
+en cada etapa de tu proceso de certificación. 

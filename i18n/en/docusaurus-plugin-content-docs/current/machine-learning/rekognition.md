@@ -4,27 +4,27 @@ sidebar_position: 8
 
 # Amazon Rekognition
 
-## O que é
-Um serviço de análise de imagens e vídeos baseado em nuvem que facilita a adição de recursos avançados de visão computacional às suas aplicações.
+## What is it
+A cloud-based image and video analysis service that makes it easy to add advanced computer vision capabilities to your applications.
 
-## Para que serve
-Detectar objetos, cenas, atividades, rostos, texto em imagens e vídeos, além de analisar emoções, atributos faciais e comparar rostos.
+## What is it for
+Detect objects, scenes, activities, faces, text in images and videos, as well as analyze emotions, facial attributes, and compare faces.
 
-## Casos de uso
-- Detecção de conteúdo impróprio em imagens e vídeos
-- Verificação de identidade online (ex: reconhecimento facial para autenticação)
-- Análise de mídia para indexação e pesquisa (ex: identificar pessoas, objetos em vídeos)
-- Geração de alertas inteligentes para casas conectadas (ex: detectar pessoas ou pacotes na porta)
-- Análise de segurança e vigilância
+## Use cases
+- Detection of inappropriate content in images and videos
+- Online identity verification (e.g., facial recognition for authentication)
+- Media analysis for indexing and search (e.g., identifying people, objects in videos)
+- Generation of smart alerts for connected homes (e.g., detecting people or packages at the door)
+- Security and surveillance analysis
 
-## Principais pontos
-- **Visão computacional gerenciada:** Não exige conhecimento prévio em machine learning para usar
-- **Análise de imagens:** Detecção de objetos, cenas, rostos, texto e conteúdo impróprio
-- **Análise de vídeos:** Detecção de atividades, pessoas, objetos e conteúdo impróprio em vídeos
-- **Reconhecimento facial:** Detecção, análise e comparação de rostos
-- **Customização:** Permite treinar modelos personalizados para casos de uso específicos
-- **Integração:** Integra-se com outros serviços AWS, como S3, Lambda e CloudWatch
+## Key points
+- **Managed computer vision:** No prior machine learning knowledge required to use
+- **Image analysis:** Detection of objects, scenes, faces, text, and inappropriate content
+- **Video analysis:** Detection of activities, people, objects, and inappropriate content in videos
+- **Facial recognition:** Face detection, analysis, and comparison
+- **Customization:** Allows training of custom models for specific use cases
+- **Integration:** Integrates with other AWS services like S3, Lambda, and CloudWatch
 
-## Comparativo
-- **Amazon Rekognition:** Oferece uma solução gerenciada e escalável para visão computacional, eliminando a necessidade de construir e treinar modelos de ML do zero. Ideal para quem precisa de resultados rápidos e não quer gerenciar a infraestrutura de ML.
-- **Visão computacional manual/bibliotecas (ex: OpenCV, TensorFlow):** Oferece maior controle e flexibilidade para personalização, mas exige conhecimento em ML e programação, além de gerenciamento da infraestrutura. Adequado para casos de uso muito específicos ou pesquisa. 
+## Comparison
+- **Amazon Rekognition:** Offers a managed and scalable solution for computer vision, eliminating the need to build and train ML models from scratch. Ideal for those who need quick results and don't want to manage ML infrastructure.
+- **Manual computer vision/libraries (e.g., OpenCV, TensorFlow):** Offers greater control and flexibility for customization but requires knowledge in ML and programming, plus infrastructure management. Suitable for very specific use cases or research. 

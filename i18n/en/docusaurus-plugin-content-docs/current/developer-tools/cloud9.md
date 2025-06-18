@@ -4,25 +4,25 @@ sidebar_position: 3
 
 # AWS Cloud9
 
-## Qué es
-Un entorno de desarrollo integrado (IDE) basado en la nube que permite escribir, ejecutar y depurar código con solo un navegador web.
+## What is it
+A cloud-based integrated development environment (IDE) that lets you write, run, and debug code using just a web browser.
 
-## Para qué sirve
-Proporcionar un entorno de desarrollo completo en la nube, eliminando la necesidad de configurar y mantener entornos de desarrollo locales.
+## What is it for
+To provide a complete cloud development environment, eliminating the need to configure and maintain local development environments.
 
-## Casos de uso
-- Desarrollo de aplicaciones
-- Desarrollo de infraestructura como código
-- Desarrollo de scripts
-- Desarrollo de funciones serverless
-- Desarrollo de aplicaciones web
+## Use cases
+- Application development
+- Infrastructure as code development
+- Script development
+- Serverless function development
+- Web application development
 
-## Puntos clave
-- **IDE basado en la nube:** Acceso desde cualquier navegador web
-- **Colaboración en tiempo real:** Múltiples desarrolladores pueden trabajar en el mismo entorno
-- **Integración con AWS:** Acceso directo a servicios de AWS
-- **Personalización:** Entorno de desarrollo personalizable
-- **Seguridad:** Acceso seguro a través de IAM
+## Key points
+- **Cloud-based IDE:** Access from any web browser
+- **Real-time collaboration:** Multiple developers can work in the same environment
+- **AWS Integration:** Direct access to AWS services
+- **Customization:** Customizable development environment
+- **Security:** Secure access through IAM
 
-## Comparación
-- **AWS Cloud9 vs. VS Code:** Cloud9 es un IDE basado en la nube que ofrece colaboración en tiempo real y acceso directo a servicios de AWS. VS Code es un editor de código fuente que ofrece características similares pero con un enfoque diferente. Cloud9 es ideal para desarrolladores que necesitan un entorno de desarrollo completo en la nube, mientras que VS Code es mejor para desarrolladores que prefieren un editor de código fuente local. 
+## Comparison
+- **AWS Cloud9 vs. VS Code:** Cloud9 is a cloud-based IDE that offers real-time collaboration and direct access to AWS services. VS Code is a source code editor that offers similar features but with a different approach. Cloud9 is ideal for developers who need a complete cloud development environment, while VS Code is better for developers who prefer a local source code editor. 
