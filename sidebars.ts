@@ -198,6 +198,10 @@ const sidebars: SidebarsConfig = {
       label: 'Migration and Transfer',
       items: [
         'migration/aws-application-discovery-service',
+        'migration/datasync',
+        'migration/dms',
+        'migration/migration-hub',
+        'migration/transfer-family',
       ],
     },
     {
