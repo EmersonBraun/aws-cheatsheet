@@ -1,0 +1,1926 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-test" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">test | AWS Cheatsheet</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://emersonbraun.github.io/aws-cheatsheet/es/img/aws.png"><meta data-rh="true" name="twitter:image" content="https://emersonbraun.github.io/aws-cheatsheet/es/img/aws.png"><meta data-rh="true" property="og:url" content="https://emersonbraun.github.io/aws-cheatsheet/es/docs/test"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="pt_BR"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="keywords" content="aws, cheatsheet, documentation, guide, tutorial"><meta data-rh="true" name="algolia-site-verification" content="1ACD95D7BD65423A"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="test | AWS Cheatsheet"><meta data-rh="true" name="description" content="Cheatsheet AWS Services (Parte 3)"><meta data-rh="true" property="og:description" content="Cheatsheet AWS Services (Parte 3)"><link data-rh="true" rel="icon" href="/aws-cheatsheet/es/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://emersonbraun.github.io/aws-cheatsheet/es/docs/test"><link data-rh="true" rel="alternate" href="https://emersonbraun.github.io/aws-cheatsheet/pt-BR/docs/test" hreflang="pt-BR"><link data-rh="true" rel="alternate" href="https://emersonbraun.github.io/aws-cheatsheet/docs/test" hreflang="en"><link data-rh="true" rel="alternate" href="https://emersonbraun.github.io/aws-cheatsheet/es/docs/test" hreflang="es"><link data-rh="true" rel="alternate" href="https://emersonbraun.github.io/aws-cheatsheet/docs/test" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://Y68B26GRW1-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="AWS Cheatsheet" href="/aws-cheatsheet/es/opensearch.xml"><link rel="stylesheet" href="/aws-cheatsheet/es/assets/css/styles.21d749e4.css">
+<script src="/aws-cheatsheet/es/assets/js/runtime~main.bc852b50.js" defer="defer"></script>
+<script src="/aws-cheatsheet/es/assets/js/main.d071db8b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/aws-cheatsheet/es/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/aws-cheatsheet/es/"><div class="navbar__logo"><img src="/aws-cheatsheet/es/img/logo.svg" alt="Home Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/aws-cheatsheet/es/img/logo.svg" alt="Home Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Home</b></a><a class="navbar__item navbar__link" href="/aws-cheatsheet/es/docs/getting-started">AWS Cheatsheet</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Español</a><ul class="dropdown__menu"><li><a href="/aws-cheatsheet/pt-BR/docs/test" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="pt-BR">Português</a></li><li><a href="/aws-cheatsheet/docs/test" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/aws-cheatsheet/es/docs/test" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="es">Español</a></li></ul></div><a href="https://github.com/EmersonBraun/aws-cheatsheet" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Buscar (Command+K)"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Buscar</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>test</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="cheatsheet-aws-services-parte-3">Cheatsheet AWS Services (Parte 3)<a href="#cheatsheet-aws-services-parte-3" class="hash-link" aria-label="Enlace directo al Cheatsheet AWS Services (Parte 3)" title="Enlace directo al Cheatsheet AWS Services (Parte 3)">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="analytics">Analytics<a href="#analytics" class="hash-link" aria-label="Enlace directo al Analytics" title="Enlace directo al Analytics">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-quicksight">Amazon QuickSight<a href="#amazon-quicksight" class="hash-link" aria-label="Enlace directo al Amazon QuickSight" title="Enlace directo al Amazon QuickSight">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de business intelligence (BI) em escala de nuvem que permite criar visualizações, realizar análises ad-hoc e obter insights de negócios a partir de seus dados.</li>
+<li><strong>Para que serve:</strong> Capacitar todos os usuários em uma organização a entender seus dados, fazer perguntas em linguagem natural e explorar painéis interativos para tomar decisões baseadas em dados.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Criação de painéis e relatórios interativos para monitorar KPIs (Key Performance Indicators).</li>
+<li>Análise de dados de vendas, marketing e operações.</li>
+<li>Geração de insights a partir de grandes volumes de dados.</li>
+<li>Compartilhamento de análises com equipes e stakeholders.</li>
+<li>Integração com diversas fontes de dados, incluindo AWS (S3, Redshift, Athena) e fontes externas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Sem servidor:</strong> Não há infraestrutura para provisionar ou gerenciar.</li>
+<li><strong>SPICE (Super-fast, Parallel, In-memory Calculation Engine):</strong> Um mecanismo de computação em memória que acelera as consultas.</li>
+<li><strong>Machine Learning Insights:</strong> Oferece recursos de ML para identificar anomalias, tendências e previsões.</li>
+<li><strong>Amazon Q in QuickSight:</strong> Recursos de BI generativa para acelerar a tomada de decisões.</li>
+<li><strong>Pagamento por sessão:</strong> Você paga apenas quando os usuários acessam os painéis ou relatórios.</li>
+<li><strong>Integração:</strong> Conecta-se a uma ampla variedade de fontes de dados, incluindo bancos de dados, data warehouses, arquivos e aplicações SaaS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com ferramentas de BI tradicionais:</strong>
+<ul>
+<li><strong>Amazon QuickSight:</strong> Um serviço de BI nativo da nuvem, sem servidor, que oferece escalabilidade, segurança e integração com o ecossistema AWS. É mais acessível e fácil de usar para usuários de negócios, sem a necessidade de gerenciar infraestrutura.</li>
+<li><strong>Ferramentas de BI tradicionais:</strong> Geralmente exigem a instalação e o gerenciamento de software, servidores e bancos de dados, o que pode ser complexo e caro. Podem ter uma curva de aprendizado mais íngreme e serem menos flexíveis para ambientes de nuvem.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-data-exchange">AWS Data Exchange<a href="#aws-data-exchange" class="hash-link" aria-label="Enlace directo al AWS Data Exchange" title="Enlace directo al AWS Data Exchange">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que facilita a localização, assinatura e uso de dados de terceiros na nuvem AWS.</li>
+<li><strong>Para que serve:</strong> Simplificar o processo de aquisição e integração de dados de provedores de dados, permitindo que os clientes da AWS acessem e usem conjuntos de dados externos para análise, machine learning e outras aplicações.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Aquisição de dados financeiros, de mercado, demográficos ou de saúde de provedores de dados.</li>
+<li>Integração de dados de terceiros com seus próprios dados para análises mais ricas.</li>
+<li>Monetização de seus próprios dados, tornando-os disponíveis para outros clientes da AWS.</li>
+<li>Acesso a conjuntos de dados baseados em arquivos via Amazon S3 ou diretamente em data warehouses como Amazon Redshift.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Marketplace de dados:</strong> Um catálogo de dados onde você pode descobrir e assinar conjuntos de dados.</li>
+<li><strong>Entrega de dados:</strong> Os dados são entregues diretamente em buckets do Amazon S3 ou em data warehouses como o Amazon Redshift.</li>
+<li><strong>Licenciamento simplificado:</strong> A AWS gerencia os termos de licenciamento e o faturamento.</li>
+<li><strong>Segurança:</strong> Os dados são transferidos de forma segura e criptografada.</li>
+<li><strong>Variedade de dados:</strong> Inclui dados de diversas categorias, como finanças, varejo, saúde, etc.</li>
+</ul>
+</li>
+<li><strong>Comparativo com aquisição manual de dados:</strong>
+<ul>
+<li><strong>AWS Data Exchange:</strong> Simplifica e acelera a aquisição de dados de terceiros, eliminando a necessidade de contratos complexos, transferências manuais de dados e integração personalizada. Oferece um ponto centralizado para descobrir e usar dados externos.</li>
+<li><strong>Aquisição manual de dados:</strong> Pode ser um processo demorado e complexo, envolvendo negociações de contratos, transferências de dados inseguras e integração manual, o que pode atrasar a obtenção de insights.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="compute">Compute<a href="#compute" class="hash-link" aria-label="Enlace directo al Compute" title="Enlace directo al Compute">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-lightsail">Amazon Lightsail<a href="#amazon-lightsail" class="hash-link" aria-label="Enlace directo al Amazon Lightsail" title="Enlace directo al Amazon Lightsail">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de servidor virtual privado (VPS) fácil de usar que oferece recursos de nuvem como instâncias, contêineres, bancos de dados, armazenamento e redes a um preço mensal baixo e previsível.</li>
+<li><strong>Para que serve:</strong> Simplificar o processo de lançamento de aplicações ou sites na AWS para desenvolvedores, pequenas empresas e estudantes, sem a complexidade de gerenciar a infraestrutura subjacente.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Hospedagem de sites e blogs (ex: WordPress, Joomla, Drupal).</li>
+<li>Execução de aplicações web e e-commerce.</li>
+<li>Criação de servidores de desenvolvimento e teste.</li>
+<li>Implantação de contêineres e bancos de dados gerenciados.</li>
+<li>Configuração de VPNs e servidores de jogos.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Preço previsível:</strong> Planos mensais fixos que incluem computação, armazenamento e transferência de dados.</li>
+<li><strong>Fácil de usar:</strong> Interface simplificada e modelos pré-configurados para lançar aplicações rapidamente.</li>
+<li><strong>Recursos completos:</strong> Inclui instâncias (VMs), contêineres, bancos de dados, armazenamento de objetos (compatível com S3), balanceadores de carga e redes.</li>
+<li><strong>Integração:</strong> Integra-se com outros serviços AWS para funcionalidades avançadas (ex: Route 53, CloudFront).</li>
+<li><strong>Escalabilidade:</strong> Embora simplificado, permite escalar verticalmente (aumentar o tamanho da instância) ou horizontalmente (adicionar mais instâncias).</li>
+</ul>
+</li>
+<li><strong>Comparativo com Amazon EC2:</strong>
+<ul>
+<li><strong>Amazon Lightsail:</strong> Ideal para usuários que precisam de uma solução simples e de baixo custo para lançar aplicações web e sites, sem a necessidade de gerenciar a complexidade do EC2. Oferece uma experiência mais guiada e com menos opções de configuração.</li>
+<li><strong>Amazon EC2:</strong> Oferece controle granular sobre a infraestrutura de computação, com uma ampla gama de tipos de instância, opções de rede e armazenamento. É mais adequado para aplicações complexas, com requisitos de desempenho e escalabilidade específicos, e para usuários que precisam de controle total sobre o ambiente.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-ec2-image-builder">AWS EC2 Image Builder<a href="#aws-ec2-image-builder" class="hash-link" aria-label="Enlace directo al AWS EC2 Image Builder" title="Enlace directo al AWS EC2 Image Builder">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço totalmente gerenciado que simplifica a criação, o teste e a implantação de Amazon Machine Images (AMIs) seguras e personalizadas e imagens de contêiner.</li>
+<li><strong>Para que serve:</strong> Automatizar o processo de construção de imagens de servidor e contêiner, garantindo que elas estejam atualizadas, seguras e em conformidade com os padrões da sua organização.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Criação de AMIs personalizadas com software pré-instalado e configurações de segurança.</li>
+<li>Manutenção de imagens atualizadas com os patches de segurança mais recentes.</li>
+<li>Teste automatizado de imagens para garantir a funcionalidade e a conformidade.</li>
+<li>Distribuição de imagens para diferentes regiões ou contas AWS.</li>
+<li>Construção de imagens de contêiner para uso com Amazon ECS, EKS ou Fargate.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> A AWS cuida da infraestrutura subjacente para a construção de imagens.</li>
+<li><strong>Automação:</strong> Automatiza o ciclo de vida de criação, teste e distribuição de imagens.</li>
+<li><strong>Segurança:</strong> Ajuda a garantir que as imagens estejam em conformidade com os padrões de segurança.</li>
+<li><strong>Customização:</strong> Permite personalizar imagens com seus próprios scripts e componentes.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Organizations, AWS Systems Manager, Amazon S3 e outros serviços.</li>
+<li><strong>Testes:</strong> Inclui testes fornecidos pela AWS e permite adicionar seus próprios testes para validação.</li>
+</ul>
+</li>
+<li><strong>Comparativo com construção manual de AMIs:</strong>
+<ul>
+<li><strong>AWS EC2 Image Builder:</strong> Automatiza e padroniza o processo de construção de imagens, reduzindo o esforço manual, os erros e garantindo a consistência e a segurança das imagens em escala. Ideal para ambientes com muitas imagens ou requisitos de atualização frequentes.</li>
+<li><strong>Construção manual de AMIs:</strong> Demorada, propensa a erros e difícil de escalar. Exige que os administradores gerenciem o processo de criação, atualização e teste de imagens manualmente, o que pode levar a inconsistências e vulnerabilidades.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-app-runner">AWS App Runner<a href="#aws-app-runner" class="hash-link" aria-label="Enlace directo al AWS App Runner" title="Enlace directo al AWS App Runner">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço totalmente gerenciado que facilita a criação, implantação e execução de aplicações web e serviços de API em contêineres, sem a necessidade de gerenciar a infraestrutura subjacente.</li>
+<li><strong>Para que serve:</strong> Simplificar o processo de colocar aplicações em produção, cuidando automaticamente da construção, implantação, escalabilidade e balanceamento de carga.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Implantação rápida de aplicações web e APIs.</li>
+<li>Execução de microsserviços e backends de aplicações.</li>
+<li>Desenvolvimento e teste de aplicações em contêineres.</li>
+<li>Hospedagem de sites e aplicações de front-end.</li>
+<li>Cenários onde a simplicidade e a velocidade de implantação são prioritárias.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> A AWS cuida da infraestrutura, do balanceamento de carga, do escalonamento automático e do gerenciamento de certificados SSL.</li>
+<li><strong>Implantação a partir de código-fonte ou imagem de contêiner:</strong> Suporta implantação direta de repositórios de código (ex: GitHub) ou de imagens de contêiner (ex: ECR).</li>
+<li><strong>Escalabilidade automática:</strong> Escala automaticamente para cima e para baixo com base no tráfego.</li>
+<li><strong>Custo-efetivo:</strong> Pague apenas pelos recursos que você usa.</li>
+<li><strong>Integração:</strong> Integra-se com AWS VPC, AWS IAM, e outros serviços AWS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com Amazon ECS/EKS/Fargate:</strong>
+<ul>
+<li><strong>AWS App Runner:</strong> É a opção mais simples e rápida para implantar aplicações em contêineres, ideal para desenvolvedores que querem focar no código e não na infraestrutura. Oferece menos controle granular sobre o ambiente de contêineres.</li>
+<li><strong>Amazon ECS (Elastic Container Service):</strong> Um serviço de orquestração de contêineres que oferece mais controle e flexibilidade sobre a implantação e o gerenciamento de contêineres. Pode ser executado em instâncias EC2 (EC2 Launch Type) ou em um modelo sem servidor com AWS Fargate.</li>
+<li><strong>Amazon EKS (Elastic Kubernetes Service):</strong> Um serviço gerenciado de Kubernetes que oferece o mais alto nível de controle e flexibilidade para orquestração de contêineres, ideal para equipes que já usam Kubernetes ou precisam de sua portabilidade e ecossistema.</li>
+<li><strong>AWS Fargate:</strong> Um motor de computação sem servidor para Amazon ECS e EKS que permite executar contêineres sem provisionar ou gerenciar servidores. App Runner usa Fargate por baixo dos panos, mas abstrai ainda mais a complexidade.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="containers">Containers<a href="#containers" class="hash-link" aria-label="Enlace directo al Containers" title="Enlace directo al Containers">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-app-mesh">AWS App Mesh<a href="#aws-app-mesh" class="hash-link" aria-label="Enlace directo al AWS App Mesh" title="Enlace directo al AWS App Mesh">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma malha de serviços que facilita o monitoramento e o controle das comunicações entre os microsserviços em suas aplicações.</li>
+<li><strong>Para que serve:</strong> Padronizar a forma como os microsserviços se comunicam, fornecendo recursos como controle de tráfego, resiliência, observabilidade e segurança, sem a necessidade de modificar o código da aplicação.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Gerenciamento de tráfego para implantações canary e azul/verde.</li>
+<li>Implementação de retries e timeouts para aumentar a resiliência da aplicação.</li>
+<li>Coleta de métricas, logs e traces para observabilidade de microsserviços.</li>
+<li>Criptografia de tráfego entre microsserviços.</li>
+<li>Aplicação de políticas de segurança em nível de rede para microsserviços.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Proxy Envoy:</strong> Utiliza o proxy Envoy de código aberto para rotear o tráfego e coletar dados.</li>
+<li><strong>Controle de tráfego:</strong> Permite rotear o tráfego com base em regras, como peso ou cabeçalhos HTTP.</li>
+<li><strong>Resiliência:</strong> Suporta retries, timeouts, circuit breakers e outras técnicas para lidar com falhas.</li>
+<li><strong>Observabilidade:</strong> Coleta métricas, logs e traces para fornecer insights sobre o comportamento dos microsserviços.</li>
+<li><strong>Segurança:</strong> Permite criptografar o tráfego e aplicar políticas de segurança.</li>
+<li><strong>Integração:</strong> Integra-se com Amazon ECS, Amazon EKS, AWS Fargate e Kubernetes.</li>
+</ul>
+</li>
+<li><strong>Comparativo com gerenciamento de microsserviços sem malha de serviços:</strong>
+<ul>
+<li><strong>AWS App Mesh:</strong> Simplifica o gerenciamento de microsserviços, abstraindo a complexidade da comunicação entre eles e fornecendo recursos avançados de rede, resiliência e observabilidade sem a necessidade de modificar o código da aplicação. Ideal para ambientes de microsserviços complexos.</li>
+<li><strong>Gerenciamento sem malha de serviços:</strong> Exige que os desenvolvedores implementem a lógica de comunicação, resiliência e observabilidade em cada microsserviço, o que pode ser complexo, propenso a erros e difícil de manter em escala.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="developer-tools">Developer Tools<a href="#developer-tools" class="hash-link" aria-label="Enlace directo al Developer Tools" title="Enlace directo al Developer Tools">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-codepipeline">AWS CodePipeline<a href="#aws-codepipeline" class="hash-link" aria-label="Enlace directo al AWS CodePipeline" title="Enlace directo al AWS CodePipeline">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de entrega contínua totalmente gerenciado que automatiza as fases de compilação, teste e implantação do seu processo de lançamento de software.</li>
+<li><strong>Para que serve:</strong> Modelar, visualizar e automatizar o fluxo de trabalho de lançamento de software, desde o commit do código até a implantação em produção, garantindo entregas rápidas e confiáveis.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Automação de pipelines de CI/CD (Integração Contínua/Entrega Contínua).</li>
+<li>Implantação automatizada de aplicações em ambientes de desenvolvimento, teste e produção.</li>
+<li>Orquestração de diferentes ferramentas de desenvolvimento (ex: CodeCommit, CodeBuild, CodeDeploy, Lambda).</li>
+<li>Gerenciamento de fluxos de trabalho de lançamento complexos com aprovações manuais ou automáticas.</li>
+<li>Entrega contínua de microsserviços e aplicações em contêineres.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> Não há servidores para provisionar ou gerenciar.</li>
+<li><strong>Fluxo de trabalho visual:</strong> Permite modelar seu pipeline como um gráfico visual, facilitando a compreensão e o monitoramento.</li>
+<li><strong>Integração:</strong> Integra-se com uma ampla gama de serviços AWS (CodeCommit, CodeBuild, CodeDeploy, S3, Lambda, ECS, EKS) e ferramentas de terceiros.</li>
+<li><strong>Automação:</strong> Automatiza cada etapa do processo de lançamento, reduzindo o esforço manual e os erros.</li>
+<li><strong>Aprovações:</strong> Permite configurar aprovações manuais em qualquer estágio do pipeline.</li>
+<li><strong>Rastreabilidade:</strong> Fornece um histórico detalhado de cada execução do pipeline.</li>
+</ul>
+</li>
+<li><strong>Comparativo com pipelines de CI/CD auto-gerenciados:</strong>
+<ul>
+<li><strong>AWS CodePipeline:</strong> Oferece um serviço de entrega contínua totalmente gerenciado e integrado com o ecossistema AWS, simplificando a configuração e o gerenciamento de pipelines de CI/CD. Reduz a sobrecarga operacional e permite que as equipes se concentrem no desenvolvimento de software.</li>
+<li><strong>Pipelines de CI/CD auto-gerenciados (ex: Jenkins):</strong> Exigem a instalação, configuração e manutenção de servidores, plugins e integrações, o que pode ser complexo e demorado. Oferecem maior flexibilidade e controle, mas com maior responsabilidade operacional.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-codecommit">AWS CodeCommit<a href="#aws-codecommit" class="hash-link" aria-label="Enlace directo al AWS CodeCommit" title="Enlace directo al AWS CodeCommit">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de controle de versão totalmente gerenciado e seguro que hospeda repositórios Git privados.</li>
+<li><strong>Para que serve:</strong> Armazenar e gerenciar com segurança o código-fonte, documentos e outros ativos de desenvolvimento, facilitando a colaboração entre equipes.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Hospedagem de repositórios de código-fonte para aplicações e serviços.</li>
+<li>Colaboração em projetos de desenvolvimento de software.</li>
+<li>Controle de versão de documentos e configurações.</li>
+<li>Integração com pipelines de CI/CD (CodePipeline, CodeBuild, CodeDeploy).</li>
+<li>Armazenamento seguro de ativos de desenvolvimento.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> Não há servidores para provisionar ou gerenciar.</li>
+<li><strong>Compatível com Git:</strong> Usa o Git padrão, permitindo que os desenvolvedores usem suas ferramentas Git existentes.</li>
+<li><strong>Segurança:</strong> Criptografia de dados em trânsito e em repouso, integração com AWS IAM para controle de acesso granular.</li>
+<li><strong>Alta disponibilidade:</strong> Repositórios são armazenados em várias Zonas de Disponibilidade.</li>
+<li><strong>Escalabilidade:</strong> Escala automaticamente para atender às necessidades de armazenamento e acesso.</li>
+<li><strong>Integração:</strong> Integra-se com outros serviços AWS Developer Tools e ferramentas de terceiros.</li>
+</ul>
+</li>
+<li><strong>Comparativo com GitHub/GitLab/Bitbucket (auto-gerenciados ou SaaS):</strong>
+<ul>
+<li><strong>AWS CodeCommit:</strong> Oferece um repositório Git privado e totalmente gerenciado dentro do ecossistema AWS, ideal para equipes que já usam a AWS e buscam uma solução integrada e segura. Não há custos por usuário ou por repositório, apenas pelo armazenamento e transferência de dados.</li>
+<li><strong>GitHub/GitLab/Bitbucket:</strong> São plataformas de hospedagem de repositórios Git populares, oferecendo recursos adicionais como gerenciamento de projetos, CI/CD integrado (em suas versões SaaS) e comunidades. Podem ter modelos de precificação baseados em usuários ou recursos, e podem exigir gerenciamento de infraestrutura em suas versões auto-gerenciadas.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-codestar">AWS CodeStar<a href="#aws-codestar" class="hash-link" aria-label="Enlace directo al AWS CodeStar" title="Enlace directo al AWS CodeStar">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço baseado em nuvem que fornece uma interface de usuário unificada para criar, gerenciar e trabalhar com projetos de desenvolvimento de software na AWS.</li>
+<li><strong>Para que serve:</strong> Simplificar a configuração de uma cadeia de ferramentas de entrega contínua completa, permitindo que os desenvolvedores desenvolvam, construam e implantem aplicações rapidamente na AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Configuração rápida de pipelines de CI/CD para novos projetos.</li>
+<li>Desenvolvimento e implantação de aplicações web, serviços web e aplicações móveis.</li>
+<li>Fornecer um painel unificado para todas as atividades de desenvolvimento.</li>
+<li>Facilitar a colaboração em projetos de desenvolvimento de software.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Interface de usuário unificada:</strong> Um único local para gerenciar todas as atividades de desenvolvimento.</li>
+<li><strong>Modelos de projeto:</strong> Oferece modelos pré-configurados para vários tipos de aplicação, com serviços AWS já integrados.</li>
+<li><strong>Cadeia de ferramentas integrada:</strong> Configura e integra automaticamente AWS CodeCommit, CodeBuild, CodeDeploy e CodePipeline.</li>
+<li><strong>Colaboração em equipe:</strong> Facilita o acesso e o gerenciamento de equipes.</li>
+<li><strong>Rastreamento de problemas:</strong> Integra-se com Atlassian Jira ou AWS CodeCommit para rastreamento de problemas.</li>
+</ul>
+</li>
+<li><strong>Comparativo com ferramentas de desenvolvedor AWS individuais (CodeCommit, CodeBuild, CodeDeploy, CodePipeline):</strong>
+<ul>
+<li><strong>AWS CodeStar:</strong> Atua como uma camada de orquestração sobre esses serviços individuais, oferecendo uma abordagem simplificada e centrada no projeto para configurar um pipeline de CI/CD completo. É ideal para iniciar projetos rapidamente e para equipes que buscam uma experiência de desenvolvimento mais integrada.</li>
+<li><strong>Ferramentas de desenvolvedor AWS individuais:</strong> Podem ser usadas independentemente para um controle mais granular sobre cada etapa do processo de CI/CD. São mais adequadas para equipes que precisam de personalização profunda ou que já possuem fluxos de trabalho de CI/CD estabelecidos e desejam integrar serviços AWS específicos.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="front-end">Front-End<a href="#front-end" class="hash-link" aria-label="Enlace directo al Front-End" title="Enlace directo al Front-End">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-device-farm">AWS Device Farm<a href="#aws-device-farm" class="hash-link" aria-label="Enlace directo al AWS Device Farm" title="Enlace directo al AWS Device Farm">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de teste de aplicações que permite testar aplicações iOS, Android e web em smartphones, tablets e navegadores de desktop reais na nuvem.</li>
+<li><strong>Para que serve:</strong> Acelerar o processo de teste de aplicações móveis e web, garantindo a compatibilidade e o desempenho em uma ampla variedade de dispositivos e sistemas operacionais.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Teste de compatibilidade de aplicações móveis em diferentes dispositivos e versões de SO.</li>
+<li>Execução de testes de desempenho e estresse em aplicações móveis.</li>
+<li>Reprodução de bugs e problemas relatados por usuários em dispositivos específicos.</li>
+<li>Teste de aplicações web em navegadores de desktop e móveis.</li>
+<li>Integração com pipelines de CI/CD para testes automatizados.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Dispositivos reais:</strong> Teste em uma grande coleção de dispositivos físicos reais na nuvem.</li>
+<li><strong>Testes paralelos:</strong> Execute testes em paralelo em vários dispositivos simultaneamente para acelerar o processo.</li>
+<li><strong>Relatórios detalhados:</strong> Receba relatórios detalhados com logs, capturas de tela e vídeos dos testes.</li>
+<li><strong>Suporte a frameworks de teste:</strong> Suporta frameworks de teste populares como Appium, XCUITest, Espresso, entre outros.</li>
+<li><strong>Interação remota:</strong> Permite interagir remotamente com dispositivos para depuração manual.</li>
+<li><strong>Integração:</strong> Integra-se com AWS CodePipeline, Jenkins e outras ferramentas de CI/CD.</li>
+</ul>
+</li>
+<li><strong>Comparativo com testes em dispositivos físicos locais:</strong>
+<ul>
+<li><strong>AWS Device Farm:</strong> Oferece acesso a uma vasta gama de dispositivos reais na nuvem, eliminando a necessidade de adquirir e manter um laboratório de dispositivos físicos. Permite testes paralelos e fornece relatórios detalhados, acelerando o ciclo de feedback e a detecção de bugs.</li>
+<li><strong>Testes em dispositivos físicos locais:</strong> Limitado ao número de dispositivos disponíveis, demorado para configurar e manter, e pode não cobrir a diversidade de dispositivos e sistemas operacionais do mercado. Dificulta a escalabilidade e a automação de testes.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="machine-learning">Machine Learning<a href="#machine-learning" class="hash-link" aria-label="Enlace directo al Machine Learning" title="Enlace directo al Machine Learning">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-forecast">Amazon Forecast<a href="#amazon-forecast" class="hash-link" aria-label="Enlace directo al Amazon Forecast" title="Enlace directo al Amazon Forecast">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço totalmente gerenciado que usa algoritmos estatísticos e de machine learning para fornecer previsões de séries temporais altamente precisas.</li>
+<li><strong>Para que serve:</strong> Automatizar o processo de previsão de dados, permitindo que você preveja resultados de negócios com facilidade e precisão, como demanda de produtos, vendas, tráfego de rede e consumo de recursos.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Previsão de demanda de produtos para otimização de estoque.</li>
+<li>Previsão de vendas para planejamento financeiro e de marketing.</li>
+<li>Previsão de tráfego de rede para planejamento de capacidade.</li>
+<li>Previsão de consumo de energia para otimização de custos.</li>
+<li>Previsão de resultados financeiros para planejamento estratégico.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> Não há servidores para provisionar ou gerenciar.</li>
+<li><strong>Machine Learning:</strong> Utiliza a mesma tecnologia de ML usada na Amazon.com para previsões.</li>
+<li><strong>Algoritmos avançados:</strong> Suporta uma variedade de algoritmos de previsão, incluindo redes neurais e modelos estatísticos.</li>
+<li><strong>Automação:</strong> Automatiza grande parte do processo de previsão, desde a preparação dos dados até a geração de previsões.</li>
+<li><strong>Precisão:</strong> Projetado para fornecer previsões altamente precisas, mesmo com dados complexos.</li>
+<li><strong>Integração:</strong> Integra-se com Amazon S3 para entrada e saída de dados.</li>
+</ul>
+</li>
+<li><strong>Comparativo com métodos de previsão tradicionais:</strong>
+<ul>
+<li><strong>Amazon Forecast:</strong> Oferece um serviço de previsão baseado em ML totalmente gerenciado, que automatiza o processo e fornece previsões mais precisas, especialmente para grandes volumes de dados e padrões complexos. Reduz a necessidade de expertise em ciência de dados e infraestrutura.</li>
+<li><strong>Métodos de previsão tradicionais (ex: planilhas, modelos estatísticos simples):</strong> Podem ser demorados, menos precisos para dados complexos e exigem conhecimento especializado em estatística e modelagem. Não escalam bem para grandes volumes de dados.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-personalize">Amazon Personalize<a href="#amazon-personalize" class="hash-link" aria-label="Enlace directo al Amazon Personalize" title="Enlace directo al Amazon Personalize">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de machine learning totalmente gerenciado que usa seus dados para gerar recomendações de itens para seus usuários.</li>
+<li><strong>Para que serve:</strong> Criar e implantar rapidamente um mecanismo de recomendação personalizado para seus clientes, sem a necessidade de experiência em machine learning.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Recomendações de produtos para e-commerce (ex: &quot;clientes que compraram X também compraram Y&quot;).</li>
+<li>Recomendações de conteúdo para plataformas de mídia (ex: filmes, artigos, músicas).</li>
+<li>Personalização de experiências de usuário em aplicações web e móveis.</li>
+<li>Sugestão de itens relacionados ou complementares.</li>
+<li>Geração de listas de tendências ou itens populares.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> A AWS cuida da infraestrutura, do treinamento e da implantação dos modelos de ML.</li>
+<li><strong>Modelos personalizados:</strong> Treina modelos de ML usando seus próprios dados de interação do usuário e dados de itens.</li>
+<li><strong>Algoritmos avançados:</strong> Utiliza algoritmos de ML de ponta, incluindo aqueles usados na Amazon.com.</li>
+<li><strong>Tempo real:</strong> Pode gerar recomendações em tempo real.</li>
+<li><strong>Sem experiência em ML:</strong> Não exige conhecimento prévio em machine learning para usar o serviço.</li>
+<li><strong>Integração:</strong> Integra-se com Amazon S3 para entrada de dados e pode ser acessado via APIs.</li>
+</ul>
+</li>
+<li><strong>Comparativo com sistemas de recomendação desenvolvidos internamente:</strong>
+<ul>
+<li><strong>Amazon Personalize:</strong> Reduz significativamente o tempo e o esforço necessários para construir e manter um sistema de recomendação, eliminando a complexidade de gerenciar a infraestrutura de ML, treinar modelos e implantá-los. Permite que as empresas se concentrem na personalização da experiência do cliente, em vez de na engenharia de ML.</li>
+<li><strong>Sistemas de recomendação desenvolvidos internamente:</strong> Exigem uma equipe de cientistas de dados e engenheiros de ML, infraestrutura dedicada e um investimento significativo de tempo e recursos para construir, treinar e manter os modelos. Podem oferecer maior controle e personalização, mas com um custo e complexidade muito maiores.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-lookout-for-metrics">Amazon Lookout for Metrics<a href="#amazon-lookout-for-metrics" class="hash-link" aria-label="Enlace directo al Amazon Lookout for Metrics" title="Enlace directo al Amazon Lookout for Metrics">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de machine learning que detecta automaticamente anomalias (outliers) em seus dados de negócios e operacionais, e ajuda a determinar suas causas-raiz.</li>
+<li><strong>Para que serve:</strong> Monitorar continuamente o desempenho de negócios e operacionais, identificar variações incomuns em métricas importantes e alertar sobre problemas para que você possa remediá-los rapidamente.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Monitoramento de métricas de vendas e receita para detectar quedas ou picos inesperados.</li>
+<li>Detecção de anomalias em taxas de conversão de websites ou aplicações.</li>
+<li>Monitoramento de métricas de desempenho de aplicações (ex: latência, erros) para identificar problemas.</li>
+<li>Análise de dados de marketing para detectar campanhas com desempenho incomum.</li>
+<li>Identificação de problemas em cadeias de suprimentos ou operações.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Detecção automática de anomalias:</strong> Utiliza machine learning para identificar padrões incomuns nos dados.</li>
+<li><strong>Causa-raiz:</strong> Ajuda a determinar a causa-raiz das anomalias, fornecendo insights acionáveis.</li>
+<li><strong>Totalmente gerenciado:</strong> Não exige experiência em machine learning para usar o serviço.</li>
+<li><strong>Fontes de dados:</strong> Conecta-se a várias fontes de dados, incluindo Amazon S3, Redshift, RDS, e SaaS (Salesforce, Google Analytics).</li>
+<li><strong>Alertas:</strong> Envia alertas para canais como Amazon SNS, AWS Lambda ou PagerDuty.</li>
+<li><strong>Feedback:</strong> Permite fornecer feedback sobre as anomalias detectadas para melhorar a precisão do modelo.</li>
+</ul>
+</li>
+<li><strong>Comparativo com monitoramento tradicional baseado em limites:</strong>
+<ul>
+<li><strong>Amazon Lookout for Metrics:</strong> Utiliza machine learning para detectar anomalias complexas e sutis que podem ser perdidas por limites estáticos. Adapta-se a padrões de dados em constante mudança e reduz falsos positivos, fornecendo insights mais precisos e acionáveis.</li>
+<li><strong>Monitoramento tradicional baseado em limites:</strong> Depende de limites predefinidos que podem ser difíceis de manter e ajustar, especialmente para métricas com padrões sazonais ou tendências. Pode gerar muitos falsos positivos ou perder anomalias importantes que não ultrapassam os limites.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-bedrock">Amazon Bedrock<a href="#amazon-bedrock" class="hash-link" aria-label="Enlace directo al Amazon Bedrock" title="Enlace directo al Amazon Bedrock">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço totalmente gerenciado que oferece acesso a modelos de base (FMs - Foundation Models) de alto desempenho de empresas de IA líderes, bem como modelos da Amazon, por meio de uma API unificada.</li>
+<li><strong>Para que serve:</strong> Facilitar a construção de aplicações de IA generativa, permitindo que os desenvolvedores experimentem, avaliem e personalizem FMs com seus próprios dados, sem a necessidade de gerenciar a infraestrutura subjacente.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Geração de texto para criação de conteúdo (artigos, e-mails, posts de blog).</li>
+<li>Resumo de documentos e textos longos.</li>
+<li>Geração de código para automação de tarefas de desenvolvimento.</li>
+<li>Criação de chatbots e assistentes virtuais com respostas mais naturais.</li>
+<li>Pesquisa e recuperação de informações em grandes volumes de dados.</li>
+<li>Geração de imagens a partir de descrições de texto.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Acesso a FMs:</strong> Oferece acesso a uma variedade de modelos de base, incluindo modelos de texto, imagem e multimodal.</li>
+<li><strong>API unificada:</strong> Permite interagir com diferentes FMs por meio de uma única API.</li>
+<li><strong>Personalização:</strong> Permite personalizar FMs com seus próprios dados usando técnicas como fine-tuning e RAG (Retrieval Augmented Generation).</li>
+<li><strong>Totalmente gerenciado:</strong> A AWS gerencia a infraestrutura subjacente, permitindo que os desenvolvedores se concentrem na construção de aplicações.</li>
+<li><strong>Segurança e privacidade:</strong> Seus dados permanecem privados e não são usados para treinar os modelos de base.</li>
+<li><strong>Avaliação de modelos:</strong> Ferramentas para avaliar e comparar o desempenho de diferentes FMs para seu caso de uso.</li>
+</ul>
+</li>
+<li><strong>Comparativo com o desenvolvimento de modelos de IA generativa do zero:</strong>
+<ul>
+<li><strong>Amazon Bedrock:</strong> Simplifica e acelera o desenvolvimento de aplicações de IA generativa, fornecendo acesso a FMs pré-treinados e ferramentas para personalização e implantação. Reduz a necessidade de expertise em ML e o tempo de desenvolvimento.</li>
+<li><strong>Desenvolvimento de modelos de IA generativa do zero:</strong> Exige uma equipe de cientistas de dados e engenheiros de ML altamente especializados, grandes volumes de dados de treinamento, infraestrutura de computação intensiva e um investimento significativo de tempo e recursos. É adequado para casos de uso muito específicos que exigem modelos altamente personalizados e proprietários.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="management-and-governance">Management and Governance<a href="#management-and-governance" class="hash-link" aria-label="Enlace directo al Management and Governance" title="Enlace directo al Management and Governance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-service-catalog">AWS Service Catalog<a href="#aws-service-catalog" class="hash-link" aria-label="Enlace directo al AWS Service Catalog" title="Enlace directo al AWS Service Catalog">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que permite às organizações criar e gerenciar catálogos de serviços de TI aprovados para uso na AWS.</li>
+<li><strong>Para que serve:</strong> Capacitar os usuários a provisionar os serviços de TI de que precisam, de forma autônoma e em conformidade com os padrões da organização, sem a necessidade de intervenção manual da equipe de TI.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Criação de um catálogo de produtos de TI aprovados (ex: instâncias EC2 pré-configuradas, bancos de dados, ambientes de desenvolvimento).</li>
+<li>Habilitar o autoatendimento para desenvolvedores e usuários de negócios.</li>
+<li>Garantir a conformidade com padrões de segurança e governança.</li>
+<li>Padronizar a implantação de recursos na AWS.</li>
+<li>Gerenciar o ciclo de vida dos produtos de TI.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Catálogo de produtos:</strong> Permite definir e gerenciar produtos (serviços de TI) que os usuários podem provisionar.</li>
+<li><strong>Controle de acesso:</strong> Integra-se com AWS IAM para controlar quem pode provisionar quais produtos.</li>
+<li><strong>Governança:</strong> Ajuda a aplicar políticas de segurança, conformidade e custos.</li>
+<li><strong>Automação:</strong> Automatiza o provisionamento de recursos usando AWS CloudFormation.</li>
+<li><strong>Versões:</strong> Permite gerenciar diferentes versões de um produto.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Organizations, AWS CloudFormation, AWS IAM e outras ferramentas.</li>
+</ul>
+</li>
+<li><strong>Comparativo com provisionamento manual de recursos:</strong>
+<ul>
+<li><strong>AWS Service Catalog:</strong> Automatiza e padroniza o provisionamento de recursos, reduzindo erros, garantindo a conformidade e acelerando o tempo de entrega de serviços de TI. Permite que as equipes de TI se concentrem em tarefas de maior valor, enquanto os usuários podem provisionar recursos de forma autônoma.</li>
+<li><strong>Provisionamento manual de recursos:</strong> Demorado, propenso a erros e pode levar a inconsistências e violações de conformidade. Exige que os administradores provisionem cada recurso manualmente, o que não escala bem em ambientes grandes.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-opsworks">AWS OpsWorks<a href="#aws-opsworks" class="hash-link" aria-label="Enlace directo al AWS OpsWorks" title="Enlace directo al AWS OpsWorks">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de gerenciamento de configuração que ajuda a configurar e operar aplicações usando Chef ou Puppet.</li>
+<li><strong>Para que serve:</strong> Automatizar tarefas operacionais como configurações de software, instalações de pacotes, configurações de banco de dados e gerenciamento de servidores, tanto na AWS quanto on-premises.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Automação da implantação e configuração de aplicações complexas.</li>
+<li>Gerenciamento do ciclo de vida de servidores e aplicações.</li>
+<li>Escalonamento automático de aplicações com base na carga.</li>
+<li>Implementação de práticas de DevOps para automação de infraestrutura.</li>
+<li>Gerenciamento de ambientes de desenvolvimento, teste e produção.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Baseado em Chef/Puppet:</strong> Utiliza ferramentas populares de automação de configuração.</li>
+<li><strong>Modelagem de aplicações:</strong> Permite modelar sua aplicação como um stack, incluindo camadas de aplicação, banco de dados e balanceamento de carga.</li>
+<li><strong>Automação de tarefas:</strong> Automatiza a instalação de software, configuração de servidores e implantação de código.</li>
+<li><strong>Gerenciamento de instâncias:</strong> Gerencia o ciclo de vida de instâncias EC2 e servidores on-premises.</li>
+<li><strong>Monitoramento:</strong> Integra-se com Amazon CloudWatch para monitoramento de métricas.</li>
+<li><strong>Tipos de OpsWorks:</strong>
+<ul>
+<li><strong>OpsWorks Stacks:</strong> Permite modelar sua aplicação como um stack de camadas, com suporte a Chef Cookbooks.</li>
+<li><strong>OpsWorks for Chef Automate:</strong> Fornece um servidor Chef gerenciado pela AWS.</li>
+<li><strong>OpsWorks for Puppet Enterprise:</strong> Fornece um servidor Puppet gerenciado pela AWS.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Comparativo com AWS CloudFormation:</strong>
+<ul>
+<li><strong>AWS OpsWorks:</strong> Focado no gerenciamento de configuração e automação de tarefas operacionais para aplicações e servidores. É mais adequado para cenários onde você precisa de um controle mais granular sobre a configuração do software e o ciclo de vida da aplicação.</li>
+<li><strong>AWS CloudFormation:</strong> Focado na infraestrutura como código, permitindo que você provisione e gerencie recursos AWS de forma declarativa. É mais adequado para provisionar a infraestrutura subjacente e garantir a consistência do ambiente.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="migration-and-transfer">Migration and Transfer<a href="#migration-and-transfer" class="hash-link" aria-label="Enlace directo al Migration and Transfer" title="Enlace directo al Migration and Transfer">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-application-discovery-service">AWS Application Discovery Service<a href="#aws-application-discovery-service" class="hash-link" aria-label="Enlace directo al AWS Application Discovery Service" title="Enlace directo al AWS Application Discovery Service">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda você a planejar sua migração para a nuvem AWS, coletando dados de uso e configuração sobre seus servidores e bancos de dados on-premises.</li>
+<li><strong>Para que serve:</strong> Obter um inventário detalhado de seus recursos on-premises, entender as dependências entre aplicações e servidores, e estimar os custos de migração para a AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Descoberta de servidores e bancos de dados em seu datacenter on-premises.</li>
+<li>Mapeamento de dependências de aplicações para planejar a ordem de migração.</li>
+<li>Coleta de dados de desempenho e utilização para dimensionar corretamente os recursos na AWS.</li>
+<li>Estimativa de custos de migração e operação na nuvem.</li>
+<li>Identificação de aplicações e servidores que são bons candidatos para migração.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Coleta de dados:</strong> Coleta dados de configuração, desempenho e uso de servidores e bancos de dados.</li>
+<li><strong>Agente ou sem agente:</strong> Pode usar um agente leve instalado nos servidores ou uma abordagem sem agente para VMware vCenter.</li>
+<li><strong>Mapeamento de dependências:</strong> Ajuda a visualizar as dependências entre aplicações e servidores.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Migration Hub para centralizar o planejamento e o acompanhamento da migração.</li>
+<li><strong>Relatórios:</strong> Gera relatórios detalhados para auxiliar no planejamento da migração.</li>
+</ul>
+</li>
+<li><strong>Comparativo com inventário manual de datacenter:</strong>
+<ul>
+<li><strong>AWS Application Discovery Service:</strong> Automatiza o processo de coleta de dados e mapeamento de dependências, reduzindo o tempo e o esforço necessários para planejar uma migração. Fornece dados mais precisos e abrangentes, o que leva a um planejamento de migração mais eficaz e a uma redução de riscos.</li>
+<li><strong>Inventário manual de datacenter:</strong> Demorado, propenso a erros e pode não capturar todas as dependências e detalhes necessários para uma migração bem-sucedida. Dificulta a escalabilidade e a precisão do planejamento em ambientes grandes.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="networking-and-content-delivery">Networking and Content Delivery<a href="#networking-and-content-delivery" class="hash-link" aria-label="Enlace directo al Networking and Content Delivery" title="Enlace directo al Networking and Content Delivery">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-global-accelerator">AWS Global Accelerator<a href="#aws-global-accelerator" class="hash-link" aria-label="Enlace directo al AWS Global Accelerator" title="Enlace directo al AWS Global Accelerator">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de rede que melhora a disponibilidade e o desempenho de suas aplicações para usuários locais e globais, roteando o tráfego de usuários através da rede global da AWS.</li>
+<li><strong>Para que serve:</strong> Otimizar o desempenho de aplicações que atendem a usuários em diferentes localizações geográficas, direcionando o tráfego para o endpoint de aplicação mais próximo e saudável, e evitando o congestionamento da internet pública.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Melhorar o desempenho de aplicações web e APIs para usuários globais.</li>
+<li>Aumentar a disponibilidade de aplicações, direcionando o tráfego para endpoints saudáveis.</li>
+<li>Balanceamento de carga de tráfego entre regiões AWS.</li>
+<li>Fornecer IPs estáticos de entrada para suas aplicações.</li>
+<li>Cenários de recuperação de desastres, direcionando o tráfego para uma região de backup.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Rede global da AWS:</strong> Utiliza a rede de borda global da AWS para rotear o tráfego, minimizando a latência.</li>
+<li><strong>IPs estáticos:</strong> Fornece dois endereços IP estáticos que atuam como um ponto de entrada fixo para suas aplicações.</li>
+<li><strong>Verificações de saúde:</strong> Monitora continuamente a saúde dos endpoints e direciona o tráfego apenas para endpoints saudáveis.</li>
+<li><strong>Balanceamento de carga:</strong> Distribui o tráfego entre endpoints em uma ou várias regiões.</li>
+<li><strong>Aceleração de tráfego:</strong> Pode melhorar o desempenho em até 60% para usuários globais.</li>
+<li><strong>Integração:</strong> Integra-se com Elastic Load Balancing, instâncias EC2 e outros recursos AWS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com Amazon CloudFront:</strong>
+<ul>
+<li><strong>AWS Global Accelerator:</strong> Opera na camada de rede (camada 3 e 4 do modelo OSI) e otimiza o roteamento do tráfego para aplicações dinâmicas e não-cacheáveis, como APIs e aplicações web interativas. Foca em melhorar a disponibilidade e o desempenho global da aplicação.</li>
+<li><strong>Amazon CloudFront:</strong> É uma CDN (Content Delivery Network) que opera na camada de aplicação (camada 7 do modelo OSI) e é otimizada para entregar conteúdo estático e cacheável (imagens, vídeos, arquivos HTML) para usuários finais com baixa latência. Foca em acelerar a entrega de conteúdo.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-network-firewall">AWS Network Firewall<a href="#aws-network-firewall" class="hash-link" aria-label="Enlace directo al AWS Network Firewall" title="Enlace directo al AWS Network Firewall">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de firewall de rede gerenciado e com estado que facilita a implantação de proteção de rede para suas Amazon Virtual Private Clouds (VPCs).</li>
+<li><strong>Para que serve:</strong> Proteger suas VPCs contra ameaças de rede, permitindo que você filtre o tráfego de entrada e saída com base em regras personalizadas, incluindo inspeção de tráfego, prevenção de intrusões e filtragem de URLs.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Inspeção de tráfego de internet de entrada para proteger aplicações web.</li>
+<li>Filtragem de tráfego de saída para controlar o acesso a destinos externos.</li>
+<li>Prevenção de intrusões e detecção de malware.</li>
+<li>Proteção de conexões AWS Direct Connect e VPN.</li>
+<li>Implementação de políticas de segurança de rede em escala.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> A AWS gerencia a infraestrutura subjacente do firewall.</li>
+<li><strong>Com estado:</strong> Mantém o estado das conexões para permitir inspeção de tráfego bidirecional.</li>
+<li><strong>Escalabilidade automática:</strong> Escala automaticamente para lidar com picos de tráfego.</li>
+<li><strong>Regras flexíveis:</strong> Permite criar regras personalizadas usando Suricata-compatible rules (IDS/IPS) e filtragem de URLs.</li>
+<li><strong>Alta disponibilidade:</strong> Implantado em várias Zonas de Disponibilidade para alta disponibilidade.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Firewall Manager, Amazon CloudWatch e AWS Security Hub.</li>
+</ul>
+</li>
+<li><strong>Comparativo com Network ACLs e Security Groups:</strong>
+<ul>
+<li><strong>AWS Network Firewall:</strong> Oferece uma camada de proteção de rede mais avançada e centralizada para suas VPCs, com recursos de inspeção de tráfego com estado, prevenção de intrusões e filtragem de URLs. É ideal para implementar políticas de segurança de rede complexas e em escala.</li>
+<li><strong>Network ACLs (Access Control Lists):</strong> Operam na camada de rede (sem estado) e fornecem controle de tráfego básico em nível de sub-rede. São úteis para filtrar tráfego permitido ou negado, mas não oferecem inspeção de tráfego com estado ou recursos avançados de segurança.</li>
+<li><strong>Security Groups:</strong> Operam na camada de instância (com estado) e controlam o tráfego de entrada e saída para instâncias EC2. São essenciais para proteger instâncias individuais, mas não fornecem uma visão centralizada ou recursos de firewall de rede para toda a VPC.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="storage">Storage<a href="#storage" class="hash-link" aria-label="Enlace directo al Storage" title="Enlace directo al Storage">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-s3-glacier-deep-archive">Amazon S3 Glacier Deep Archive<a href="#amazon-s3-glacier-deep-archive" class="hash-link" aria-label="Enlace directo al Amazon S3 Glacier Deep Archive" title="Enlace directo al Amazon S3 Glacier Deep Archive">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma classe de armazenamento do Amazon S3 projetada para arquivamento de dados de longo prazo e de custo mais baixo, com tempos de recuperação de horas.</li>
+<li><strong>Para que serve:</strong> Armazenar dados que são acessados raramente (uma ou duas vezes por ano, ou menos) e que podem tolerar um tempo de recuperação de algumas horas, oferecendo o menor custo de armazenamento na AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Arquivamento de dados regulatórios e de conformidade que precisam ser retidos por anos ou décadas.</li>
+<li>Backup de dados de longo prazo para recuperação de desastres.</li>
+<li>Armazenamento de arquivos de mídia (vídeos, áudios) que não são acessados com frequência.</li>
+<li>Preservação de dados históricos para fins de auditoria ou análise futura.</li>
+<li>Substituição de fitas magnéticas e outras soluções de arquivamento on-premises.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Custo mais baixo:</strong> Oferece o menor custo de armazenamento por GB na AWS.</li>
+<li><strong>Durabilidade:</strong> Projetado para 99.999999999% (11 noves) de durabilidade dos objetos.</li>
+<li><strong>Tempos de recuperação:</strong> Recuperação padrão em 12 horas, recuperação em massa em 48 horas.</li>
+<li><strong>Segurança:</strong> Criptografia de dados em repouso e em trânsito.</li>
+<li><strong>Integração:</strong> Acessível via API do S3, S3 Lifecycle policies e S3 Batch Operations.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outras classes de armazenamento S3 Glacier:</strong>
+<ul>
+<li><strong>Amazon S3 Glacier Deep Archive:</strong> Ideal para dados que são acessados com pouca frequência (uma ou duas vezes por ano, ou menos) e que podem tolerar tempos de recuperação de horas. Oferece o menor custo.</li>
+<li><strong>Amazon S3 Glacier Flexible Retrieval (anteriormente S3 Glacier):</strong> Para dados que são acessados com menos frequência (uma vez por trimestre ou ano) e que podem tolerar tempos de recuperação de minutos a horas. Oferece opções de recuperação mais rápidas e flexíveis do que o Deep Archive.</li>
+<li><strong>Amazon S3 Glacier Instant Retrieval:</strong> Para dados que são acessados uma vez por trimestre e que exigem recuperação em milissegundos. Oferece o menor custo para acesso instantâneo de dados de arquivo.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-s3-storage-lens">Amazon S3 Storage Lens<a href="#amazon-s3-storage-lens" class="hash-link" aria-label="Enlace directo al Amazon S3 Storage Lens" title="Enlace directo al Amazon S3 Storage Lens">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um recurso de análise de armazenamento em nuvem que oferece visibilidade em toda a organização sobre o uso e a atividade do armazenamento de objetos no Amazon S3.</li>
+<li><strong>Para que serve:</strong> Ajudar você a entender, analisar e otimizar seus custos e desempenho de armazenamento no S3, identificando tendências, sinalizando discrepâncias e fornecendo recomendações acionáveis.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Monitoramento do uso de armazenamento em todas as contas e buckets S3.</li>
+<li>Identificação de buckets com alto crescimento de dados ou baixa utilização.</li>
+<li>Otimização de custos de armazenamento, identificando dados que podem ser movidos para classes de armazenamento mais baratas.</li>
+<li>Detecção de anomalias no uso ou atividade do S3.</li>
+<li>Geração de relatórios de auditoria e conformidade sobre o uso do S3.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Visibilidade em toda a organização:</strong> Agrega métricas de uso e atividade de todos os buckets e contas S3.</li>
+<li><strong>Painel interativo:</strong> Fornece um painel visual para explorar métricas e tendências.</li>
+<li><strong>Métricas detalhadas:</strong> Oferece mais de 60 métricas de uso e atividade, incluindo tamanho do bucket, número de objetos, solicitações, etc.</li>
+<li><strong>Recomendações:</strong> Fornece recomendações para otimizar custos e melhorar o desempenho.</li>
+<li><strong>Detecção de anomalias:</strong> Ajuda a identificar padrões incomuns no uso do S3.</li>
+<li><strong>Exportação de dados:</strong> Permite exportar dados de métricas para análise posterior.</li>
+</ul>
+</li>
+<li><strong>Comparativo com monitoramento manual de S3:</strong>
+<ul>
+<li><strong>Amazon S3 Storage Lens:</strong> Automatiza a coleta e a análise de métricas de uso e atividade do S3 em escala, fornecendo uma visão abrangente e insights acionáveis para otimização. Reduz o esforço manual e a complexidade de gerenciar grandes volumes de dados no S3.</li>
+<li><strong>Monitoramento manual de S3:</strong> Demorado e propenso a erros, especialmente para ambientes com muitos buckets e contas. Dificulta a identificação de tendências, anomalias e oportunidades de otimização de custos.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security">Security<a href="#security" class="hash-link" aria-label="Enlace directo al Security" title="Enlace directo al Security">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-control-tower">AWS Control Tower<a href="#aws-control-tower" class="hash-link" aria-label="Enlace directo al AWS Control Tower" title="Enlace directo al AWS Control Tower">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que automatiza a configuração e a governança de um ambiente AWS multi-contas seguro e em conformidade, conhecido como landing zone.</li>
+<li><strong>Para que serve:</strong> Simplificar a configuração de um ambiente AWS bem arquitetado e governado, aplicando as melhores práticas de segurança, conformidade e operações em escala.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Configuração rápida de um ambiente AWS multi-contas seguro e em conformidade.</li>
+<li>Aplicação de políticas de governança e guardrails para garantir a conformidade.</li>
+<li>Provisionamento de novas contas AWS de forma padronizada e segura.</li>
+<li>Monitoramento contínuo da conformidade e detecção de desvios.</li>
+<li>Gerenciamento centralizado de identidades e acessos.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Landing Zone:</strong> Configura uma landing zone segura e em conformidade com as melhores práticas da AWS.</li>
+<li><strong>Guardrails:</strong> Aplica guardrails preventivos e de detecção para impor políticas de governança.</li>
+<li><strong>Provisionamento de contas:</strong> Permite provisionar novas contas AWS de forma automatizada e padronizada.</li>
+<li><strong>Painel de controle:</strong> Fornece um painel centralizado para monitorar a conformidade e o status do ambiente.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Organizations, AWS IAM Identity Center (SSO), AWS CloudTrail, AWS Config e outros serviços.</li>
+</ul>
+</li>
+<li><strong>Comparativo com configuração manual de ambiente multi-contas:</strong>
+<ul>
+<li><strong>AWS Control Tower:</strong> Automatiza e padroniza a configuração de um ambiente AWS multi-contas, reduzindo a complexidade, o tempo e o risco de erros. Garante que o ambiente esteja em conformidade com as melhores práticas de segurança e governança desde o início.</li>
+<li><strong>Configuração manual de ambiente multi-contas:</strong> Demorada, complexa e propensa a erros, especialmente em ambientes grandes. Exige que os administradores configurem manualmente cada conta e apliquem políticas de segurança e governança, o que pode levar a inconsistências e vulnerabilidades.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-detective">Amazon Detective<a href="#amazon-detective" class="hash-link" aria-label="Enlace directo al Amazon Detective" title="Enlace directo al Amazon Detective">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que coleta automaticamente dados de log de seus recursos AWS e usa machine learning, análise de gráficos e estatísticas para construir um conjunto de dados unificado e interativo, facilitando a análise, investigação e identificação da causa raiz de descobertas de segurança ou atividades suspeitas.</li>
+<li><strong>Para que serve:</strong> Simplificar e acelerar as investigações de segurança, fornecendo uma visão consolidada e contextualizada de atividades suspeitas, como tentativas de acesso não autorizado, uso de credenciais comprometidas ou comportamento incomum de instâncias.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Investigação de descobertas de segurança do AWS Security Hub ou Amazon GuardDuty.</li>
+<li>Análise de atividades de usuários e funções do IAM para identificar comportamentos anômalos.</li>
+<li>Rastreamento de atividades de rede e chamadas de API para entender a sequência de eventos de um incidente.</li>
+<li>Identificação da causa raiz de incidentes de segurança.</li>
+<li>Melhoria da postura de segurança através da compreensão de padrões de ataque.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Gráfico de comportamento:</strong> Constrói um gráfico de comportamento que resume as interações entre usuários, funções, instâncias e recursos ao longo do tempo.</li>
+<li><strong>Coleta automática de dados:</strong> Coleta dados de log de serviços como AWS CloudTrail, Amazon VPC Flow Logs e Amazon GuardDuty.</li>
+<li><strong>Machine Learning:</strong> Utiliza ML para identificar padrões de comportamento normais e anômalos.</li>
+<li><strong>Visualizações interativas:</strong> Fornece visualizações interativas para explorar as relações entre entidades e eventos.</li>
+<li><strong>Totalmente gerenciado:</strong> Não há infraestrutura para provisionar ou gerenciar.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Security Hub e Amazon GuardDuty.</li>
+</ul>
+</li>
+<li><strong>Comparativo com análise manual de logs:</strong>
+<ul>
+<li><strong>Amazon Detective:</strong> Automatiza a coleta e a correlação de dados de log de várias fontes, construindo um gráfico de comportamento que facilita a investigação de segurança. Reduz o tempo e o esforço necessários para analisar grandes volumes de logs e identificar a causa raiz de incidentes.</li>
+<li><strong>Análise manual de logs:</strong> Demorada, complexa e exige conhecimento especializado para correlacionar eventos de diferentes fontes. Pode ser difícil identificar padrões e relações em grandes volumes de dados, o que pode atrasar a resposta a incidentes de segurança.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-iam-identity-center-antigo-aws-sso">AWS IAM Identity Center (antigo AWS SSO)<a href="#aws-iam-identity-center-antigo-aws-sso" class="hash-link" aria-label="Enlace directo al AWS IAM Identity Center (antigo AWS SSO)" title="Enlace directo al AWS IAM Identity Center (antigo AWS SSO)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de nuvem que facilita o gerenciamento centralizado do acesso de usuários a várias contas e aplicações AWS, bem como a aplicações de terceiros.</li>
+<li><strong>Para que serve:</strong> Simplificar o gerenciamento de identidades e acessos em um ambiente AWS multi-contas, permitindo que os usuários acessem todos os seus recursos AWS com um único conjunto de credenciais.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Gerenciamento centralizado de usuários e grupos para acesso a todas as contas AWS em uma organização.</li>
+<li>Habilitar o Single Sign-On (SSO) para aplicações AWS (ex: Console de Gerenciamento AWS, Amazon S3) e aplicações de terceiros (ex: Salesforce, Microsoft 365).</li>
+<li>Provisionamento automático de usuários e grupos de diretórios externos (ex: Active Directory, Okta).</li>
+<li>Atribuir permissões granulares a usuários e grupos em várias contas AWS.</li>
+<li>Simplificar a experiência de login para usuários da força de trabalho.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Gerenciamento centralizado:</strong> Crie ou conecte suas identidades de força de trabalho e gerencie o acesso centralmente.</li>
+<li><strong>Single Sign-On (SSO):</strong> Permite que os usuários façam login uma vez e acessem várias contas e aplicações.</li>
+<li><strong>Integração com diretórios:</strong> Sincroniza usuários e grupos de diretórios externos como AWS Directory Service for Microsoft Active Directory, Okta Universal Directory, Azure AD, etc.</li>
+<li><strong>Permissões granulares:</strong> Atribua permissões baseadas em funções a usuários e grupos em contas AWS.</li>
+<li><strong>Aplicações AWS e de terceiros:</strong> Suporta acesso a uma ampla gama de aplicações.</li>
+<li><strong>Totalmente gerenciado:</strong> A AWS cuida da infraestrutura subjacente do serviço de identidade.</li>
+</ul>
+</li>
+<li><strong>Comparativo com AWS IAM (Identity and Access Management):</strong>
+<ul>
+<li><strong>AWS IAM Identity Center:</strong> Focado no gerenciamento de identidades da força de trabalho e no SSO para acesso a múltiplas contas e aplicações AWS. Simplifica a experiência do usuário e o gerenciamento de acesso em ambientes multi-contas.</li>
+<li><strong>AWS IAM:</strong> Focado no gerenciamento de permissões para entidades (usuários, grupos, funções) dentro de uma única conta AWS. É a base para o controle de acesso na AWS, mas não oferece SSO nativo para múltiplas contas ou aplicações de terceiros.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-access-analyzer">AWS Access Analyzer<a href="#aws-access-analyzer" class="hash-link" aria-label="Enlace directo al AWS Access Analyzer" title="Enlace directo al AWS Access Analyzer">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda você a identificar os recursos em sua organização e suas contas, como buckets do Amazon S3 ou funções do IAM, que são compartilhados com uma entidade externa.</li>
+<li><strong>Para que serve:</strong> Aumentar a segurança de seus recursos AWS, identificando acessos não intencionais e potenciais riscos de segurança decorrentes de configurações de permissões excessivamente permissivas.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Identificar buckets S3 que estão publicamente acessíveis ou compartilhados com contas externas.</li>
+<li>Detectar funções do IAM que podem ser assumidas por entidades fora da sua organização.</li>
+<li>Revisar políticas baseadas em recursos para garantir que apenas as entidades autorizadas tenham acesso.</li>
+<li>Ajudar a implementar o princípio do privilégio mínimo.</li>
+<li>Monitorar continuamente o acesso externo aos seus recursos.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Análise de acesso externo:</strong> Analisa políticas baseadas em recursos para identificar acesso externo.</li>
+<li><strong>Tipos de recursos:</strong> Suporta S3 buckets, funções do IAM, filas SQS, tópicos SNS, chaves KMS, entre outros.</li>
+<li><strong>Resultados acionáveis:</strong> Fornece descobertas detalhadas sobre o acesso externo e recomendações para correção.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Security Hub para agregar descobertas de segurança.</li>
+<li><strong>Totalmente gerenciado:</strong> Não há infraestrutura para provisionar ou gerenciar.</li>
+<li><strong>Análise contínua:</strong> Monitora continuamente as políticas para novas descobertas.</li>
+</ul>
+</li>
+<li><strong>Comparativo com auditorias manuais de políticas:</strong>
+<ul>
+<li><strong>AWS Access Analyzer:</strong> Automatiza a identificação de acesso externo não intencional, fornecendo uma análise contínua e abrangente de suas políticas baseadas em recursos. Reduz o esforço manual e a probabilidade de erros, ajudando a manter uma postura de segurança robusta.</li>
+<li><strong>Auditorias manuais de políticas:</strong> Demoradas, propensas a erros e podem não cobrir todas as políticas e recursos em um ambiente grande. Dificulta a identificação proativa de riscos de segurança e a manutenção da conformidade.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hybrid">Hybrid<a href="#hybrid" class="hash-link" aria-label="Enlace directo al Hybrid" title="Enlace directo al Hybrid">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-local-zones">AWS Local Zones<a href="#aws-local-zones" class="hash-link" aria-label="Enlace directo al AWS Local Zones" title="Enlace directo al AWS Local Zones">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um tipo de infraestrutura AWS que estende os serviços AWS para mais locais, permitindo que você execute aplicações sensíveis à latência mais perto dos usuários finais e dos datacenters on-premises.</li>
+<li><strong>Para que serve:</strong> Atender a requisitos de baixa latência para aplicações que precisam estar fisicamente próximas aos usuários ou a recursos on-premises, sem a necessidade de operar um datacenter próprio.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Aplicações de jogos online que exigem latência ultrabaixa.</li>
+<li>Transmissão de vídeo ao vivo e processamento de mídia.</li>
+<li>Aplicações de realidade virtual e aumentada.</li>
+<li>Aplicações industriais e de manufatura que exigem processamento de dados em tempo real.</li>
+<li>Extensão de datacenters on-premises para a nuvem com baixa latência.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Extensão de região:</strong> Estende uma região AWS para uma localização geográfica mais próxima dos usuários.</li>
+<li><strong>Baixa latência:</strong> Permite executar recursos de computação e armazenamento com latência de milissegundos de um dígito.</li>
+<li><strong>Serviços AWS selecionados:</strong> Oferece um subconjunto de serviços AWS, como EC2, EBS, VPC, e outros, mais próximos dos usuários.</li>
+<li><strong>Conectividade:</strong> Conecta-se perfeitamente à região AWS principal, permitindo acesso a todos os serviços da região.</li>
+<li><strong>Gerenciamento unificado:</strong> Gerencie recursos em Local Zones da mesma forma que gerencia recursos em uma região AWS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com regiões AWS e Zonas de Disponibilidade:</strong>
+<ul>
+<li><strong>AWS Local Zones:</strong> Projetadas para estender a nuvem AWS para locais específicos onde a latência é crítica, oferecendo um subconjunto de serviços AWS mais próximos dos usuários finais ou datacenters on-premises. Ideal para cargas de trabalho que exigem latência ultrabaixa.</li>
+<li><strong>Regiões AWS:</strong> São áreas geográficas isoladas onde a AWS hospeda seus datacenters. Cada região é composta por várias Zonas de Disponibilidade.</li>
+<li><strong>Zonas de Disponibilidade (AZs):</strong> São locais fisicamente separados e isolados dentro de uma região AWS, projetados para fornecer alta disponibilidade e tolerância a falhas. As AZs estão conectadas por redes de baixa latência.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-wavelength">AWS Wavelength<a href="#aws-wavelength" class="hash-link" aria-label="Enlace directo al AWS Wavelength" title="Enlace directo al AWS Wavelength">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma infraestrutura da AWS que incorpora serviços de computação e armazenamento da AWS nas redes 5G das operadoras de telecomunicações, permitindo que os desenvolvedores criem aplicações que oferecem latência ultrabaixa para dispositivos móveis e usuários finais.</li>
+<li><strong>Para que serve:</strong> Habilitar casos de uso de borda que exigem latência de milissegundos de um dígito para usuários móveis e dispositivos conectados ao 5G, como aplicações de jogos, streaming de vídeo em tempo real e IoT industrial.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Jogos online e e-sports com requisitos de latência extremamente baixos.</li>
+<li>Streaming de vídeo em tempo real e processamento de mídia na borda da rede.</li>
+<li>Aplicações de realidade aumentada e virtual para dispositivos móveis.</li>
+<li>IoT industrial e robótica que exigem processamento de dados em tempo real.</li>
+<li>Veículos autônomos e drones que precisam de respostas rápidas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Computação na borda 5G:</strong> Estende a infraestrutura AWS para a borda da rede 5G das operadoras.</li>
+<li><strong>Latência ultrabaixa:</strong> Permite que as aplicações alcancem latência de milissegundos de um dígito para usuários móveis.</li>
+<li><strong>Serviços AWS familiares:</strong> Permite usar serviços AWS como EC2, EBS e VPC em Wavelength Zones.</li>
+<li><strong>Integração com redes 5G:</strong> Conecta-se diretamente à rede 5G da operadora, minimizando o tráfego pela internet pública.</li>
+<li><strong>Gerenciamento unificado:</strong> Gerencie recursos em Wavelength Zones da mesma forma que gerencia recursos em uma região AWS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com AWS Local Zones:</strong>
+<ul>
+<li><strong>AWS Wavelength:</strong> Focado em estender a nuvem AWS para a borda da rede 5G das operadoras de telecomunicações, visando aplicações que exigem latência ultrabaixa para dispositivos móveis e usuários finais conectados ao 5G. Ideal para casos de uso de borda móvel.</li>
+<li><strong>AWS Local Zones:</strong> Estende a nuvem AWS para locais mais próximos de grandes centros populacionais ou datacenters on-premises, visando aplicações que exigem baixa latência para usuários em geral ou para estender ambientes híbridos. Não está intrinsecamente ligada à rede 5G.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai--generative">AI / Generative<a href="#ai--generative" class="hash-link" aria-label="Enlace directo al AI / Generative" title="Enlace directo al AI / Generative">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-q">Amazon Q<a href="#amazon-q" class="hash-link" aria-label="Enlace directo al Amazon Q" title="Enlace directo al Amazon Q">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um assistente de IA generativa desenvolvido pela AWS, projetado para ajudar desenvolvedores e usuários de negócios a entender, criar, estender e operar aplicações e cargas de trabalho na AWS.</li>
+<li><strong>Para que serve:</strong> Acelerar tarefas de desenvolvimento, responder a perguntas, gerar conteúdo, resumir dados e resolver problemas, atuando como um assistente inteligente em diversas funções de negócios.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Geração de código e depuração para desenvolvedores.</li>
+<li>Respostas a perguntas sobre documentação da AWS e melhores práticas.</li>
+<li>Geração de conteúdo para marketing e comunicação.</li>
+<li>Automação de fluxos de trabalho complexos.</li>
+<li>Extração de insights de grandes volumes de dados.</li>
+<li>Assistência na solução de problemas e otimização de recursos AWS.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Assistente de IA generativa:</strong> Utiliza modelos de linguagem grandes para interações conversacionais.</li>
+<li><strong>Focado na AWS:</strong> Especializado em conhecimento sobre a AWS, seus serviços e melhores práticas.</li>
+<li><strong>Para desenvolvedores e negócios:</strong> Atende a uma ampla gama de usuários, desde desenvolvedores até funcionários de negócios.</li>
+<li><strong>Integração:</strong> Integra-se com o Console de Gerenciamento AWS, IDEs (como VS Code e IntelliJ IDEA) e outras ferramentas.</li>
+<li><strong>Segurança e privacidade:</strong> Projetado com segurança e privacidade em mente, mantendo os dados do cliente privados.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outros assistentes de IA genéricos:</strong>
+<ul>
+<li><strong>Amazon Q:</strong> É otimizado para o ecossistema AWS, fornecendo respostas e sugestões mais precisas e relevantes para tarefas relacionadas à AWS. Atua como um especialista em AWS, acelerando o desenvolvimento e a operação na plataforma.</li>
+<li><strong>Assistentes de IA genéricos:</strong> Embora possam responder a uma ampla gama de perguntas, podem não ter a profundidade de conhecimento ou a especificidade necessária para tarefas complexas relacionadas à AWS, exigindo mais contexto ou pesquisa adicional.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="claude-via-amazon-bedrock">Claude (via Amazon Bedrock)<a href="#claude-via-amazon-bedrock" class="hash-link" aria-label="Enlace directo al Claude (via Amazon Bedrock)" title="Enlace directo al Claude (via Amazon Bedrock)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma família de modelos de linguagem grandes (LLMs) desenvolvida pela Anthropic, disponível através do Amazon Bedrock. Esses modelos são projetados para serem úteis, inofensivos, honestos e úteis (HHH).</li>
+<li><strong>Para que serve:</strong> Gerar texto, resumir informações, responder a perguntas, criar conteúdo criativo, auxiliar na codificação e realizar raciocínio complexo em diversas aplicações de IA generativa.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Criação de chatbots e assistentes virtuais conversacionais.</li>
+<li>Geração de conteúdo para marketing, vendas e comunicação.</li>
+<li>Resumo de documentos longos e extração de informações-chave.</li>
+<li>Auxílio na codificação, depuração e geração de código.</li>
+<li>Análise de sentimentos e classificação de texto.</li>
+<li>Criação de experiências de cliente personalizadas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Modelos de linguagem grandes:</strong> Oferece diferentes versões (ex: Claude 3 Opus, Sonnet, Haiku) com capacidades variadas para diferentes necessidades.</li>
+<li><strong>Disponível via Amazon Bedrock:</strong> Acessível como um modelo de base totalmente gerenciado, sem a necessidade de gerenciar a infraestrutura subjacente.</li>
+<li><strong>Segurança e ética:</strong> Projetado com foco em ser útil, inofensivo, honesto e útil (HHH).</li>
+<li><strong>Capacidades de raciocínio:</strong> Demonstra forte desempenho em raciocínio, matemática e codificação.</li>
+<li><strong>Contexto estendido:</strong> Suporta janelas de contexto grandes, permitindo processar e gerar textos mais longos.</li>
+<li><strong>Integração:</strong> Pode ser facilmente integrado em aplicações AWS através do Amazon Bedrock.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outros LLMs disponíveis no Amazon Bedrock:</strong>
+<ul>
+<li><strong>Claude:</strong> Destaca-se por seu foco em segurança, ética e capacidades de raciocínio avançadas, sendo uma boa escolha para aplicações que exigem alta confiabilidade e interações conversacionais complexas. Oferece diferentes modelos para otimizar custo e desempenho.</li>
+<li><strong>Outros LLMs (ex: Amazon Titan, Llama 2):</strong> Cada modelo tem suas próprias forças e casos de uso ideais. A escolha depende dos requisitos específicos da aplicação, como custo, desempenho, tamanho do modelo e capacidades específicas (ex: geração de imagem, incorporações).</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-titan-via-amazon-bedrock">Amazon Titan (via Amazon Bedrock)<a href="#amazon-titan-via-amazon-bedrock" class="hash-link" aria-label="Enlace directo al Amazon Titan (via Amazon Bedrock)" title="Enlace directo al Amazon Titan (via Amazon Bedrock)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma família de modelos de base (FMs) desenvolvida pela AWS, disponível através do Amazon Bedrock. Inclui modelos para geração de texto (Titan Text) e incorporações de texto (Titan Embeddings).</li>
+<li><strong>Para que serve:</strong> Capacitar uma ampla variedade de casos de uso de IA generativa, desde a geração de conteúdo e resumo de texto até a pesquisa semântica e personalização, aproveitando modelos pré-treinados pela AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li><strong>Titan Text:</strong>
+<ul>
+<li>Geração de artigos, posts de blog, e-mails e outros conteúdos textuais.</li>
+<li>Resumo de documentos e extração de informações-chave.</li>
+<li>Geração de código e assistência na programação.</li>
+<li>Criação de chatbots e assistentes virtuais.</li>
+<li>Brainstorming e geração de ideias.</li>
+</ul>
+</li>
+<li><strong>Titan Embeddings:</strong>
+<ul>
+<li>Pesquisa semântica e recomendação de conteúdo.</li>
+<li>Personalização e agrupamento de dados.</li>
+<li>Detecção de anomalias e moderação de conteúdo.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Modelos de base da AWS:</strong> Desenvolvidos e pré-treinados pela AWS em grandes conjuntos de dados.</li>
+<li><strong>Disponível via Amazon Bedrock:</strong> Acessível como modelos de base totalmente gerenciados.</li>
+<li><strong>Versatilidade:</strong> Oferece modelos para diferentes tarefas, como geração de texto e criação de incorporações.</li>
+<li><strong>Segurança e responsabilidade:</strong> Projetado com foco em IA responsável.</li>
+<li><strong>Personalização:</strong> Pode ser personalizado com seus próprios dados para melhorar a relevância para casos de uso específicos.</li>
+<li><strong>Integração:</strong> Facilmente integrado em aplicações AWS através do Amazon Bedrock.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outros LLMs/FMs:</strong>
+<ul>
+<li><strong>Amazon Titan:</strong> Oferece uma solução robusta e versátil para uma ampla gama de casos de uso de IA generativa, com a vantagem de ser desenvolvido pela própria AWS e otimizado para integração com outros serviços AWS. Os modelos Titan Text são ideais para tarefas de geração de texto, enquanto os Titan Embeddings são excelentes para casos de uso que envolvem pesquisa semântica e personalização.</li>
+<li><strong>Outros LLMs/FMs (ex: Claude, Llama 2):</strong> Cada modelo tem suas próprias características e pontos fortes. A escolha depende das necessidades específicas do projeto, como o tipo de tarefa (geração de texto, imagem, incorporações), o desempenho desejado, o custo e a preferência por modelos de diferentes provedores.</li>
+</ul>
+</li>
+</ul>
+<p>ção:** Integra-se com AWS CodePipeline, AWS CodeBuild, AWS CodeDeploy e outras ferramentas de desenvolvimento.</p>
+<ul>
+<li><strong>Comparativo com GitHub/GitLab/Bitbucket:</strong>
+<ul>
+<li><strong>AWS CodeCommit:</strong> Um serviço de repositório Git totalmente gerenciado e seguro, ideal para equipes que já estão no ecossistema AWS e buscam uma solução integrada. Oferece alta disponibilidade e escalabilidade sem a necessidade de gerenciar a infraestrutura.</li>
+<li><strong>GitHub/GitLab/Bitbucket:</strong> Plataformas de controle de versão populares que oferecem uma ampla gama de recursos de colaboração, CI/CD e gerenciamento de projetos. Podem ser hospedados na nuvem ou on-premises, oferecendo mais flexibilidade, mas exigindo mais gerenciamento em alguns casos.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-codestar-1">AWS CodeStar<a href="#aws-codestar-1" class="hash-link" aria-label="Enlace directo al AWS CodeStar" title="Enlace directo al AWS CodeStar">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço baseado em nuvem que fornece uma interface de usuário unificada para criar, gerenciar e trabalhar com projetos de desenvolvimento de software na AWS.</li>
+<li><strong>Para que serve:</strong> Simplificar a configuração de uma cadeia de ferramentas de entrega contínua completa, permitindo que os desenvolvedores desenvolvam, construam e implantem aplicações rapidamente na AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Configuração rápida de pipelines de CI/CD para novos projetos.</li>
+<li>Desenvolvimento e implantação de aplicações web, serviços web e aplicações móveis.</li>
+<li>Fornecer um painel unificado para todas as atividades de desenvolvimento.</li>
+<li>Facilitar a colaboração em projetos de desenvolvimento de software.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Interface de usuário unificada:</strong> Um único local para gerenciar todas as atividades de desenvolvimento.</li>
+<li><strong>Modelos de projeto:</strong> Oferece modelos pré-configurados para vários tipos de aplicação, com serviços AWS já integrados.</li>
+<li><strong>Cadeia de ferramentas integrada:</strong> Configura e integra automaticamente AWS CodeCommit, CodeBuild, CodeDeploy e CodePipeline.</li>
+<li><strong>Colaboração em equipe:</strong> Facilita o acesso e o gerenciamento de equipes.</li>
+<li><strong>Rastreamento de problemas:</strong> Integra-se com Atlassian Jira ou AWS CodeCommit para rastreamento de problemas.</li>
+</ul>
+</li>
+<li><strong>Comparativo com ferramentas de desenvolvedor AWS individuais (CodeCommit, CodeBuild, CodeDeploy, CodePipeline):</strong>
+<ul>
+<li><strong>AWS CodeStar:</strong> Atua como uma camada de orquestração sobre esses serviços individuais, oferecendo uma abordagem simplificada e centrada no projeto para configurar um pipeline de CI/CD completo. É ideal para iniciar projetos rapidamente e para equipes que buscam uma experiência de desenvolvimento mais integrada.</li>
+<li><strong>Ferramentas de desenvolvedor AWS individuais:</strong> Podem ser usadas independentemente para um controle mais granular sobre cada etapa do processo de CI/CD. São mais adequadas para equipes que precisam de personalização profunda ou que já possuem fluxos de trabalho de CI/CD estabelecidos e desejam integrar serviços AWS específicos.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="front-end-1">Front-End<a href="#front-end-1" class="hash-link" aria-label="Enlace directo al Front-End" title="Enlace directo al Front-End">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-device-farm-1">AWS Device Farm<a href="#aws-device-farm-1" class="hash-link" aria-label="Enlace directo al AWS Device Farm" title="Enlace directo al AWS Device Farm">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de teste de aplicações que permite testar aplicações iOS, Android e web em smartphones, tablets e navegadores de desktop reais na nuvem.</li>
+<li><strong>Para que serve:</strong> Acelerar o processo de teste de aplicações móveis e web, garantindo a compatibilidade e o desempenho em uma ampla variedade de dispositivos e sistemas operacionais.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Teste de compatibilidade de aplicações móveis em diferentes dispositivos e versões de SO.</li>
+<li>Execução de testes de desempenho e estresse em aplicações móveis.</li>
+<li>Reprodução de bugs e problemas relatados por usuários em dispositivos específicos.</li>
+<li>Teste de aplicações web em navegadores de desktop e móveis.</li>
+<li>Integração com pipelines de CI/CD para testes automatizados.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Dispositivos reais:</strong> Teste em uma grande coleção de dispositivos físicos reais na nuvem.</li>
+<li><strong>Testes paralelos:</strong> Execute testes em paralelo em vários dispositivos simultaneamente para acelerar o processo.</li>
+<li><strong>Relatórios detalhados:</strong> Receba relatórios detalhados com logs, capturas de tela e vídeos dos testes.</li>
+<li><strong>Suporte a frameworks de teste:</strong> Suporta frameworks de teste populares como Appium, XCUITest, Espresso, entre outros.</li>
+<li><strong>Interação remota:</strong> Permite interagir remotamente com dispositivos para depuração manual.</li>
+<li><strong>Integração:</strong> Integra-se com AWS CodePipeline, Jenkins e outras ferramentas de CI/CD.</li>
+</ul>
+</li>
+<li><strong>Comparativo com testes em dispositivos físicos locais:</strong>
+<ul>
+<li><strong>AWS Device Farm:</strong> Oferece acesso a uma vasta gama de dispositivos reais na nuvem, eliminando a necessidade de adquirir e manter um laboratório de dispositivos físicos. Permite testes paralelos e fornece relatórios detalhados, acelerando o ciclo de feedback e a detecção de bugs.</li>
+<li><strong>Testes em dispositivos físicos locais:</strong> Limitado ao número de dispositivos disponíveis, demorado para configurar e manter, e pode não cobrir a diversidade de dispositivos e sistemas operacionais do mercado. Dificulta a escalabilidade e a automação de testes.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="machine-learning-1">Machine Learning<a href="#machine-learning-1" class="hash-link" aria-label="Enlace directo al Machine Learning" title="Enlace directo al Machine Learning">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-forecast-1">Amazon Forecast<a href="#amazon-forecast-1" class="hash-link" aria-label="Enlace directo al Amazon Forecast" title="Enlace directo al Amazon Forecast">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço totalmente gerenciado que usa algoritmos estatísticos e de machine learning para fornecer previsões de séries temporais altamente precisas.</li>
+<li><strong>Para que serve:</strong> Automatizar o processo de previsão de dados, permitindo que você preveja resultados de negócios com facilidade e precisão, como demanda de produtos, vendas, tráfego de rede e consumo de recursos.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Previsão de demanda de produtos para otimização de estoque.</li>
+<li>Previsão de vendas para planejamento financeiro e de marketing.</li>
+<li>Previsão de tráfego de rede para planejamento de capacidade.</li>
+<li>Previsão de consumo de energia para otimização de custos.</li>
+<li>Previsão de resultados financeiros para planejamento estratégico.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> Não há servidores para provisionar ou gerenciar.</li>
+<li><strong>SPICE (Super-fast, Parallel, In-memory Calculation Engine):</strong> Um mecanismo de computação em memória que acelera as consultas.</li>
+<li><strong>Machine Learning Insights:</strong> Oferece recursos de ML para identificar anomalias, tendências e previsões.</li>
+<li><strong>Amazon Q in QuickSight:</strong> Recursos de BI generativa para acelerar a tomada de decisões.</li>
+<li><strong>Pagamento por sessão:</strong> Você paga apenas quando os usuários acessam os painéis ou relatórios.</li>
+<li><strong>Integração:</strong> Conecta-se a uma ampla variedade de fontes de dados, incluindo bancos de dados, data warehouses, arquivos e aplicações SaaS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com ferramentas de BI tradicionais:</strong>
+<ul>
+<li><strong>Amazon QuickSight:</strong> Um serviço de BI nativo da nuvem, sem servidor, que oferece escalabilidade, segurança e integração com o ecossistema AWS. É mais acessível e fácil de usar para usuários de negócios, sem a necessidade de gerenciar infraestrutura.</li>
+<li><strong>Ferramentas de BI tradicionais:</strong> Geralmente exigem a instalação e o gerenciamento de software, servidores e bancos de dados, o que pode ser complexo e caro. Podem ter uma curva de aprendizado mais íngreme e serem menos flexíveis para ambientes de nuvem.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-personalize-1">Amazon Personalize<a href="#amazon-personalize-1" class="hash-link" aria-label="Enlace directo al Amazon Personalize" title="Enlace directo al Amazon Personalize">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de machine learning totalmente gerenciado que usa seus dados para gerar recomendações de itens para seus usuários.</li>
+<li><strong>Para que serve:</strong> Criar e implantar rapidamente um mecanismo de recomendação personalizado para seus clientes, sem a necessidade de experiência em machine learning.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Recomendações de produtos para e-commerce (ex: &quot;clientes que compraram X também compraram Y&quot;).</li>
+<li>Recomendações de conteúdo para plataformas de mídia (ex: filmes, artigos, músicas).</li>
+<li>Personalização de experiências de usuário em aplicações web e móveis.</li>
+<li>Sugestão de itens relacionados ou complementares.</li>
+<li>Geração de listas de tendências ou itens populares.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> A AWS cuida da infraestrutura, do treinamento e da implantação dos modelos de ML.</li>
+<li><strong>Modelos personalizados:</strong> Treina modelos de ML usando seus próprios dados de interação do usuário e dados de itens.</li>
+<li><strong>Algoritmos avançados:</strong> Utiliza algoritmos de ML de ponta, incluindo aqueles usados na Amazon.com.</li>
+<li><strong>Tempo real:</strong> Pode gerar recomendações em tempo real.</li>
+<li><strong>Sem experiência em ML:</strong> Não exige conhecimento prévio em machine learning para usar o serviço.</li>
+<li><strong>Integração:</strong> Integra-se com Amazon S3 para entrada de dados e pode ser acessado via APIs.</li>
+</ul>
+</li>
+<li><strong>Comparativo com sistemas de recomendação desenvolvidos internamente:</strong>
+<ul>
+<li><strong>Amazon Personalize:</strong> Reduz significativamente o tempo e o esforço necessários para construir e manter um sistema de recomendação, eliminando a complexidade de gerenciar a infraestrutura de ML, treinar modelos e implantá-los. Oferece um serviço de BI nativo da nuvem, sem servidor, que oferece escalabilidade, segurança e integração com o ecossistema AWS. É mais acessível e fácil de usar para usuários de negócios, sem a necessidade de gerenciar infraestrutura.</li>
+<li><strong>Sistemas de recomendação desenvolvidos internamente:</strong> Exigem uma equipe de cientistas de dados e engenheiros de ML, infraestrutura dedicada e um investimento significativo de tempo e recursos para construir, treinar e manter os modelos. Podem oferecer maior controle e personalização, mas com um custo e complexidade muito maiores.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-lookout-for-metrics-1">Amazon Lookout for Metrics<a href="#amazon-lookout-for-metrics-1" class="hash-link" aria-label="Enlace directo al Amazon Lookout for Metrics" title="Enlace directo al Amazon Lookout for Metrics">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de machine learning que detecta automaticamente anomalias (outliers) em seus dados de negócios e operacionais, e ajuda a determinar suas causas-raiz.</li>
+<li><strong>Para que serve:</strong> Monitorar continuamente o desempenho de negócios e operacionais, identificar variações incomuns em métricas importantes e alertar sobre problemas para que você possa remediá-los rapidamente.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Monitoramento de métricas de vendas e receita para detectar quedas ou picos inesperados.</li>
+<li>Detecção de anomalias em taxas de conversão de websites ou aplicações.</li>
+<li>Monitoramento de métricas de desempenho de aplicações (ex: latência, erros) para identificar problemas.</li>
+<li>Análise de dados de marketing para detectar campanhas com desempenho incomum.</li>
+<li>Identificação de problemas em cadeias de suprimentos ou operações.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Detecção automática de anomalias:</strong> Utiliza machine learning para identificar padrões incomuns nos dados.</li>
+<li><strong>Causa-raiz:</strong> Ajuda a determinar a causa-raiz das anomalias, fornecendo insights acionáveis.</li>
+<li><strong>Totalmente gerenciado:</strong> Não exige experiência em machine learning para usar o serviço.</li>
+<li><strong>Fontes de dados:</strong> Conecta-se a várias fontes de dados, incluindo Amazon S3, Redshift, RDS, e SaaS (Salesforce, Google Analytics).</li>
+<li><strong>Alertas:</strong> Envia alertas para canais como Amazon SNS, AWS Lambda ou PagerDuty.</li>
+<li><strong>Feedback:</strong> Permite fornecer feedback sobre as anomalias detectadas para melhorar a precisão do modelo.</li>
+</ul>
+</li>
+<li><strong>Comparativo com monitoramento tradicional baseado em limites:</strong>
+<ul>
+<li><strong>Amazon Lookout for Metrics:</strong> Utiliza machine learning para detectar anomalias complexas e sutis que podem ser perdidas por limites estáticos. Adapta-se a padrões de dados em constante mudança e reduz falsos positivos, fornecendo insights mais precisos e acionáveis.</li>
+<li><strong>Monitoramento tradicional baseado em limites:</strong> Depende de limites predefinidos que podem ser difíceis de manter e ajustar, especialmente para métricas com padrões sazonais ou tendências. Pode gerar muitos falsos positivos ou perder anomalias importantes que não ultrapassam os limites.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-bedrock-1">Amazon Bedrock<a href="#amazon-bedrock-1" class="hash-link" aria-label="Enlace directo al Amazon Bedrock" title="Enlace directo al Amazon Bedrock">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço totalmente gerenciado que oferece acesso a modelos de base (FMs - Foundation Models) de alto desempenho de empresas de IA líderes, bem como modelos da Amazon, por meio de uma API unificada.</li>
+<li><strong>Para que serve:</strong> Facilitar a construção de aplicações de IA generativa, permitindo que os desenvolvedores experimentem, avaliem e personalizem FMs com seus próprios dados, sem a necessidade de gerenciar a infraestrutura subjacente.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Geração de texto para criação de conteúdo (artigos, e-mails, posts de blog).</li>
+<li>Resumo de documentos e textos longos.</li>
+<li>Geração de código para automação de tarefas de desenvolvimento.</li>
+<li>Criação de chatbots e assistentes virtuais com respostas mais naturais.</li>
+<li>Pesquisa e recuperação de informações em grandes volumes de dados.</li>
+<li>Geração de imagens a partir de descrições de texto.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Acesso a FMs:</strong> Oferece acesso a uma variedade de modelos de base, incluindo modelos de texto, imagem e multimodal.</li>
+<li><strong>API unificada:</strong> Permite interagir com diferentes FMs por meio de uma única API.</li>
+<li><strong>Personalização:</strong> Permite personalizar FMs com seus próprios dados usando técnicas como fine-tuning e RAG (Retrieval Augmented Generation).</li>
+<li><strong>Totalmente gerenciado:</strong> A AWS gerencia a infraestrutura subjacente, permitindo que os desenvolvedores se concentrem na construção de aplicações.</li>
+<li><strong>Segurança e privacidade:</strong> Seus dados permanecem privados e não são usados para treinar os modelos de base.</li>
+<li><strong>Avaliação de modelos:</strong> Ferramentas para avaliar e comparar o desempenho de diferentes FMs para seu caso de uso.</li>
+</ul>
+</li>
+<li><strong>Comparativo com o desenvolvimento de modelos de IA generativa do zero:</strong>
+<ul>
+<li><strong>Amazon Bedrock:</strong> Simplifica e acelera o desenvolvimento de aplicações de IA generativa, fornecendo acesso a FMs pré-treinados e ferramentas para personalização e implantação. Reduz a necessidade de expertise em ML e o tempo de desenvolvimento.</li>
+<li><strong>Desenvolvimento de modelos de IA generativa do zero:</strong> Exige uma equipe de cientistas de dados e engenheiros de ML altamente especializados, grandes volumes de dados de treinamento, infraestrutura de computação intensiva e um investimento significativo de tempo e recursos. É adequado para casos de uso muito específicos que exigem modelos altamente personalizados e proprietários.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="management-and-governance-1">Management and Governance<a href="#management-and-governance-1" class="hash-link" aria-label="Enlace directo al Management and Governance" title="Enlace directo al Management and Governance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-service-catalog-1">AWS Service Catalog<a href="#aws-service-catalog-1" class="hash-link" aria-label="Enlace directo al AWS Service Catalog" title="Enlace directo al AWS Service Catalog">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que permite às organizações criar e gerenciar catálogos de serviços de TI aprovados para uso na AWS.</li>
+<li><strong>Para que serve:</strong> Capacitar os usuários a provisionar os serviços de TI de que precisam, de forma autônoma e em conformidade com os padrões da organização, sem a necessidade de intervenção manual da equipe de TI.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Criação de um catálogo de produtos de TI aprovados (ex: instâncias EC2 pré-configuradas, bancos de dados, ambientes de desenvolvimento).</li>
+<li>Habilitar o autoatendimento para desenvolvedores e usuários de negócios.</li>
+<li>Garantir a conformidade com padrões de segurança e governança.</li>
+<li>Padronizar a implantação de recursos na AWS.</li>
+<li>Gerenciar o ciclo de vida dos produtos de TI.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Catálogo de produtos:</strong> Permite definir e gerenciar produtos (serviços de TI) que os usuários podem provisionar.</li>
+<li><strong>Controle de acesso:</strong> Integra-se com AWS IAM para controlar quem pode provisionar quais produtos.</li>
+<li><strong>Governança:</strong> Ajuda a aplicar políticas de segurança, conformidade e custos.</li>
+<li><strong>Automação:</strong> Automatiza o provisionamento de recursos usando AWS CloudFormation.</li>
+<li><strong>Versões:</strong> Permite gerenciar diferentes versões de um produto.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Organizations, AWS CloudFormation, AWS IAM e outras ferramentas.</li>
+</ul>
+</li>
+<li><strong>Comparativo com provisionamento manual de recursos:</strong>
+<ul>
+<li><strong>AWS Service Catalog:</strong> Automatiza e padroniza o provisionamento de recursos, reduzindo erros, garantindo a conformidade e acelerando o tempo de entrega de serviços de TI. Permite que as equipes de TI se concentrem em tarefas de maior valor, enquanto os usuários podem provisionar recursos de forma autônoma.</li>
+<li><strong>Provisionamento manual de recursos:</strong> Demorado, propenso a erros e pode levar a inconsistências e violações de conformidade. Exige que os administradores provisionem cada recurso manualmente, o que não escala bem em ambientes grandes.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-opsworks-1">AWS OpsWorks<a href="#aws-opsworks-1" class="hash-link" aria-label="Enlace directo al AWS OpsWorks" title="Enlace directo al AWS OpsWorks">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de gerenciamento de configuração que ajuda a configurar e operar aplicações usando Chef ou Puppet.</li>
+<li><strong>Para que serve:</strong> Automatizar tarefas operacionais como configurações de software, instalações de pacotes, configurações de banco de dados e gerenciamento de servidores, tanto na AWS quanto on-premises.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Automação da implantação e configuração de aplicações complexas.</li>
+<li>Gerenciamento do ciclo de vida de servidores e aplicações.</li>
+<li>Escalonamento automático de aplicações com base na carga.</li>
+<li>Implementação de práticas de DevOps para automação de infraestrutura.</li>
+<li>Gerenciamento de ambientes de desenvolvimento, teste e produção.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Baseado em Chef/Puppet:</strong> Utiliza ferramentas populares de automação de configuração.</li>
+<li><strong>Modelagem de aplicações:</strong> Permite modelar sua aplicação como um stack, incluindo camadas de aplicação, banco de dados e balanceamento de carga.</li>
+<li><strong>Automação de tarefas:</strong> Automatiza a instalação de software, configuração de servidores e implantação de código.</li>
+<li><strong>Gerenciamento de instâncias:</strong> Gerencia o ciclo de vida de instâncias EC2 e servidores on-premises.</li>
+<li><strong>Monitoramento:</strong> Integra-se com Amazon CloudWatch para monitoramento de métricas.</li>
+<li><strong>Tipos de OpsWorks:</strong>
+<ul>
+<li><strong>OpsWorks Stacks:</strong> Permite modelar sua aplicação como um stack de camadas, com suporte a Chef Cookbooks.</li>
+<li><strong>OpsWorks for Chef Automate:</strong> Fornece um servidor Chef gerenciado pela AWS.</li>
+<li><strong>OpsWorks for Puppet Enterprise:</strong> Fornece um servidor Puppet gerenciado pela AWS.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Comparativo com AWS CloudFormation:</strong>
+<ul>
+<li><strong>AWS OpsWorks:</strong> Focado no gerenciamento de configuração e automação de tarefas operacionais para aplicações e servidores. É mais adequado para cenários onde você precisa de um controle mais granular sobre a configuração do software e o ciclo de vida da aplicação.</li>
+<li><strong>AWS CloudFormation:</strong> Focado na infraestrutura como código, permitindo que você provisione e gerencie recursos AWS de forma declarativa. É mais adequado para provisionar a infraestrutura subjacente e garantir a consistência do ambiente.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="migration-and-transfer-1">Migration and Transfer<a href="#migration-and-transfer-1" class="hash-link" aria-label="Enlace directo al Migration and Transfer" title="Enlace directo al Migration and Transfer">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-application-discovery-service-1">AWS Application Discovery Service<a href="#aws-application-discovery-service-1" class="hash-link" aria-label="Enlace directo al AWS Application Discovery Service" title="Enlace directo al AWS Application Discovery Service">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda você a planejar sua migração para a nuvem AWS, coletando dados de uso e configuração sobre seus servidores e bancos de dados on-premises.</li>
+<li><strong>Para que serve:</strong> Obter um inventário detalhado de seus recursos on-premises, entender as dependências entre aplicações e servidores, e estimar os custos de migração para a AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Descoberta de servidores e bancos de dados em seu datacenter on-premises.</li>
+<li>Mapeamento de dependências de aplicações para planejar a ordem de migração.</li>
+<li>Coleta de dados de desempenho e utilização para dimensionar corretamente os recursos na AWS.</li>
+<li>Estimativa de custos de migração e operação na nuvem.</li>
+<li>Identificação de aplicações e servidores que são bons candidatos para migração.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Coleta de dados:</strong> Coleta dados de configuração, desempenho e uso de servidores e bancos de dados.</li>
+<li><strong>Agente ou sem agente:</strong> Pode usar um agente leve instalado nos servidores ou uma abordagem sem agente para VMware vCenter.</li>
+<li><strong>Mapeamento de dependências:</strong> Ajuda a visualizar as dependências entre aplicações e servidores.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Migration Hub para centralizar o planejamento e o acompanhamento da migração.</li>
+<li><strong>Relatórios:</strong> Gera relatórios detalhados para auxiliar no planejamento da migração.</li>
+</ul>
+</li>
+<li><strong>Comparativo com inventário manual de datacenter:</strong>
+<ul>
+<li><strong>AWS Application Discovery Service:</strong> Automatiza o processo de coleta de dados e mapeamento de dependências, reduzindo o tempo e o esforço necessários para planejar uma migração. Fornece dados mais precisos e abrangentes, o que leva a um planejamento de migração mais eficaz e a uma redução de riscos.</li>
+<li><strong>Inventário manual de datacenter:</strong> Demorado, propenso a erros e pode não capturar todas as dependências e detalhes necessários para uma migração bem-sucedida. Dificulta a escalabilidade e a precisão do planejamento em ambientes grandes.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="networking-and-content-delivery-1">Networking and Content Delivery<a href="#networking-and-content-delivery-1" class="hash-link" aria-label="Enlace directo al Networking and Content Delivery" title="Enlace directo al Networking and Content Delivery">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-global-accelerator-1">AWS Global Accelerator<a href="#aws-global-accelerator-1" class="hash-link" aria-label="Enlace directo al AWS Global Accelerator" title="Enlace directo al AWS Global Accelerator">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de rede que melhora a disponibilidade e o desempenho de suas aplicações para usuários locais e globais, roteando o tráfego de usuários através da rede global da AWS.</li>
+<li><strong>Para que serve:</strong> Otimizar o desempenho de aplicações que atendem a usuários em diferentes localizações geográficas, direcionando o tráfego para o endpoint de aplicação mais próximo e saudável, e evitando o congestionamento da internet pública.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Melhorar o desempenho de aplicações web e APIs para usuários globais.</li>
+<li>Aumentar a disponibilidade de aplicações, direcionando o tráfego para endpoints saudáveis.</li>
+<li>Balanceamento de carga de tráfego entre regiões AWS.</li>
+<li>Fornecer IPs estáticos de entrada para suas aplicações.</li>
+<li>Cenários de recuperação de desastres, direcionando o tráfego para uma região de backup.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Rede global da AWS:</strong> Utiliza a rede de borda global da AWS para rotear o tráfego, minimizando a latência.</li>
+<li><strong>IPs estáticos:</strong> Fornece dois endereços IP estáticos que atuam como um ponto de entrada fixo para suas aplicações.</li>
+<li><strong>Verificações de saúde:</strong> Monitora continuamente a saúde dos endpoints e direciona o tráfego apenas para endpoints saudáveis.</li>
+<li><strong>Balanceamento de carga:</strong> Distribui o tráfego entre endpoints em uma ou várias regiões.</li>
+<li><strong>Aceleração de tráfego:</strong> Pode melhorar o desempenho em até 60% para usuários globais.</li>
+<li><strong>Integração:</strong> Integra-se com Elastic Load Balancing, instâncias EC2 e outros recursos AWS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com Amazon CloudFront:</strong>
+<ul>
+<li><strong>AWS Global Accelerator:</strong> Opera na camada de rede (camada 3 e 4 do modelo OSI) e otimiza o roteamento do tráfego para aplicações dinâmicas e não-cacheáveis, como APIs e aplicações web interativas. Foca em melhorar a disponibilidade e o desempenho global da aplicação.</li>
+<li><strong>Amazon CloudFront:</strong> É uma CDN (Content Delivery Network) que opera na camada de aplicação (camada 7 do modelo OSI) e é otimizada para entregar conteúdo estático e cacheável (imagens, vídeos, arquivos HTML) para usuários finais com baixa latência. Foca em acelerar a entrega de conteúdo.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-network-firewall-1">AWS Network Firewall<a href="#aws-network-firewall-1" class="hash-link" aria-label="Enlace directo al AWS Network Firewall" title="Enlace directo al AWS Network Firewall">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de firewall de rede gerenciado e com estado que facilita a implantação de proteção de rede para suas Amazon Virtual Private Clouds (VPCs).</li>
+<li><strong>Para que serve:</strong> Proteger suas VPCs contra ameaças de rede, permitindo que você filtre o tráfego de entrada e saída com base em regras personalizadas, incluindo inspeção de tráfego, prevenção de intrusões e filtragem de URLs.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Inspeção de tráfego de internet de entrada para proteger aplicações web.</li>
+<li>Filtragem de tráfego de saída para controlar o acesso a destinos externos.</li>
+<li>Prevenção de intrusões e detecção de malware.</li>
+<li>Proteção de conexões AWS Direct Connect e VPN.</li>
+<li>Implementação de políticas de segurança de rede em escala.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> A AWS cuida da infraestrutura subjacente do firewall.</li>
+<li><strong>Com estado:</strong> Mantém o estado das conexões para permitir inspeção de tráfego bidirecional.</li>
+<li><strong>Escalabilidade automática:</strong> Escala automaticamente para lidar com picos de tráfego.</li>
+<li><strong>Regras flexíveis:</strong> Permite criar regras personalizadas usando Suricata-compatible rules (IDS/IPS) e filtragem de URLs.</li>
+<li><strong>Alta disponibilidade:</strong> Implantado em várias Zonas de Disponibilidade para alta disponibilidade.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Firewall Manager, Amazon CloudWatch e AWS Security Hub.</li>
+</ul>
+</li>
+<li><strong>Comparativo com Network ACLs e Security Groups:</strong>
+<ul>
+<li><strong>AWS Network Firewall:</strong> Oferece uma camada de proteção de rede mais avançada e centralizada para suas VPCs, com recursos de inspeção de tráfego com estado, prevenção de intrusões e filtragem de URLs. É ideal para implementar políticas de segurança de rede complexas e em escala.</li>
+<li><strong>Network ACLs (Access Control Lists):</strong> Operam na camada de rede (sem estado) e fornecem controle de tráfego básico em nível de sub-rede. São úteis para filtrar tráfego permitido ou negado, mas não oferecem inspeção de tráfego com estado ou recursos avançados de segurança.</li>
+<li><strong>Security Groups:</strong> Operam na camada de instância (com estado) e controlam o tráfego de entrada e saída para instâncias EC2. São essenciais para proteger instâncias individuais, mas não fornecem uma visão centralizada ou recursos de firewall de rede para toda a VPC.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="storage-1">Storage<a href="#storage-1" class="hash-link" aria-label="Enlace directo al Storage" title="Enlace directo al Storage">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-s3-glacier-deep-archive-1">Amazon S3 Glacier Deep Archive<a href="#amazon-s3-glacier-deep-archive-1" class="hash-link" aria-label="Enlace directo al Amazon S3 Glacier Deep Archive" title="Enlace directo al Amazon S3 Glacier Deep Archive">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma classe de armazenamento do Amazon S3 projetada para arquivamento de dados de longo prazo e de custo mais baixo, com tempos de recuperação de horas.</li>
+<li><strong>Para que serve:</strong> Armazenar dados que são acessados raramente (uma ou duas vezes por ano, ou menos) e que podem tolerar um tempo de recuperação de algumas horas, oferecendo o menor custo de armazenamento na AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Arquivamento de dados regulatórios e de conformidade que precisam ser retidos por anos ou décadas.</li>
+<li>Backup de dados de longo prazo para recuperação de desastres.</li>
+<li>Armazenamento de arquivos de mídia (vídeos, áudios) que não são acessados com frequência.</li>
+<li>Preservação de dados históricos para fins de auditoria ou análise futura.</li>
+<li>Substituição de fitas magnéticas e outras soluções de arquivamento on-premises.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Custo mais baixo:</strong> Oferece o menor custo de armazenamento por GB na AWS.</li>
+<li><strong>Durabilidade:</strong> Projetado para 99.999999999% (11 noves) de durabilidade dos objetos.</li>
+<li><strong>Tempos de recuperação:</strong> Recuperação padrão em 12 horas, recuperação em massa em 48 horas.</li>
+<li><strong>Segurança:</strong> Criptografia de dados em repouso e em trânsito.</li>
+<li><strong>Integração:</strong> Acessível via API do S3, S3 Lifecycle policies e S3 Batch Operations.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outras classes de armazenamento S3 Glacier:</strong>
+<ul>
+<li><strong>Amazon S3 Glacier Deep Archive:</strong> Ideal para dados que são acessados com pouca frequência (uma ou duas vezes por ano, ou menos) e que podem tolerar tempos de recuperação de horas. Oferece o menor custo.</li>
+<li><strong>Amazon S3 Glacier Flexible Retrieval (anteriormente S3 Glacier):</strong> Para dados que são acessados com menos frequência (uma vez por trimestre ou ano) e que podem tolerar tempos de recuperação de minutos a horas. Oferece opções de recuperação mais rápidas e flexíveis do que o Deep Archive.</li>
+<li><strong>Amazon S3 Glacier Instant Retrieval:</strong> Para dados que são acessados uma vez por trimestre e que exigem recuperação em milissegundos. Oferece o menor custo para acesso instantâneo de dados de arquivo.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-s3-storage-lens-1">Amazon S3 Storage Lens<a href="#amazon-s3-storage-lens-1" class="hash-link" aria-label="Enlace directo al Amazon S3 Storage Lens" title="Enlace directo al Amazon S3 Storage Lens">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um recurso de análise de armazenamento em nuvem que oferece visibilidade em toda a organização sobre o uso e a atividade do armazenamento de objetos no Amazon S3.</li>
+<li><strong>Para que serve:</strong> Ajudar você a entender, analisar e otimizar seus custos e desempenho de armazenamento no S3, identificando tendências, sinalizando discrepâncias e fornecendo recomendações acionáveis.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Monitoramento do uso de armazenamento em todas as contas e buckets S3.</li>
+<li>Identificação de buckets com alto crescimento de dados ou baixa utilização.</li>
+<li>Otimização de custos de armazenamento, identificando dados que podem ser movidos para classes de armazenamento mais baratas.</li>
+<li>Detecção de anomalias no uso ou atividade do S3.</li>
+<li>Geração de relatórios de auditoria e conformidade sobre o uso do S3.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Visibilidade em toda a organização:</strong> Agrega métricas de uso e atividade de todos os buckets e contas S3.</li>
+<li><strong>Painel interativo:</strong> Fornece um painel visual para explorar métricas e tendências.</li>
+<li><strong>Métricas detalhadas:</strong> Oferece mais de 60 métricas de uso e atividade, incluindo tamanho do bucket, número de objetos, solicitações, etc.</li>
+<li><strong>Recomendações:</strong> Fornece recomendações para otimizar custos e melhorar o desempenho.</li>
+<li><strong>Detecção de anomalias:</strong> Ajuda a identificar padrões incomuns no uso do S3.</li>
+<li><strong>Exportação de dados:</strong> Permite exportar dados de métricas para análise posterior.</li>
+</ul>
+</li>
+<li><strong>Comparativo com monitoramento manual de S3:</strong>
+<ul>
+<li><strong>Amazon S3 Storage Lens:</strong> Automatiza a coleta e a análise de métricas de uso e atividade do S3 em escala, fornecendo uma visão abrangente e insights acionáveis para otimização. Reduz o esforço manual e a complexidade de gerenciar grandes volumes de dados no S3.</li>
+<li><strong>Monitoramento manual de S3:</strong> Demorado e propenso a erros, especialmente para ambientes com muitos buckets e contas. Dificulta a identificação proativa de riscos de segurança e a otimização de custos.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-1">Security<a href="#security-1" class="hash-link" aria-label="Enlace directo al Security" title="Enlace directo al Security">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-control-tower-1">AWS Control Tower<a href="#aws-control-tower-1" class="hash-link" aria-label="Enlace directo al AWS Control Tower" title="Enlace directo al AWS Control Tower">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que automatiza a configuração e a governança de um ambiente AWS multi-contas seguro e em conformidade, conhecido como landing zone.</li>
+<li><strong>Para que serve:</strong> Simplificar a configuração de um ambiente AWS bem arquitetado e governado, aplicando as melhores práticas de segurança, conformidade e operações em escala.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Configuração rápida de um ambiente AWS multi-contas seguro e em conformidade.</li>
+<li>Aplicação de políticas de governança e guardrails para garantir a conformidade.</li>
+<li>Provisionamento de novas contas AWS de forma padronizada e segura.</li>
+<li>Monitoramento contínuo da conformidade e detecção de desvios.</li>
+<li>Gerenciamento centralizado de identidades e acessos.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Landing Zone:</strong> Configura uma landing zone segura e em conformidade com as melhores práticas da AWS.</li>
+<li><strong>Guardrails:</strong> Aplica guardrails preventivos e de detecção para impor políticas de governança.</li>
+<li><strong>Provisionamento de contas:</strong> Permite provisionar novas contas AWS de forma automatizada e padronizada.</li>
+<li><strong>Painel de controle:</strong> Fornece um painel centralizado para monitorar a conformidade e o status do ambiente.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Organizations, AWS IAM Identity Center (SSO), AWS CloudTrail, AWS Config e outros serviços.</li>
+</ul>
+</li>
+<li><strong>Comparativo com configuração manual de ambiente multi-contas:</strong>
+<ul>
+<li><strong>AWS Control Tower:</strong> Automatiza e padroniza a configuração de um ambiente AWS multi-contas, reduzindo a complexidade, o tempo e o risco de erros. Garante que o ambiente esteja em conformidade com as melhores práticas de segurança e governança desde o início.</li>
+<li><strong>Configuração manual de ambiente multi-contas:</strong> Demorada, complexa e propensa a erros, especialmente em ambientes grandes. Exige que os administradores configurem manualmente cada conta e apliquem políticas de segurança e governança, o que pode levar a inconsistências e vulnerabilidades.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-detective-1">Amazon Detective<a href="#amazon-detective-1" class="hash-link" aria-label="Enlace directo al Amazon Detective" title="Enlace directo al Amazon Detective">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que coleta automaticamente dados de log de seus recursos AWS e usa machine learning, análise de gráficos e estatísticas para construir um conjunto de dados unificado e interativo, facilitando a análise, investigação e identificação da causa raiz de descobertas de segurança ou atividades suspeitas.</li>
+<li><strong>Para que serve:</strong> Simplificar e acelerar as investigações de segurança, fornecendo uma visão consolidada e contextualizada de atividades suspeitas, como tentativas de acesso não autorizado, uso de credenciais comprometidas ou comportamento incomum de instâncias.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Investigação de descobertas de segurança do AWS Security Hub ou Amazon GuardDuty.</li>
+<li>Análise de atividades de usuários e funções do IAM para identificar comportamentos anômalos.</li>
+<li>Rastreamento de atividades de rede e chamadas de API para entender a sequência de eventos de um incidente.</li>
+<li>Identificação da causa raiz de incidentes de segurança.</li>
+<li>Melhoria da postura de segurança através da compreensão de padrões de ataque.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Gráfico de comportamento:</strong> Constrói um gráfico de comportamento que resume as interações entre usuários, funções, instâncias e recursos ao longo do tempo.</li>
+<li><strong>Coleta automática de dados:</strong> Coleta dados de log de serviços como AWS CloudTrail, Amazon VPC Flow Logs e Amazon GuardDuty.</li>
+<li><strong>Machine Learning:</strong> Utiliza ML para identificar padrões de comportamento normais e anômalos.</li>
+<li><strong>Visualizações interativas:</strong> Fornece visualizações interativas para explorar as relações entre entidades e eventos.</li>
+<li><strong>Totalmente gerenciado:</strong> Não há infraestrutura para provisionar ou gerenciar.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Security Hub e Amazon GuardDuty.</li>
+</ul>
+</li>
+<li><strong>Comparativo com análise manual de logs:</strong>
+<ul>
+<li><strong>Amazon Detective:</strong> Automatiza a coleta e a correlação de dados de log de várias fontes, construindo um gráfico de comportamento que facilita a investigação de segurança. Reduz o tempo e o esforço necessários para analisar grandes volumes de logs e identificar a causa raiz de incidentes.</li>
+<li><strong>Análise manual de logs:</strong> Demorada, complexa e exige conhecimento especializado para correlacionar eventos de diferentes fontes. Pode ser difícil identificar padrões e relações em grandes volumes de dados, o que pode atrasar a resposta a incidentes de segurança.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-iam-identity-center-antigo-aws-sso-1">AWS IAM Identity Center (antigo AWS SSO)<a href="#aws-iam-identity-center-antigo-aws-sso-1" class="hash-link" aria-label="Enlace directo al AWS IAM Identity Center (antigo AWS SSO)" title="Enlace directo al AWS IAM Identity Center (antigo AWS SSO)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de nuvem que facilita o gerenciamento centralizado do acesso de usuários a várias contas e aplicações AWS, bem como a aplicações de terceiros.</li>
+<li><strong>Para que serve:</strong> Simplificar o gerenciamento de identidades e acessos em um ambiente AWS multi-contas, permitindo que os usuários acessem todos os seus recursos AWS com um único conjunto de credenciais.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Gerenciamento centralizado de usuários e grupos para acesso a todas as contas AWS em uma organização.</li>
+<li>Habilitar o Single Sign-On (SSO) para aplicações AWS (ex: Console de Gerenciamento AWS, Amazon S3) e aplicações de terceiros (ex: Salesforce, Microsoft 365).</li>
+<li>Provisionamento automático de usuários e grupos de diretórios externos (ex: Active Directory, Okta).</li>
+<li>Atribuir permissões granulares a usuários e grupos em várias contas AWS.</li>
+<li>Simplificar a experiência de login para usuários da força de trabalho.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Gerenciamento centralizado:</strong> Crie ou conecte suas identidades de força de trabalho e gerencie o acesso centralmente.</li>
+<li><strong>Single Sign-On (SSO):</strong> Permite que os usuários façam login uma vez e acessem várias contas e aplicações.</li>
+<li><strong>Integração com diretórios:</strong> Sincroniza usuários e grupos de diretórios externos como AWS Directory Service for Microsoft Active Directory, Okta Universal Directory, Azure AD, etc.</li>
+<li><strong>Permissões granulares:</strong> Atribua permissões baseadas em funções a usuários e grupos em contas AWS.</li>
+<li><strong>Aplicações AWS e de terceiros:</strong> Suporta acesso a uma ampla gama de aplicações.</li>
+<li><strong>Totalmente gerenciado:</strong> A AWS cuida da infraestrutura subjacente do serviço de identidade.</li>
+</ul>
+</li>
+<li><strong>Comparativo com AWS IAM (Identity and Access Management):</strong>
+<ul>
+<li><strong>AWS IAM Identity Center:</strong> Focado no gerenciamento de identidades da força de trabalho e no SSO para acesso a múltiplas contas e aplicações AWS. Simplifica a experiência do usuário e o gerenciamento de acesso em ambientes multi-contas.</li>
+<li><strong>AWS IAM:</strong> Focado no gerenciamento de permissões para entidades (usuários, grupos, funções) dentro de uma única conta AWS. É a base para o controle de acesso na AWS, mas não oferece SSO nativo para múltiplas contas ou aplicações de terceiros.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-access-analyzer-1">AWS Access Analyzer<a href="#aws-access-analyzer-1" class="hash-link" aria-label="Enlace directo al AWS Access Analyzer" title="Enlace directo al AWS Access Analyzer">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda você a identificar os recursos em sua organização e suas contas, como buckets do Amazon S3 ou funções do IAM, que são compartilhados com uma entidade externa.</li>
+<li><strong>Para que serve:</strong> Aumentar a segurança de seus recursos AWS, identificando acessos não intencionais e potenciais riscos de segurança decorrentes de configurações de permissões excessivamente permissivas.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Identificar buckets S3 que estão publicamente acessíveis ou compartilhados com contas externas.</li>
+<li>Detectar funções do IAM que podem ser assumidas por entidades fora da sua organização.</li>
+<li>Revisar políticas baseadas em recursos para garantir que apenas as entidades autorizadas tenham acesso.</li>
+<li>Ajudar a implementar o princípio do privilégio mínimo.</li>
+<li>Monitorar continuamente o acesso externo aos seus recursos.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Análise de acesso externo:</strong> Analisa políticas baseadas em recursos para identificar acesso externo.</li>
+<li><strong>Tipos de recursos:</strong> Suporta S3 buckets, funções SQS, tópicos SNS, chaves KMS, entre outros.</li>
+<li><strong>Resultados acionáveis:</strong> Fornece descobertas detalhadas sobre o acesso externo e recomendações para correção.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Security Hub para agregar descobertas de segurança.</li>
+<li><strong>Totalmente gerenciado:</strong> Não há infraestrutura para provisionar ou gerenciar.</li>
+<li><strong>Análise contínua:</strong> Monitora continuamente as políticas para novas descobertas.</li>
+</ul>
+</li>
+<li><strong>Comparativo com auditorias manuais de políticas:</strong>
+<ul>
+<li><strong>AWS Access Analyzer:</strong> Automatiza a coleta e a análise de métricas de uso e atividade do S3 em escala, fornecendo uma visão abrangente e insights acionáveis para otimização. Reduz o esforço manual e a complexidade de gerenciar grandes volumes de dados no S3.</li>
+<li><strong>Auditorias manuais de políticas:</strong> Demoradas, propensas a erros e podem não cobrir todas as políticas e recursos em um ambiente grande. Dificulta a identificação proativa de riscos de segurança e a manutenção da conformidade.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hybrid-1">Hybrid<a href="#hybrid-1" class="hash-link" aria-label="Enlace directo al Hybrid" title="Enlace directo al Hybrid">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-local-zones-1">AWS Local Zones<a href="#aws-local-zones-1" class="hash-link" aria-label="Enlace directo al AWS Local Zones" title="Enlace directo al AWS Local Zones">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um tipo de infraestrutura AWS que estende os serviços AWS para mais locais, permitindo que você execute aplicações sensíveis à latência mais perto dos usuários finais e dos datacenters on-premises.</li>
+<li><strong>Para que serve:</strong> Atender a requisitos de baixa latência para aplicações que precisam estar fisicamente próximas aos usuários ou a recursos on-premises, sem a necessidade de operar um datacenter próprio.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Aplicações de jogos online que exigem latência ultrabaixa.</li>
+<li>Transmissão de vídeo ao vivo e processamento de mídia.</li>
+<li>Aplicações de realidade virtual e aumentada.</li>
+<li>Aplicações industriais e de manufatura que exigem processamento de dados em tempo real.</li>
+<li>Extensão de datacenters on-premises para a nuvem com baixa latência.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Extensão de região:</strong> Estende uma região AWS para uma localização geográfica mais próxima dos usuários.</li>
+<li><strong>Baixa latência:</strong> Permite executar recursos de computação e armazenamento com latência de milissegundos de um dígito.</li>
+<li><strong>Serviços AWS selecionados:</strong> Oferece um subconjunto de serviços AWS, como EC2, EBS, VPC, e outros, mais próximos dos usuários.</li>
+<li><strong>Conectividade:</strong> Conecta-se perfeitamente à região AWS principal, permitindo acesso a todos os serviços da região.</li>
+<li><strong>Gerenciamento unificado:</strong> Gerencie recursos em Local Zones da mesma forma que gerencia recursos em uma região AWS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com regiões AWS e Zonas de Disponibilidade:</strong>
+<ul>
+<li><strong>AWS Local Zones:</strong> Projetadas para estender a nuvem AWS para locais específicos onde a latência é crítica, oferecendo um subconjunto de serviços AWS mais próximos dos usuários finais ou datacenters on-premises. Ideal para cargas de trabalho que exigem latência ultrabaixa.</li>
+<li><strong>Regiões AWS:</strong> São áreas geográficas isoladas onde a AWS hospeda seus datacenters. Cada região é composta por várias Zonas de Disponibilidade.</li>
+<li><strong>Zonas de Disponibilidade (AZs):</strong> São locais fisicamente separados e isolados dentro de uma região AWS, projetados para fornecer alta disponibilidade e tolerância a falhas. As AZs estão conectadas por redes de baixa latência.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-wavelength-1">AWS Wavelength<a href="#aws-wavelength-1" class="hash-link" aria-label="Enlace directo al AWS Wavelength" title="Enlace directo al AWS Wavelength">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma infraestrutura da AWS que incorpora serviços de computação e armazenamento da AWS nas redes 5G das operadoras de telecomunicações, permitindo que os desenvolvedores criem aplicações que oferecem latência ultrabaixa para dispositivos móveis e usuários finais.</li>
+<li><strong>Para que serve:</strong> Habilitar casos de uso de borda que exigem latência de milissegundos de um dígito para usuários móveis e dispositivos conectados ao 5G, como aplicações de jogos, streaming de vídeo em tempo real e IoT industrial.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Jogos online e e-sports com requisitos de latência extremamente baixos.</li>
+<li>Streaming de vídeo em tempo real e processamento de mídia na borda da rede.</li>
+<li>Aplicações de realidade aumentada e virtual para dispositivos móveis.</li>
+<li>IoT industrial e robótica que exigem processamento de dados em tempo real.</li>
+<li>Veículos autônomos e drones que precisam de respostas rápidas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Computação na borda 5G:</strong> Estende a infraestrutura AWS para a borda da rede 5G das operadoras.</li>
+<li><strong>Latência ultrabaixa:</strong> Permite que as aplicações alcancem latência de milissegundos de um dígito para usuários móveis.</li>
+<li><strong>Serviços AWS familiares:</strong> Permite usar serviços AWS como EC2, EBS e VPC em Wavelength Zones.</li>
+<li><strong>Integração com redes 5G:</strong> Conecta-se diretamente à rede 5G da operadora, minimizando o tráfego pela internet pública.</li>
+<li><strong>Gerenciamento unificado:</strong> Gerencie recursos em Wavelength Zones da mesma forma que gerencia recursos em uma região AWS.</li>
+</ul>
+</li>
+<li><strong>Comparativo com AWS Local Zones:</strong>
+<ul>
+<li><strong>AWS Wavelength:</strong> Focado em estender a nuvem AWS para a borda da rede 5G das operadoras de telecomunicações, visando aplicações que exigem latência ultrabaixa para dispositivos móveis e usuários finais conectados ao 5G. Ideal para casos de uso de borda móvel.</li>
+<li><strong>AWS Local Zones:</strong> Estende a nuvem AWS para locais mais próximos de grandes centros populacionais ou datacenters on-premises, visando aplicações que exigem baixa latência para usuários em geral ou para estender ambientes híbridos. Não está intrinsecamente ligada à rede 5G.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai--generative-1">AI / Generative<a href="#ai--generative-1" class="hash-link" aria-label="Enlace directo al AI / Generative" title="Enlace directo al AI / Generative">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-q-1">Amazon Q<a href="#amazon-q-1" class="hash-link" aria-label="Enlace directo al Amazon Q" title="Enlace directo al Amazon Q">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um assistente de IA generativa desenvolvido pela AWS, projetado para ajudar desenvolvedores e usuários de negócios a entender, criar, estender e operar aplicações e cargas de trabalho na AWS.</li>
+<li><strong>Para que serve:</strong> Acelerar tarefas de desenvolvimento, responder a perguntas, gerar conteúdo, resumir dados e resolver problemas, atuando como um assistente inteligente em diversas funções de negócios.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Geração de código e depuração para desenvolvedores.</li>
+<li>Respostas a perguntas sobre documentação da AWS e melhores práticas.</li>
+<li>Geração de conteúdo para marketing e comunicação.</li>
+<li>Automação de fluxos de trabalho complexos.</li>
+<li>Extração de insights de grandes volumes de dados.</li>
+<li>Assistência na solução de problemas e otimização de recursos AWS.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Assistente de IA generativa:</strong> Utiliza modelos de linguagem grandes para interações conversacionais.</li>
+<li><strong>Focado na AWS:</strong> Especializado em conhecimento sobre a AWS, seus serviços e melhores práticas.</li>
+<li><strong>Para desenvolvedores e negócios:</strong> Atende a uma ampla gama de usuários, desde desenvolvedores até funcionários de negócios.</li>
+<li><strong>Integração:</strong> Integra-se com o Console de Gerenciamento AWS, IDEs (como VS Code e IntelliJ IDEA) e outras ferramentas.</li>
+<li><strong>Segurança e privacidade:</strong> Projetado com segurança e privacidade em mente, mantendo os dados do cliente privados.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outros assistentes de IA genéricos:</strong>
+<ul>
+<li><strong>Amazon Q:</strong> É otimizado para o ecossistema AWS, fornecendo respostas e sugestões mais precisas e relevantes para tarefas relacionadas à AWS. Atua como um especialista em AWS, acelerando o desenvolvimento e a operação na plataforma.</li>
+<li><strong>Assistentes de IA genéricos:</strong> Embora possam responder a uma ampla gama de perguntas, podem não ter a profundidade de conhecimento ou a especificidade necessária para tarefas complexas relacionadas à AWS, exigindo mais contexto ou pesquisa adicional.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="claude-via-amazon-bedrock-1">Claude (via Amazon Bedrock)<a href="#claude-via-amazon-bedrock-1" class="hash-link" aria-label="Enlace directo al Claude (via Amazon Bedrock)" title="Enlace directo al Claude (via Amazon Bedrock)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma família de modelos de linguagem grandes (LLMs) desenvolvida pela Anthropic, disponível através do Amazon Bedrock. Esses modelos são projetados para serem úteis, inofensivos, honestos e úteis (HHH).</li>
+<li><strong>Para que serve:</strong> Gerar texto, resumir informações, responder a perguntas, criar conteúdo criativo, auxiliar na codificação e realizar raciocínio complexo em diversas aplicações de IA generativa.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Criação de chatbots e assistentes virtuais conversacionais.</li>
+<li>Geração de conteúdo para marketing, vendas e comunicação.</li>
+<li>Resumo de documentos longos e extração de informações-chave.</li>
+<li>Auxílio na codificação, depuração e geração de código.</li>
+<li>Análise de sentimentos e classificação de texto.</li>
+<li>Criação de experiências de cliente personalizadas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Modelos de linguagem grandes:</strong> Oferece diferentes versões (ex: Claude 3 Opus, Sonnet, Haiku) com capacidades variadas para diferentes necessidades.</li>
+<li><strong>Disponível via Amazon Bedrock:</strong> Acessível como um modelo de base totalmente gerenciado, sem a necessidade de gerenciar a infraestrutura subjacente.</li>
+<li><strong>Segurança e ética:</strong> Projetado com foco em ser útil, inofensivo, honesto e útil (HHH).</li>
+<li><strong>Capacidades de raciocínio:</strong> Demonstra forte desempenho em raciocínio, matemática e codificação.</li>
+<li><strong>Contexto estendido:</strong> Suporta janelas de contexto grandes, permitindo processar e gerar textos mais longos.</li>
+<li><strong>Integração:</strong> Pode ser facilmente integrado em aplicações AWS através do Amazon Bedrock.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outros LLMs disponíveis no Amazon Bedrock:</strong>
+<ul>
+<li><strong>Claude:</strong> Destaca-se por seu foco em segurança, ética e capacidades de raciocínio avançadas, sendo uma boa escolha para aplicações que exigem alta confiabilidade e interações conversacionais complexas. Oferece diferentes modelos para otimizar custo e desempenho.</li>
+<li><strong>Outros LLMs (ex: Amazon Titan, Llama 2):</strong> Cada modelo tem suas próprias forças e casos de uso ideais. A escolha depende dos requisitos específicos da aplicação, como custo, desempenho, tamanho do modelo e capacidades específicas (ex: geração de imagem, incorporações).</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-titan-via-amazon-bedrock-1">Amazon Titan (via Amazon Bedrock)<a href="#amazon-titan-via-amazon-bedrock-1" class="hash-link" aria-label="Enlace directo al Amazon Titan (via Amazon Bedrock)" title="Enlace directo al Amazon Titan (via Amazon Bedrock)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma família de modelos de base (FMs) desenvolvida pela AWS, disponível através do Amazon Bedrock. Inclui modelos para geração de texto (Titan Text) e incorporações de texto (Titan Embeddings).</li>
+<li><strong>Para que serve:</strong> Capacitar uma ampla variedade de casos de uso de IA generativa, desde a geração de conteúdo e resumo de texto até a pesquisa semântica e personalização, aproveitando modelos pré-treinados pela AWS.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li><strong>Titan Text:</strong>
+<ul>
+<li>Geração de artigos, posts de blog, e-mails e outros conteúdos textuais.</li>
+<li>Resumo de documentos e extração de informações-chave.</li>
+<li>Geração de código e assistência na programação.</li>
+<li>Criação de chatbots e assistentes virtuais.</li>
+<li>Brainstorming e geração de ideias.</li>
+</ul>
+</li>
+<li><strong>Titan Embeddings:</strong>
+<ul>
+<li>Pesquisa semântica e recomendação de conteúdo.</li>
+<li>Personalização e agrupamento de dados.</li>
+<li>Detecção de anomalias e moderação de conteúdo.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Modelos de base da AWS:</strong> Desenvolvidos e pré-treinados pela AWS em grandes conjuntos de dados.</li>
+<li><strong>Disponível via Amazon Bedrock:</strong> Acessível como modelos de base totalmente gerenciados.</li>
+<li><strong>Versatilidade:</strong> Oferece modelos para diferentes tarefas, como geração de texto e criação de incorporações.</li>
+<li><strong>Segurança e responsabilidade:</strong> Projetado com foco em IA responsável.</li>
+<li><strong>Personalização:</strong> Pode ser personalizado com seus próprios dados para melhorar a relevância para casos de uso específicos.</li>
+<li><strong>Integração:</strong> Facilmente integrado em aplicações AWS através do Amazon Bedrock.</li>
+</ul>
+</li>
+<li><strong>Comparativo com outros LLMs/FMs:</strong>
+<ul>
+<li><strong>Amazon Titan:</strong> Oferece uma solução robusta e versátil para uma ampla gama de casos de uso de IA generativa, com a vantagem de ser desenvolvido pela própria AWS e otimizado para integração com outros serviços AWS. Os modelos Titan Text são ideais para tarefas de geração de texto, enquanto os Titan Embeddings são excelentes para casos de uso que envolvem pesquisa semântica e personalização.</li>
+<li><strong>Outros LLMs/FMs (ex: Claude, Llama 2):</strong> Cada modelo tem suas próprias características e pontos fortes. A escolha depende das necessidades específicas do projeto, como o tipo de tarefa (geração de texto, imagem, incorporações), o desempenho desejado, o custo e a preferência por modelos de diferentes provedores.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-sts-security-token-service">AWS STS (Security Token Service)<a href="#aws-sts-security-token-service" class="hash-link" aria-label="Enlace directo al AWS STS (Security Token Service)" title="Enlace directo al AWS STS (Security Token Service)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço web que permite solicitar credenciais de segurança temporárias e com privilégios limitados para usuários da AWS.</li>
+<li><strong>Para que serve:</strong> Conceder acesso temporário e seguro aos recursos da AWS sem a necessidade de credenciais de longo prazo, melhorando a segurança e a flexibilidade.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li><strong>Acesso entre contas (Cross-Account Access):</strong> Permitir que usuários de uma conta acessem recursos em outra conta AWS.</li>
+<li><strong>Acesso federado:</strong> Integrar diretórios corporativos (como Active Directory) com a AWS, permitindo que os usuários usem suas credenciais existentes para acessar recursos da AWS.</li>
+<li><strong>Aplicações móveis e web:</strong> Fornecer credenciais temporárias para aplicações que precisam acessar recursos da AWS em nome de usuários finais.</li>
+<li><strong>Acesso a recursos on-premises:</strong> Permitir que aplicações ou serviços on-premises acessem recursos da AWS de forma segura.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Credenciais temporárias:</strong> Gera chaves de acesso, chaves secretas e tokens de sessão que expiram após um período definido.</li>
+<li><strong>Segurança aprimorada:</strong> Reduz o risco de credenciais de longo prazo serem comprometidas.</li>
+<li><strong>Controle de acesso granular:</strong> As credenciais temporárias podem ser associadas a políticas de IAM para conceder apenas os privilégios necessários.</li>
+<li><strong>Integração:</strong> Funciona com IAM e outros serviços AWS para autenticação e autorização.</li>
+<li><strong>Roles (Funções):</strong> O principal mecanismo para conceder credenciais temporárias, permitindo que entidades assumam permissões específicas.</li>
+</ul>
+</li>
+<li><strong>Comparativo com credenciais de longo prazo (chaves de acesso IAM):</strong>
+<ul>
+<li><strong>AWS STS:</strong> Oferece credenciais temporárias que expiram automaticamente, reduzindo a superfície de ataque e a necessidade de rotação manual de credenciais. Ideal para acesso programático e cenários onde o acesso de longo prazo não é necessário.</li>
+<li><strong>Credenciais de longo prazo (chaves de acesso IAM):</strong> São credenciais permanentes que precisam ser gerenciadas e rotacionadas manualmente para manter a segurança. Mais adequadas para usuários administrativos ou aplicações que exigem acesso contínuo e ininterrupto.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-iam-access-analyzer">AWS IAM Access Analyzer<a href="#aws-iam-access-analyzer" class="hash-link" aria-label="Enlace directo al AWS IAM Access Analyzer" title="Enlace directo al AWS IAM Access Analyzer">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda a identificar recursos em sua organização e contas AWS, como buckets do Amazon S3 ou funções do IAM, que são compartilhados com uma entidade externa.</li>
+<li><strong>Para que serve:</strong> Aumentar a segurança ao identificar acessos não intencionais ou não autorizados a seus recursos, auxiliando na implementação do princípio do privilégio mínimo.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Identificar buckets S3 acessíveis publicamente ou por outras contas.</li>
+<li>Encontrar funções IAM que podem ser assumidas por entidades externas.</li>
+<li>Auditar políticas de acesso para garantir conformidade e segurança.</li>
+<li>Gerar políticas de IAM com base na atividade de acesso real para refinar permissões.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Análise contínua:</strong> Monitora continuamente as políticas de acesso para identificar descobertas de acesso externo.</li>
+<li><strong>Descobertas:</strong> Gera descobertas quando um recurso é acessível por uma entidade externa à sua zona de confiança.</li>
+<li><strong>Privilégio mínimo:</strong> Ajuda a refinar permissões para conceder apenas o acesso necessário.</li>
+<li><strong>Integração:</strong> Integra-se com AWS Organizations para análise em várias contas.</li>
+<li><strong>Geração de políticas:</strong> Pode gerar políticas de IAM com base no uso real para simplificar a criação de políticas seguras.</li>
+</ul>
+</li>
+<li><strong>Comparativo com auditoria manual de políticas:</strong>
+<ul>
+<li><strong>AWS IAM Access Analyzer:</strong> Automatiza a identificação de acessos externos, o que seria extremamente difícil e propenso a erros em uma auditoria manual, especialmente em ambientes grandes e complexos. Fornece insights contínuos e acionáveis.</li>
+<li><strong>Auditoria manual de políticas:</strong> Demorada, exige conhecimento profundo das políticas de IAM e pode facilmente perder configurações de acesso complexas ou não intencionais. Não oferece monitoramento contínuo.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-secrets-manager">AWS Secrets Manager<a href="#aws-secrets-manager" class="hash-link" aria-label="Enlace directo al AWS Secrets Manager" title="Enlace directo al AWS Secrets Manager">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda a gerenciar, recuperar e alternar credenciais de banco de dados, chaves de API e outros segredos ao longo de seus ciclos de vida.</li>
+<li><strong>Para que serve:</strong> Proteger o acesso a aplicações, serviços e recursos, eliminando a necessidade de codificar segredos em suas aplicações e permitindo a rotação automática.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Armazenar credenciais de banco de dados, chaves de API e outros segredos de forma segura.</li>
+<li>Rotacionar automaticamente credenciais de banco de dados e outros segredos.</li>
+<li>Gerenciar o acesso a segredos com políticas de IAM granulares.</li>
+<li>Auditar o uso de segredos para conformidade e segurança.</li>
+<li>Integrar com outras aplicações e serviços AWS para recuperação de segredos.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Gerenciamento centralizado:</strong> Armazena e gerencia todos os seus segredos em um único local.</li>
+<li><strong>Rotação automática:</strong> Suporta a rotação automática de segredos para bancos de dados e outros serviços.</li>
+<li><strong>Criptografia:</strong> Criptografa segredos em repouso e em trânsito.</li>
+<li><strong>Controle de acesso:</strong> Integra-se com IAM para controle de acesso baseado em funções.</li>
+<li><strong>Auditoria:</strong> Registra o acesso a segredos no AWS CloudTrail.</li>
+</ul>
+</li>
+<li><strong>Comparativo com armazenamento de segredos em código ou arquivos de configuração:</strong>
+<ul>
+<li><strong>AWS Secrets Manager:</strong> Oferece uma solução segura e gerenciada para armazenar e rotacionar segredos, reduzindo o risco de exposição de credenciais e simplificando o gerenciamento de segurança. Elimina a necessidade de codificar segredos diretamente nas aplicações.</li>
+<li><strong>Armazenamento em código/arquivos:</strong> Altamente inseguro, pois os segredos podem ser expostos em repositórios de código, logs ou sistemas de arquivos. A rotação manual é complexa e propensa a erros, aumentando o risco de violações de segurança.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-systems-manager-session-manager">AWS Systems Manager Session Manager<a href="#aws-systems-manager-session-manager" class="hash-link" aria-label="Enlace directo al AWS Systems Manager Session Manager" title="Enlace directo al AWS Systems Manager Session Manager">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma capacidade do AWS Systems Manager totalmente gerenciada que permite gerenciar suas instâncias Amazon EC2, dispositivos de borda, servidores on-premises e máquinas virtuais (VMs) por meio de um navegador baseado na web ou da AWS CLI.</li>
+<li><strong>Para que serve:</strong> Fornecer acesso seguro e auditável a instâncias sem a necessidade de abrir portas de entrada, gerenciar chaves SSH ou usar hosts bastion.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Acesso seguro a instâncias EC2 sem SSH ou RDP.</li>
+<li>Solução de problemas e execução de comandos em instâncias.</li>
+<li>Auditoria de sessões de acesso para conformidade.</li>
+<li>Gerenciamento de frotas de servidores em escala.</li>
+<li>Conexão a instâncias em redes privadas sem acesso direto à internet.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Sem servidor:</strong> Não há necessidade de gerenciar hosts bastion ou chaves SSH.</li>
+<li><strong>Acesso seguro:</strong> Usa credenciais IAM para autenticação e autorização.</li>
+<li><strong>Auditoria:</strong> Registra todas as ações da sessão no CloudTrail e logs no CloudWatch Logs ou S3.</li>
+<li><strong>Compatibilidade:</strong> Funciona com instâncias EC2, servidores on-premises e VMs.</li>
+<li><strong>Execução de comandos:</strong> Permite executar comandos shell, PowerShell e scripts.</li>
+<li><strong>Transferência de arquivos:</strong> Suporta transferência de arquivos para e de instâncias.</li>
+</ul>
+</li>
+<li><strong>Comparativo com SSH/RDP tradicional:</strong>
+<ul>
+<li><strong>AWS Systems Manager Session Manager:</strong> Oferece uma abordagem mais segura e gerenciada para acesso a instâncias, eliminando a necessidade de abrir portas de entrada (como a porta 22 para SSH ou 3389 para RDP), gerenciar chaves SSH ou usar hosts bastion. Melhora a postura de segurança e simplifica o gerenciamento de acesso.</li>
+<li><strong>SSH/RDP tradicional:</strong> Exige a abertura de portas de entrada, o que aumenta a superfície de ataque. O gerenciamento de chaves SSH pode ser complexo e propenso a erros. A auditoria de sessões pode ser mais difícil de implementar e manter.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-systems-manager-session-manager-1">AWS Systems Manager Session Manager<a href="#aws-systems-manager-session-manager-1" class="hash-link" aria-label="Enlace directo al AWS Systems Manager Session Manager" title="Enlace directo al AWS Systems Manager Session Manager">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma capacidade do AWS Systems Manager que permite gerenciar suas instâncias Amazon EC2, instâncias on-premises e máquinas virtuais (VMs) de forma segura e auditável, sem a necessidade de abrir portas de entrada, gerenciar chaves SSH ou usar hosts bastion.</li>
+<li><strong>Para que serve:</strong> Fornecer acesso seguro e baseado em navegador ou CLI às suas instâncias, facilitando a solução de problemas, a execução de comandos e a automação de tarefas de gerenciamento.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Acesso seguro a instâncias EC2 sem SSH ou RDP.</li>
+<li>Execução de comandos em várias instâncias simultaneamente.</li>
+<li>Solução de problemas e diagnóstico de instâncias.</li>
+<li>Auditoria de sessões de acesso a instâncias.</li>
+<li>Automação de tarefas de gerenciamento de sistemas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> Não há servidores para provisionar ou gerenciar.</li>
+<li><strong>Segurança:</strong> Não requer portas de entrada abertas, chaves SSH ou hosts bastion. O acesso é controlado por políticas IAM.</li>
+<li><strong>Auditoria:</strong> Todas as ações realizadas durante uma sessão são registradas no AWS CloudTrail e nos logs do Amazon S3 ou CloudWatch Logs.</li>
+<li><strong>Acesso baseado em navegador ou CLI:</strong> Permite acesso conveniente através do console da AWS ou da AWS CLI.</li>
+<li><strong>Multiplataforma:</strong> Suporta instâncias EC2, on-premises e VMs.</li>
+<li><strong>Integração:</strong> Integra-se com outros recursos do AWS Systems Manager.</li>
+</ul>
+</li>
+<li><strong>Comparativo com SSH/RDP tradicionais:</strong>
+<ul>
+<li><strong>AWS Systems Manager Session Manager:</strong> Oferece um método mais seguro, auditável e gerenciado para acessar instâncias, eliminando a necessidade de gerenciar chaves SSH, abrir portas de firewall e usar hosts bastion. Reduz a superfície de ataque e simplifica o gerenciamento de acesso.</li>
+<li><strong>SSH/RDP tradicionais:</strong> Exigem o gerenciamento de chaves SSH ou senhas, a abertura de portas de firewall e, muitas vezes, o uso de hosts bastion, o que pode aumentar a complexidade e os riscos de segurança.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-sts-security-token-service-1">AWS STS (Security Token Service)<a href="#aws-sts-security-token-service-1" class="hash-link" aria-label="Enlace directo al AWS STS (Security Token Service)" title="Enlace directo al AWS STS (Security Token Service)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço web que permite solicitar credenciais de segurança temporárias e com privilégios limitados para usuários ou serviços da AWS.</li>
+<li><strong>Para que serve:</strong> Conceder acesso temporário e seguro a recursos da AWS sem a necessidade de compartilhar credenciais de longo prazo. É fundamental para cenários de federação de identidade, acesso entre contas e aplicações móveis.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li><strong>Acesso entre contas:</strong> Conceder a um usuário ou serviço em uma conta AWS acesso a recursos em outra conta.</li>
+<li><strong>Federação de identidade:</strong> Permitir que usuários de um diretório corporativo (como Active Directory) acessem recursos da AWS usando suas credenciais existentes.</li>
+<li><strong>Aplicações móveis e web:</strong> Fornecer credenciais temporárias para aplicações que precisam acessar recursos da AWS em nome de usuários finais.</li>
+<li><strong>Acesso temporário para tarefas específicas:</strong> Conceder a um usuário ou função acesso por um período limitado para realizar uma tarefa específica.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Credenciais temporárias:</strong> Gera chaves de acesso, chaves secretas e tokens de sessão que expiram após um período configurável.</li>
+<li><strong>Segurança aprimorada:</strong> Reduz o risco de credenciais de longo prazo serem comprometidas.</li>
+<li><strong>Assumir função (AssumeRole):</strong> Permite que uma entidade (usuário IAM, serviço AWS, etc.) assuma os privilégios de uma função IAM.</li>
+<li><strong>Decodificar mensagem de autorização:</strong> Ajuda a diagnosticar problemas de permissão.</li>
+<li><strong>Compatibilidade:</strong> Funciona com a maioria dos serviços AWS que suportam autenticação baseada em credenciais temporárias.</li>
+</ul>
+</li>
+<li><strong>Comparativo com credenciais de longo prazo (chaves de acesso IAM):</strong>
+<ul>
+<li><strong>AWS STS:</strong> Oferece credenciais temporárias que expiram automaticamente, reduzindo a superfície de ataque e a necessidade de rotação manual de chaves. Ideal para acesso programático e cenários de federação.</li>
+<li><strong>Credenciais de longo prazo (chaves de acesso IAM):</strong> São permanentes até serem revogadas ou rotacionadas manualmente, o que pode representar um risco de segurança se forem comprometidas. Adequadas para usuários administrativos ou aplicações que exigem acesso contínuo e não podem usar credenciais temporárias.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-iam-access-analyzer-1">AWS IAM Access Analyzer<a href="#aws-iam-access-analyzer-1" class="hash-link" aria-label="Enlace directo al AWS IAM Access Analyzer" title="Enlace directo al AWS IAM Access Analyzer">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda a identificar recursos em sua organização e contas que são acessíveis por entidades externas, como outros usuários da AWS, contas ou serviços.</li>
+<li><strong>Para que serve:</strong> Aumentar a segurança ao identificar acessos não intencionais a seus recursos, permitindo que você revise e ajuste as políticas de permissão para aderir ao princípio do privilégio mínimo.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Identificar buckets S3, funções IAM, filas SQS, chaves KMS e segredos do Secrets Manager que são acessíveis publicamente ou por contas externas.</li>
+<li>Auditar políticas de acesso para garantir que apenas entidades autorizadas possam acessar seus recursos.</li>
+<li>Validar políticas de IAM antes de implantá-las para evitar configurações de acesso excessivamente permissivas.</li>
+<li>Monitorar continuamente o acesso externo aos seus recursos.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Análise contínua:</strong> Monitora continuamente as políticas de recursos para identificar novos acessos externos.</li>
+<li><strong>Descoberta de acesso externo:</strong> Identifica recursos que podem ser acessados por entidades fora da sua zona de confiança.</li>
+<li><strong>Validação de políticas:</strong> Ajuda a validar políticas de IAM para garantir que elas concedam apenas as permissões pretendidas.</li>
+<li><strong>Integração com AWS Organizations:</strong> Permite analisar o acesso em várias contas dentro de uma organização.</li>
+<li><strong>Resultados acionáveis:</strong> Fornece detalhes sobre o acesso identificado, incluindo a política que concede o acesso e a entidade externa.</li>
+</ul>
+</li>
+<li><strong>Comparativo com revisão manual de políticas:</strong>
+<ul>
+<li><strong>AWS IAM Access Analyzer:</strong> Automatiza a identificação de acessos externos, o que é impraticável para ser feito manualmente em ambientes complexos. Fornece uma visão abrangente e contínua do acesso externo, ajudando a manter uma postura de segurança forte.</li>
+<li><strong>Revisão manual de políticas:</strong> Demorada, propensa a erros e não escalável. É fácil perder configurações de acesso excessivamente permissivas em ambientes com muitas políticas e recursos.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-iam-identity-center-antigo-aws-sso-2">AWS IAM Identity Center (antigo AWS SSO)<a href="#aws-iam-identity-center-antigo-aws-sso-2" class="hash-link" aria-label="Enlace directo al AWS IAM Identity Center (antigo AWS SSO)" title="Enlace directo al AWS IAM Identity Center (antigo AWS SSO)">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço de gerenciamento de acesso e identidade baseado em nuvem que simplifica o gerenciamento centralizado do acesso a várias contas AWS e aplicações de negócios.</li>
+<li><strong>Para que serve:</strong> Fornecer um ponto centralizado para gerenciar o acesso de usuários e grupos a todas as suas contas AWS e aplicações SaaS, oferecendo uma experiência de login único (SSO) para os usuários.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Gerenciamento centralizado de usuários e grupos para acesso a várias contas AWS.</li>
+<li>Habilitar login único para aplicações de negócios (ex: Salesforce, Office 365) e aplicações personalizadas.</li>
+<li>Integrar com diretórios existentes (ex: Active Directory, Okta) para sincronizar usuários e grupos.</li>
+<li>Atribuir permissões baseadas em funções para usuários e grupos em contas AWS.</li>
+<li>Simplificar a experiência de login para desenvolvedores e administradores que trabalham com várias contas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Login único (SSO):</strong> Permite que os usuários acessem todas as contas e aplicações atribuídas com um único conjunto de credenciais.</li>
+<li><strong>Gerenciamento centralizado:</strong> Gerencie usuários, grupos e permissões de acesso a partir de um único local.</li>
+<li><strong>Integração com diretórios:</strong> Sincroniza com o AWS Managed Microsoft AD, Active Directory Connector ou provedores de identidade externos (IdPs) compatíveis com SAML 2.0.</li>
+<li><strong>Atribuição de permissões baseadas em funções:</strong> Atribua conjuntos de permissões pré-definidos ou personalizados a usuários e grupos em contas AWS.</li>
+<li><strong>Portal de usuário personalizável:</strong> Os usuários podem acessar um portal personalizado para ver e acessar suas contas e aplicações atribuídas.</li>
+<li><strong>Auditoria:</strong> Integra-se com AWS CloudTrail para registrar atividades de login e acesso.</li>
+</ul>
+</li>
+<li><strong>Comparativo com gerenciamento de acesso IAM tradicional em várias contas:</strong>
+<ul>
+<li><strong>AWS IAM Identity Center:</strong> Simplifica o gerenciamento de acesso em ambientes multi-conta, eliminando a necessidade de criar e gerenciar usuários IAM individuais em cada conta. Oferece uma experiência de usuário aprimorada com SSO e um modelo de permissões mais fácil de gerenciar.</li>
+<li><strong>Gerenciamento de acesso IAM tradicional:</strong> Exige a criação e o gerenciamento de usuários e funções IAM em cada conta individualmente, o que pode ser complexo e propenso a erros em ambientes com muitas contas. Não oferece uma experiência de SSO nativa.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-secrets-manager-1">AWS Secrets Manager<a href="#aws-secrets-manager-1" class="hash-link" aria-label="Enlace directo al AWS Secrets Manager" title="Enlace directo al AWS Secrets Manager">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Um serviço que ajuda a proteger o acesso às suas aplicações, serviços e recursos de TI, permitindo que você gire, gerencie e recupere credenciais de banco de dados, chaves de API e outros segredos durante todo o seu ciclo de vida.</li>
+<li><strong>Para que serve:</strong> Eliminar a necessidade de codificar segredos diretamente nas aplicações, melhorando a postura de segurança e facilitando a rotação automática de credenciais.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Armazenar e gerenciar credenciais de banco de dados (ex: MySQL, PostgreSQL, Aurora).</li>
+<li>Proteger chaves de API para serviços de terceiros.</li>
+<li>Gerenciar credenciais para aplicações e microsserviços.</li>
+<li>Rotacionar automaticamente credenciais de banco de dados para aumentar a segurança.</li>
+<li>Armazenar e recuperar segredos de forma segura para aplicações sem servidor (ex: AWS Lambda).</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Rotação automática:</strong> Gira automaticamente credenciais de banco de dados e outros segredos em intervalos definidos.</li>
+<li><strong>Criptografia:</strong> Criptografa segredos em repouso e em trânsito.</li>
+<li><strong>Integração:</strong> Integra-se com serviços AWS como RDS, Lambda, EC2 e outros.</li>
+<li><strong>Controle de acesso granular:</strong> Use políticas IAM para controlar quem pode acessar quais segredos.</li>
+<li><strong>Auditoria:</strong> Registra o acesso aos segredos no AWS CloudTrail.</li>
+<li><strong>Recuperação de segredos:</strong> As aplicações podem recuperar segredos programaticamente, eliminando a necessidade de codificá-los.</li>
+</ul>
+</li>
+<li><strong>Comparativo com armazenamento manual de segredos:</strong>
+<ul>
+<li><strong>AWS Secrets Manager:</strong> Oferece uma solução segura e automatizada para gerenciar segredos, reduzindo o risco de vazamento de credenciais e simplificando a rotação. Permite que as aplicações recuperem segredos de forma segura, sem a necessidade de codificá-los diretamente.</li>
+<li><strong>Armazenamento manual de segredos:</strong> Pode levar a práticas inseguras, como codificar segredos diretamente no código-fonte ou armazená-los em arquivos de configuração não criptografados. A rotação manual de segredos é demorada e propensa a erros.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-systems-manager-session-manager-2">AWS Systems Manager Session Manager<a href="#aws-systems-manager-session-manager-2" class="hash-link" aria-label="Enlace directo al AWS Systems Manager Session Manager" title="Enlace directo al AWS Systems Manager Session Manager">​</a></h3>
+<ul>
+<li><strong>O que é:</strong> Uma capacidade do AWS Systems Manager que permite gerenciar suas instâncias Amazon EC2, instâncias on-premises e máquinas virtuais (VMs) de forma segura e auditável, sem a necessidade de abrir portas de entrada, gerenciar chaves SSH ou usar hosts bastion.</li>
+<li><strong>Para que serve:</strong> Fornecer acesso seguro e baseado em navegador ou CLI às suas instâncias, facilitando a solução de problemas, a execução de comandos e a automação de tarefas de gerenciamento.</li>
+<li><strong>Casos de uso:</strong>
+<ul>
+<li>Acesso seguro a instâncias EC2 sem SSH ou RDP.</li>
+<li>Execução de comandos em várias instâncias simultaneamente.</li>
+<li>Solução de problemas e diagnóstico de instâncias.</li>
+<li>Auditoria de sessões de acesso a instâncias.</li>
+<li>Automação de tarefas de gerenciamento de sistemas.</li>
+</ul>
+</li>
+<li><strong>Principais pontos:</strong>
+<ul>
+<li><strong>Totalmente gerenciado:</strong> Não há servidores para provisionar ou gerenciar.</li>
+<li><strong>Segurança:</strong> Não requer portas de entrada abertas, chaves SSH ou hosts bastion. O acesso é controlado por políticas IAM.</li>
+<li><strong>Auditoria:</strong> Todas as ações realizadas durante uma sessão são registradas no AWS CloudTrail e nos logs do Amazon S3 ou CloudWatch Logs.</li>
+<li><strong>Acesso baseado em navegador ou CLI:</strong> Permite acesso conveniente através do console da AWS ou da AWS CLI.</li>
+<li><strong>Multiplataforma:</strong> Suporta instâncias EC2, on-premises e VMs.</li>
+<li><strong>Integração:</strong> Integra-se com outros recursos do AWS Systems Manager.</li>
+</ul>
+</li>
+<li><strong>Comparativo com SSH/RDP tradicionais:</strong>
+<ul>
+<li><strong>AWS Systems Manager Session Manager:</strong> Oferece um método mais seguro, auditável e gerenciado para acessar instâncias, eliminando a necessidade de gerenciar chaves SSH, abrir portas de firewall e usar hosts bastion. Reduz a superfície de ataque e simplifica o gerenciamento de acesso.</li>
+<li><strong>SSH/RDP tradicionais:</strong> Exigem o gerenciamento de chaves SSH ou senhas, a abertura de portas de firewall e, muitas vezes, o uso de hosts bastion, o que pode aumentar a complexidade e os riscos de segurança.</li>
+</ul>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/EmersonBraun/aws-cheatsheet/blob/master/docs/test.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#cheatsheet-aws-services-parte-3" class="table-of-contents__link toc-highlight">Cheatsheet AWS Services (Parte 3)</a></li><li><a href="#analytics" class="table-of-contents__link toc-highlight">Analytics</a><ul><li><a href="#amazon-quicksight" class="table-of-contents__link toc-highlight">Amazon QuickSight</a></li><li><a href="#aws-data-exchange" class="table-of-contents__link toc-highlight">AWS Data Exchange</a></li></ul></li><li><a href="#compute" class="table-of-contents__link toc-highlight">Compute</a><ul><li><a href="#amazon-lightsail" class="table-of-contents__link toc-highlight">Amazon Lightsail</a></li><li><a href="#aws-ec2-image-builder" class="table-of-contents__link toc-highlight">AWS EC2 Image Builder</a></li><li><a href="#aws-app-runner" class="table-of-contents__link toc-highlight">AWS App Runner</a></li></ul></li><li><a href="#containers" class="table-of-contents__link toc-highlight">Containers</a><ul><li><a href="#aws-app-mesh" class="table-of-contents__link toc-highlight">AWS App Mesh</a></li></ul></li><li><a href="#developer-tools" class="table-of-contents__link toc-highlight">Developer Tools</a><ul><li><a href="#aws-codepipeline" class="table-of-contents__link toc-highlight">AWS CodePipeline</a></li><li><a href="#aws-codecommit" class="table-of-contents__link toc-highlight">AWS CodeCommit</a></li><li><a href="#aws-codestar" class="table-of-contents__link toc-highlight">AWS CodeStar</a></li></ul></li><li><a href="#front-end" class="table-of-contents__link toc-highlight">Front-End</a><ul><li><a href="#aws-device-farm" class="table-of-contents__link toc-highlight">AWS Device Farm</a></li></ul></li><li><a href="#machine-learning" class="table-of-contents__link toc-highlight">Machine Learning</a><ul><li><a href="#amazon-forecast" class="table-of-contents__link toc-highlight">Amazon Forecast</a></li><li><a href="#amazon-personalize" class="table-of-contents__link toc-highlight">Amazon Personalize</a></li><li><a href="#amazon-lookout-for-metrics" class="table-of-contents__link toc-highlight">Amazon Lookout for Metrics</a></li><li><a href="#amazon-bedrock" class="table-of-contents__link toc-highlight">Amazon Bedrock</a></li></ul></li><li><a href="#management-and-governance" class="table-of-contents__link toc-highlight">Management and Governance</a><ul><li><a href="#aws-service-catalog" class="table-of-contents__link toc-highlight">AWS Service Catalog</a></li><li><a href="#aws-opsworks" class="table-of-contents__link toc-highlight">AWS OpsWorks</a></li></ul></li><li><a href="#migration-and-transfer" class="table-of-contents__link toc-highlight">Migration and Transfer</a><ul><li><a href="#aws-application-discovery-service" class="table-of-contents__link toc-highlight">AWS Application Discovery Service</a></li></ul></li><li><a href="#networking-and-content-delivery" class="table-of-contents__link toc-highlight">Networking and Content Delivery</a><ul><li><a href="#aws-global-accelerator" class="table-of-contents__link toc-highlight">AWS Global Accelerator</a></li><li><a href="#aws-network-firewall" class="table-of-contents__link toc-highlight">AWS Network Firewall</a></li></ul></li><li><a href="#storage" class="table-of-contents__link toc-highlight">Storage</a><ul><li><a href="#amazon-s3-glacier-deep-archive" class="table-of-contents__link toc-highlight">Amazon S3 Glacier Deep Archive</a></li><li><a href="#amazon-s3-storage-lens" class="table-of-contents__link toc-highlight">Amazon S3 Storage Lens</a></li></ul></li><li><a href="#security" class="table-of-contents__link toc-highlight">Security</a><ul><li><a href="#aws-control-tower" class="table-of-contents__link toc-highlight">AWS Control Tower</a></li><li><a href="#amazon-detective" class="table-of-contents__link toc-highlight">Amazon Detective</a></li><li><a href="#aws-iam-identity-center-antigo-aws-sso" class="table-of-contents__link toc-highlight">AWS IAM Identity Center (antigo AWS SSO)</a></li><li><a href="#aws-access-analyzer" class="table-of-contents__link toc-highlight">AWS Access Analyzer</a></li></ul></li><li><a href="#hybrid" class="table-of-contents__link toc-highlight">Hybrid</a><ul><li><a href="#aws-local-zones" class="table-of-contents__link toc-highlight">AWS Local Zones</a></li><li><a href="#aws-wavelength" class="table-of-contents__link toc-highlight">AWS Wavelength</a></li></ul></li><li><a href="#ai--generative" class="table-of-contents__link toc-highlight">AI / Generative</a><ul><li><a href="#amazon-q" class="table-of-contents__link toc-highlight">Amazon Q</a></li><li><a href="#claude-via-amazon-bedrock" class="table-of-contents__link toc-highlight">Claude (via Amazon Bedrock)</a></li><li><a href="#amazon-titan-via-amazon-bedrock" class="table-of-contents__link toc-highlight">Amazon Titan (via Amazon Bedrock)</a></li><li><a href="#aws-codestar-1" class="table-of-contents__link toc-highlight">AWS CodeStar</a></li></ul></li><li><a href="#front-end-1" class="table-of-contents__link toc-highlight">Front-End</a><ul><li><a href="#aws-device-farm-1" class="table-of-contents__link toc-highlight">AWS Device Farm</a></li></ul></li><li><a href="#machine-learning-1" class="table-of-contents__link toc-highlight">Machine Learning</a><ul><li><a href="#amazon-forecast-1" class="table-of-contents__link toc-highlight">Amazon Forecast</a></li><li><a href="#amazon-personalize-1" class="table-of-contents__link toc-highlight">Amazon Personalize</a></li><li><a href="#amazon-lookout-for-metrics-1" class="table-of-contents__link toc-highlight">Amazon Lookout for Metrics</a></li><li><a href="#amazon-bedrock-1" class="table-of-contents__link toc-highlight">Amazon Bedrock</a></li></ul></li><li><a href="#management-and-governance-1" class="table-of-contents__link toc-highlight">Management and Governance</a><ul><li><a href="#aws-service-catalog-1" class="table-of-contents__link toc-highlight">AWS Service Catalog</a></li><li><a href="#aws-opsworks-1" class="table-of-contents__link toc-highlight">AWS OpsWorks</a></li></ul></li><li><a href="#migration-and-transfer-1" class="table-of-contents__link toc-highlight">Migration and Transfer</a><ul><li><a href="#aws-application-discovery-service-1" class="table-of-contents__link toc-highlight">AWS Application Discovery Service</a></li></ul></li><li><a href="#networking-and-content-delivery-1" class="table-of-contents__link toc-highlight">Networking and Content Delivery</a><ul><li><a href="#aws-global-accelerator-1" class="table-of-contents__link toc-highlight">AWS Global Accelerator</a></li><li><a href="#aws-network-firewall-1" class="table-of-contents__link toc-highlight">AWS Network Firewall</a></li></ul></li><li><a href="#storage-1" class="table-of-contents__link toc-highlight">Storage</a><ul><li><a href="#amazon-s3-glacier-deep-archive-1" class="table-of-contents__link toc-highlight">Amazon S3 Glacier Deep Archive</a></li><li><a href="#amazon-s3-storage-lens-1" class="table-of-contents__link toc-highlight">Amazon S3 Storage Lens</a></li></ul></li><li><a href="#security-1" class="table-of-contents__link toc-highlight">Security</a><ul><li><a href="#aws-control-tower-1" class="table-of-contents__link toc-highlight">AWS Control Tower</a></li><li><a href="#amazon-detective-1" class="table-of-contents__link toc-highlight">Amazon Detective</a></li><li><a href="#aws-iam-identity-center-antigo-aws-sso-1" class="table-of-contents__link toc-highlight">AWS IAM Identity Center (antigo AWS SSO)</a></li><li><a href="#aws-access-analyzer-1" class="table-of-contents__link toc-highlight">AWS Access Analyzer</a></li></ul></li><li><a href="#hybrid-1" class="table-of-contents__link toc-highlight">Hybrid</a><ul><li><a href="#aws-local-zones-1" class="table-of-contents__link toc-highlight">AWS Local Zones</a></li><li><a href="#aws-wavelength-1" class="table-of-contents__link toc-highlight">AWS Wavelength</a></li></ul></li><li><a href="#ai--generative-1" class="table-of-contents__link toc-highlight">AI / Generative</a><ul><li><a href="#amazon-q-1" class="table-of-contents__link toc-highlight">Amazon Q</a></li><li><a href="#claude-via-amazon-bedrock-1" class="table-of-contents__link toc-highlight">Claude (via Amazon Bedrock)</a></li><li><a href="#amazon-titan-via-amazon-bedrock-1" class="table-of-contents__link toc-highlight">Amazon Titan (via Amazon Bedrock)</a></li><li><a href="#aws-sts-security-token-service" class="table-of-contents__link toc-highlight">AWS STS (Security Token Service)</a></li><li><a href="#aws-iam-access-analyzer" class="table-of-contents__link toc-highlight">AWS IAM Access Analyzer</a></li><li><a href="#aws-secrets-manager" class="table-of-contents__link toc-highlight">AWS Secrets Manager</a></li><li><a href="#aws-systems-manager-session-manager" class="table-of-contents__link toc-highlight">AWS Systems Manager Session Manager</a></li><li><a href="#aws-systems-manager-session-manager-1" class="table-of-contents__link toc-highlight">AWS Systems Manager Session Manager</a></li><li><a href="#aws-sts-security-token-service-1" class="table-of-contents__link toc-highlight">AWS STS (Security Token Service)</a></li><li><a href="#aws-iam-access-analyzer-1" class="table-of-contents__link toc-highlight">AWS IAM Access Analyzer</a></li><li><a href="#aws-iam-identity-center-antigo-aws-sso-2" class="table-of-contents__link toc-highlight">AWS IAM Identity Center (antigo AWS SSO)</a></li><li><a href="#aws-secrets-manager-1" class="table-of-contents__link toc-highlight">AWS Secrets Manager</a></li><li><a href="#aws-systems-manager-session-manager-2" class="table-of-contents__link toc-highlight">AWS Systems Manager Session Manager</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/aws-cheatsheet/es/docs/getting-started">Serviços AWS</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">AWS Cheatsheet. Created by <a href="https://www.linkedin.com/in/emerson-braun/" target="_blank">Emerson Braun</a>, last updated on 13/06/2025</div></div></div></footer></div>
+</body>
+</html>
