@@ -124,7 +124,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `AWS Cheatsheet. Created by <a href="https://www.linkedin.com/in/emerson-braun/" target="_blank">Emerson Braun</a>, last updated on 13/06/2025`,
+      copyright: `AWS Cheatsheet. Created by <a href="https://www.linkedin.com/in/emerson-braun/" target="_blank">Emerson Braun</a>, last updated on 25/06/2025`,
     },
     prism: {
       theme: prismThemes.github,
