@@ -25,6 +25,14 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Frameworks',
+      items: [
+        'framework/well-architected-framework',
+        'framework/caf',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Analytics',
       items: [
         'analytics/athena',
@@ -55,10 +63,10 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Artificial Intelligence (Generative)',
       items: [
+        'ai/amazon-augmented-ai',
         'ai/amazon-q',
         'ai/bedrock',
         'ai/amazon-lookout-for-metrics',
-        'ai/claude',
         'ai/amazon-titan',
       ],
     },
@@ -67,6 +75,7 @@ const sidebars: SidebarsConfig = {
       label: 'Compute',
       items: [
         'compute/app-runner',
+        'compute/appstream',
         'compute/batch',
         'compute/ec2',
         'compute/ec2-auto-scaling',
@@ -162,6 +171,7 @@ const sidebars: SidebarsConfig = {
       label: 'Machine Learning',
       items: [
         'machine-learning/comprehend',
+        'machine-learning/deepracer',
         'machine-learning/forecast',
         'machine-learning/kendra',
         'machine-learning/lex',
