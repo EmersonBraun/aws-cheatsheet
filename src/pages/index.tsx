@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import { type ReactElement } from 'react';
 
+import { EbookCta } from '../components/EbookCta';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -80,6 +81,8 @@ export default function Home(): ReactElement {
                       Contribute to the Project 🤝
                     </Link>
                   </div>
+
+                  <EbookCta />
                 </div>
               </div>
             </div>

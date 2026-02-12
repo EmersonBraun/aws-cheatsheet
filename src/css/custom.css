@@ -97,3 +97,34 @@
   padding-left: 1rem;
   margin: 1rem 0;
 }
+
+/* Footer Connect column: icons in a row */
+.footer__items--connect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.footer__item--icon {
+  margin-bottom: 0;
+}
+
+.footer__link-item--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  border-radius: 6px;
+  color: var(--ifm-footer-link-color);
+  transition: color 0.2s, background 0.2s;
+}
+
+.footer__link-item--icon:hover {
+  color: var(--ifm-footer-link-hover-color);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.footer__link-item--icon svg {
+  display: block;
+}

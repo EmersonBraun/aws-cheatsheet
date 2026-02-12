@@ -6,5 +6,29 @@
   "link.item.label.Serviços AWS": {
     "message": "Serviços AWS",
     "description": "The label of footer link with label=Serviços AWS linking to /docs/intro"
+  },
+  "link.title.Connect": {
+    "message": "Conectar",
+    "description": "Footer social links column"
+  },
+  "link.item.label.Website": {
+    "message": "Site",
+    "description": "Personal website"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "LinkedIn profile"
+  },
+  "link.item.label.X / Twitter": {
+    "message": "X / Twitter",
+    "description": "X profile"
+  },
+  "link.item.label.Instagram": {
+    "message": "Instagram",
+    "description": "Instagram profile"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "YouTube channel"
   }
 }

@@ -123,8 +123,18 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Connect',
+          items: [
+            { label: 'Website', href: 'https://emersonbraun.dev/' },
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/emerson-braun/' },
+            { label: 'X / Twitter', href: 'https://x.com/EmersonfBraun' },
+            { label: 'Instagram', href: 'https://www.instagram.com/emerson.braun.dev/' },
+            { label: 'YouTube', href: 'https://www.youtube.com/@emerson.braun_dev' },
+          ],
+        },
       ],
-      copyright: `AWS Cheatsheet. Created by <a href="https://www.linkedin.com/in/emerson-braun/" target="_blank">Emerson Braun</a>, last updated on 25/06/2025`,
+      copyright: `AWS Cheatsheet. Created by <a href="https://www.linkedin.com/in/emerson-braun/" target="_blank">Emerson Braun</a>, last updated on 12/02/2026`,
     },
     prism: {
       theme: prismThemes.github,
